@@ -159,3 +159,5 @@ None.
   17 (Atlanta metro map, Gwinnett outlined). Beat 1 trimmed to avoid overlap.
   Proposed edits to Eric's intro sent as a numbered list (not applied).
   Post has 7 charts. Tie-out 84 of 84. DATASETS 14 (county boundaries).
+- 2026-10-21 Eric accepted intro edits 1-5 (northeast, top ten outside college
+  towns, household definition, tool link, Tyson); applied.

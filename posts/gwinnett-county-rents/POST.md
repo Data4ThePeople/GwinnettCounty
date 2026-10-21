@@ -18,9 +18,9 @@ dividers: false
 
 # [Eric: title]
 
-Last week, we dug into our Rentals within Reach visualization and pulled out what looked like one of the most affordable counties in America for renters. That was Dawson County, Nebraska, and while it’s true that it used to be affordable, that all changed earlier this year when its largest employer – the Tyson’s meatpacking plant – shut its doors. 
+Last week, we dug into our [Rentals Within Reach](https://www.data4thepeople.com/p/rentals-within-reach) visualization and pulled out what looked like one of the most affordable counties in America for renters. That was Dawson County, Nebraska, and while it’s true that it used to be affordable, that all changed earlier this year when its largest employer – the Tyson meatpacking plant – shut its doors. 
 
-Today, we went hunting on the opposite side of the ledger – the counties that were the least affordable for renters. Interestingly, three of the top ten counties were all in the Atlanta metro area. Interesting. But one county stood out from the rest – Gwinnett County, situated immediately northwest of downtown Atlanta. Gwinnett County had just 10.5% of rental units “within reach” of the median renter household income. We define within reach as no more than 30% of a family’s after-tax income. 
+Today, we went hunting on the opposite side of the ledger – the counties that were the least affordable for renters. Interestingly, three of the ten least affordable counties outside college towns were in the Atlanta metro area. But one county stood out from the rest – Gwinnett County, situated northeast of downtown Atlanta. Gwinnett County had just 10.5% of rental units “within reach” of the median renter household income. We define within reach as a rent of no more than 30% of the median renter household’s after-tax income. 
 
 ![Map of the 29 counties of the Atlanta metro area, shaded red by the share of rentals within reach in 2020-2024, brighter for smaller shares. Gwinnett County, northeast of downtown Atlanta and outlined, is lowest at 10.5%. Clayton is 11.0%, DeKalb 14.0%, Henry 18.2%, Cobb 23.9% and Fulton 24.6%. Outer counties run higher, up to 70.0% in Haralson County.](images/01-atlanta-map.png)
 *Source: Data 4 The People, Rentals Within Reach, from Census Bureau American Community Survey 5-year estimates, 2020-2024. County lines: Census Bureau, 2024.*
