@@ -291,7 +291,7 @@ def income_vs_rent():
     g = next(o for o in big if o[6] == "13135")
     rank = sorted(big, key=lambda o: o[3] - o[0], reverse=True).index(g) + 1
     assert rank == 1
-    titleblock(fig, "Among large Atlanta-area counties, Gwinnett's rent outran renter income the most",
+    titleblock(fig, "Rent outran renter income in Gwinnett by one of the metro's widest gaps",
                f"Change from 2005-09 to 2020-24 after inflation, the {len(big)} Atlanta-metro counties with at least 10,000 renter households.\n"
                f"Points above the dashed line saw rent rise faster than renter income. Gwinnett sits farthest above it,\n"
                f"but its income change has a margin of about {g[1]:.0f} points either way, so its lead over the next counties is uncertain.")
@@ -312,11 +312,12 @@ def ranking():
     fig, ax = frame(left=0.2, top=0.74)
     hbars(ax, names, [v for v, _ in top], [BLUE if u == G else MUTED for _, u in top], lambda v: f"{v:.1f}%", 0.25)
     ax.set_xlim(0, max(v for v, _ in top) * 1.15)
-    titleblock(fig, "Gwinnett had the smallest share of rentals within reach outside college towns",
-               f"Share of rentals within reach, 2020-24: the 10 lowest of {n_nc:,} counties with 1,000+ rentals, leaving out college towns.\n"
-               f"With college towns included, Gwinnett ranks {rank_all} of {n_all:,}.\n" + REACH.replace(",\nthe", ", the"))
-    credit(fig, TOOL + "\nCounties the tool marks low reliability in 2020-24 are left out. College towns: the tool's list of 71 counties"
-           " where students are a large share of renters.")
+    titleblock(fig, f"Gwinnett had the lowest share within reach of {n_nc:,} non-college counties",
+               f"Share of rentals within reach, 2020-24: the 10 lowest of {n_nc:,} counties with 1,000+ rentals, leaving out college counties.\n"
+               f"With college counties included, Gwinnett ranks {rank_all} of {n_all:,}.\n" + REACH.replace(",\nthe", ", the"))
+    n_col = sum(1 for info in H["units"].values() if info["college"] >= C1.COLLEGE_SHARE)
+    credit(fig, TOOL + f"\nCounties the tool marks low reliability in 2020-24 are left out. \nCollege counties: the tool's {n_col} counties"
+           " where 15% or more of residents age 3 and over are enrolled in college.")
     save(fig, "10-least-affordable.png")
 
 

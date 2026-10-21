@@ -7,12 +7,13 @@ an independent tie-out yet.
 ## Beats
 
 **1. Gwinnett had the smallest share of rentals within reach of any county in
-the country outside college towns.**
+the country outside college counties.**
 - In 2020-24, 10.5% of Gwinnett's rentals were within reach of its median
   renter household. That is the lowest of 1,922 counties with at least 1,000
-  rentals, leaving out college towns.
+  rentals, leaving out college counties (the tool's counties where 15% or
+  more of residents age 3 and over are enrolled in college).
 - Caveats:
-  - With college towns included, it ranks 3rd of 1,987.
+  - With college counties included, it ranks 3rd of 1,987.
   - Clayton County, next door, is at 11.0%, half a point behind.
   - The ranking uses the tool's default settings (the median renter household,
     after taxes, 30% of income). Other settings give other rankings.
