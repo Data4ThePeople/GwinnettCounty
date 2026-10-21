@@ -47,26 +47,21 @@ Home prices rose fast in Gwinnett, but they rose about as fast in Cobb County, w
 
 ## Not a story of high-priced new apartments
 
-Apartments built since 2010 hold about 10% of Gwinnett's renters. Their median rent, $1,870, is 3% above the county's.
+Houses account for more than half of the rentals Gwinnett added over this period, most of them older houses that became rentals. Apartments built since 2010 added about 11,000, at a median rent of $1,870, 3% above the county's. The rentals within reach were lost mostly in older apartments.
 
-![Bar chart of median monthly rent in Gwinnett County in 2020-2024 by when the building was built. All rentals $1,810. Apartments built before 2000 $1,660, houses built before 2000 $1,990, apartments built 2000-2009 $1,670, houses built 2000-2009 $2,220, apartments built 2010 or later $1,870, and houses built 2010 or later $2,500.](images/04-rent-by-year-built.png)
-*Source: Census Bureau, American Community Survey 5-year microdata, 2020-2024. Year built is reported by the household.*
+![Two-panel bar chart of the change in Gwinnett County rentals with a cash rent from 2005-2009 to 2020-2024, by building type and year built. Change in all rentals: houses built before 2000 +11,300, houses built 2000-2009 +3,800, houses built 2010 or later +6,700, apartments built before 2000 +1,200, apartments built 2000-2009 +2,300, apartments built 2010 or later +11,000, other +4,500. Change in rentals within reach: +700, +200, +200, -5,500, -800, +900 and +200.](images/04-growth-by-age.png)
+*Source: Census Bureau, American Community Survey 5-year microdata. Apartments are buildings with 5 or more units. Year built is reported by the household.*
 
-The bigger change was in older buildings. Gwinnett's apartments built before 2000 housed about the same number of renters in both periods. The number of them within reach fell 58%.
+Houses went from 31% of Gwinnett's rentals in 2005-2009 to 39.5% in 2020-2024. And Gwinnett permitted fewer homes for each new household than most of its neighbors.
 
-![Bar chart of Gwinnett County renter households in apartment buildings built before 2000. About 28,800 in 2005-2009 and 30,000 in 2020-2024. Of those, about 9,600 were within reach in 2005-2009 and 4,100 in 2020-2024.](images/05-older-apartments.png)
-*Source: Census Bureau, American Community Survey 5-year microdata. Apartments are buildings with 5 or more units.*
-
-Many older houses became rentals: houses went from 31% of Gwinnett's rentals in 2005-2009 to 39.5% in 2020-2024. And Gwinnett permitted fewer homes for each new household than most of its neighbors.
-
-![Bar chart of housing units permitted from 2007 to 2021 for each household added from 2005-2009 to 2020-2024, in eight Atlanta-area counties. DeKalb 1.86, Forsyth 1.03, Fulton 0.92, Cherokee 0.91, Cobb 0.80, Henry 0.76, Gwinnett 0.65 and Clayton 0.42.](images/06-permits-per-household.png)
+![Bar chart of housing units permitted from 2007 to 2021 for each household added from 2005-2009 to 2020-2024, in eight Atlanta-area counties. DeKalb 1.86, Forsyth 1.03, Fulton 0.92, Cherokee 0.91, Cobb 0.80, Henry 0.76, Gwinnett 0.65 and Clayton 0.42.](images/05-permits-per-household.png)
 *Source: Census Bureau, Building Permits Survey and American Community Survey 5-year estimates. Permits are approvals to build, not finished homes.*
 
 ## Renters' pay did not keep up
 
 Gwinnett's renter households earned more over this period mostly because the households changed: more members worked, more worked full time, and more householders were older or had college degrees. Pay itself did not rise. After inflation, the median renter who worked full time all year earned about $46,100 in 2005-2009 and $44,600 in 2020-2024. In Cobb, that pay rose 7%.
 
-![Bar chart of the change in median earnings of renters who worked full time all year, 2005-2009 to 2020-2024, after inflation. Fulton up 21.2%, DeKalb up 9.9%, Cobb up 6.7%, Gwinnett down 3.3%, Henry down 3.4%, Cherokee down 6.0% and Clayton down 9.2%.](images/07-renter-pay.png)
+![Bar chart of the change in median earnings of renters who worked full time all year, 2005-2009 to 2020-2024, after inflation. Fulton up 21.2%, DeKalb up 9.9%, Cobb up 6.7%, Gwinnett down 3.3%, Henry down 3.4%, Cherokee down 6.0% and Clayton down 9.2%.](images/06-renter-pay.png)
 *Source: Census Bureau, American Community Survey 5-year microdata; BLS consumer price index. Gwinnett's change has a margin of about 5 points either way.*
 
 Renter pay also fell in Henry, Cherokee and Clayton. In Gwinnett, rents rose about as much as in Cobb, while pay moved more like Henry's.
@@ -87,7 +82,7 @@ Renter pay also fell in Henry, Cherokee and Clayton. In Gwinnett, rents rose abo
 
 - **Shares within reach** come from our Rentals Within Reach tool, built from Census Bureau American Community Survey 5-year estimates for 2005-2009, 2010-2014, 2015-2019 and 2020-2024. Counties with fewer than 1,000 rentals, or with unreliable estimates, are left out. College counties are the tool's 71 counties where 15% or more of residents age 3 and over are enrolled in college.
 - **Rent and income changes** use the published median gross rent and median renter household income, put in 2024 dollars with the consumer price index.
-- **Rent by year built, older apartments and renter pay** come from the survey's microdata (individual household records) for Gwinnett and six neighboring counties. Forsyth County is left out of these because its 2005-2009 records also cover Dawson and Pickens counties. Full time means 35 or more hours a week for 50 or more weeks a year.
+- **Rentals by building type and year built, and renter pay,** come from the survey's microdata (individual household records) for Gwinnett and six neighboring counties. Forsyth County is left out of these because its 2005-2009 records also cover Dawson and Pickens counties. Full time means 35 or more hours a week for 50 or more weeks a year.
 - **Permits** come from the Census Bureau's Building Permits Survey.
 - **Home prices** come from the Federal Housing Finance Agency's county house price index.
 - An independent check recomputed every number from the raw data. The code and data notes are on [GitHub](https://github.com/Data4ThePeople/GwinnettCounty).

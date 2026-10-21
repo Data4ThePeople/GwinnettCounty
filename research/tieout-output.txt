@@ -44,6 +44,12 @@ Beat 4
    PASS  D9   houses share of rentals 2005-09 (%)                            claimed      31.00  computed      30.96
    PASS  D10  houses share of rentals 2020-24 (%)                            claimed      39.50  computed      39.46
    INFO  median rent of house rentals 2020-24 $2,122 ('above the county median')
+Chart 04 in the post (growth by building type and year built)
+   PASS  F1   group changes add to the PUMS total change                     claimed  40,755.00  computed  40,755.00
+   PASS  F2   houses' share of added rentals (%), 'more than half'           claimed      54.00  computed      53.57
+   PASS  F3   apartments built 2010+ added, 'about 11,000'                   claimed  11,000.00  computed  10,959.00
+   PASS  F4   older apartments within reach change, '-5,500'                 claimed  -5,500.00  computed  -5,516.00
+   PASS  F5   largest single group is older houses (1 = yes)                 claimed       1.00  computed       1.00
 Beat 5
    INFO  PUMS renter median change +6.8% (the text's 8% is the published table, C2)
    PASS  E1   full-time year-round pay change (%)                            claimed      -3.00  computed      -3.28
@@ -78,4 +84,4 @@ Words (checked by hand against the results above and the memos)
    FIXED  beat 5 and chart 11 'fell 3%': -3.3% is inside its 90% margin of about 5 points, so the text now says pay 'did not rise' (flagged by the independent tie-out).
    FIXED  beat 5 '34% to 38%' for households with 2+ workers: 37.46% rounds to 37 (E9); 'the same rise' as Cobb is now 'about the same rise' (E7, within the margin of about 0.02).
 
-55 of 55 number checks pass.
+60 of 60 number checks pass.

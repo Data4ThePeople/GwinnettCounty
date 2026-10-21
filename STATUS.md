@@ -133,3 +133,8 @@ None.
 - 2026-10-21 Eric swapped the share line and counts bar (post charts 02, 03)
   for one stacked bar of rentals within reach by period (draft chart 12).
   Post now has 7 charts, renumbered 01-07.
+- 2026-10-21 Eric approved the growth-by-age chart (draft 13); it replaces
+  rent by year built and older apartments. Post now has 6 charts. Tie-out
+  extended (F1-F5): group changes add to the microdata total; 60 of 60 pass.
+  Chart notes the tool's counts (+41,400 rentals, -5,500 within reach) vs
+  microdata (+40,800, -4,200).

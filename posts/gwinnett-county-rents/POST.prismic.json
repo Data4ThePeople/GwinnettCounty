@@ -291,7 +291,7 @@
           },
           {
             "type": "paragraph",
-            "text": "Apartments built since 2010 hold about 10% of Gwinnett's renters. Their median rent, $1,870, is 3% above the county's.",
+            "text": "Houses account for more than half of the rentals Gwinnett added over this period, most of them older houses that became rentals. Apartments built since 2010 added about 11,000, at a median rent of $1,870, 3% above the county's. The rentals within reach were lost mostly in older apartments.",
             "spans": [],
             "direction": "ltr"
           }
@@ -306,17 +306,17 @@
       "items": [],
       "primary": {
         "image": {
-          "alt": "Bar chart of median monthly rent in Gwinnett County in 2020-2024 by when the building was built. All rentals $1,810. Apartments built before 2000 $1,660, houses built before 2000 $1,990, apartments built 2000-2009 $1,670, houses built 2000-2009 $2,220, apartments built 2010 or later $1,870, and houses built 2010 or later $2,500.",
+          "alt": "Two-panel bar chart of the change in Gwinnett County rentals with a cash rent from 2005-2009 to 2020-2024, by building type and year built. Change in all rentals: houses built before 2000 +11,300, houses built 2000-2009 +3,800, houses built 2010 or later +6,700, apartments built before 2000 +1,200, apartments built 2000-2009 +2,300, apartments built 2010 or later +11,000, other +4,500. Change in rentals within reach: +700, +200, +200, -5,500, -800, +900 and +200.",
           "copyright": null
         },
         "source_text": [
           {
             "type": "paragraph",
-            "text": "Source: Census Bureau, American Community Survey 5-year microdata, 2020-2024. Year built is reported by the household.",
+            "text": "Source: Census Bureau, American Community Survey 5-year microdata. Apartments are buildings with 5 or more units. Year built is reported by the household.",
             "spans": [
               {
                 "start": 0,
-                "end": 118,
+                "end": 154,
                 "type": "em"
               }
             ],
@@ -345,61 +345,7 @@
         "paragraph_text": [
           {
             "type": "paragraph",
-            "text": "The bigger change was in older buildings. Gwinnett's apartments built before 2000 housed about the same number of renters in both periods. The number of them within reach fell 58%.",
-            "spans": [],
-            "direction": "ltr"
-          }
-        ]
-      }
-    },
-    {
-      "slice_type": "blog_body_content_image",
-      "slice_label": null,
-      "variation": "default",
-      "version": "initial",
-      "items": [],
-      "primary": {
-        "image": {
-          "alt": "Bar chart of Gwinnett County renter households in apartment buildings built before 2000. About 28,800 in 2005-2009 and 30,000 in 2020-2024. Of those, about 9,600 were within reach in 2005-2009 and 4,100 in 2020-2024.",
-          "copyright": null
-        },
-        "source_text": [
-          {
-            "type": "paragraph",
-            "text": "Source: Census Bureau, American Community Survey 5-year microdata. Apartments are buildings with 5 or more units.",
-            "spans": [
-              {
-                "start": 0,
-                "end": 113,
-                "type": "em"
-              }
-            ],
-            "direction": "ltr"
-          }
-        ]
-      }
-    },
-    {
-      "slice_type": "spacer",
-      "slice_label": null,
-      "variation": "default",
-      "version": "initial",
-      "items": [],
-      "primary": {
-        "spacer_value": "20px"
-      }
-    },
-    {
-      "slice_type": "paragarph_text",
-      "slice_label": null,
-      "variation": "default",
-      "version": "initial",
-      "items": [],
-      "primary": {
-        "paragraph_text": [
-          {
-            "type": "paragraph",
-            "text": "Many older houses became rentals: houses went from 31% of Gwinnett's rentals in 2005-2009 to 39.5% in 2020-2024. And Gwinnett permitted fewer homes for each new household than most of its neighbors.",
+            "text": "Houses went from 31% of Gwinnett's rentals in 2005-2009 to 39.5% in 2020-2024. And Gwinnett permitted fewer homes for each new household than most of its neighbors.",
             "spans": [],
             "direction": "ltr"
           }
@@ -661,11 +607,11 @@
           },
           {
             "type": "list-item",
-            "text": "Rent by year built, older apartments and renter pay come from the survey's microdata (individual household records) for Gwinnett and six neighboring counties. Forsyth County is left out of these because its 2005-2009 records also cover Dawson and Pickens counties. Full time means 35 or more hours a week for 50 or more weeks a year.",
+            "text": "Rentals by building type and year built, and renter pay, come from the survey's microdata (individual household records) for Gwinnett and six neighboring counties. Forsyth County is left out of these because its 2005-2009 records also cover Dawson and Pickens counties. Full time means 35 or more hours a week for 50 or more weeks a year.",
             "spans": [
               {
                 "start": 0,
-                "end": 51,
+                "end": 56,
                 "type": "strong"
               }
             ],

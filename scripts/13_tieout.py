@@ -139,6 +139,17 @@ def main():
     hs = [x for x in r24 if x["type"] == "single-family"]
     print(f"   INFO  median rent of house rentals 2020-24 ${N7.wmedian(hs):,.0f} ('above the county median')")
 
+    print("Chart 04 in the post (growth by building type and year built)")
+    C9 = import_module("09_charts")
+    d = C9.by_age_type()
+    add = {g: d[g]["2024"][0] - d[g]["2009"][0] for g in d}
+    inr = {g: d[g]["2024"][1] - d[g]["2009"][1] for g in d}
+    check("F1", "group changes add to the PUMS total change", N7.count(r24) - N7.count(N7.records("2009", "135")), sum(add.values()), 0.5)
+    check("F2", "houses' share of added rentals (%), 'more than half'", 54, 100 * sum(v for g, v in add.items() if g[0] == "houses") / sum(add.values()), 0.5)
+    check("F3", "apartments built 2010+ added, 'about 11,000'", 11000, add[("apartments", "2010 or later")], 50)
+    check("F4", "older apartments within reach change, '-5,500'", -5500, inr[("apartments", "before 2000")], 50)
+    big = max(add, key=add.get)
+    check("F5", "largest single group is older houses (1 = yes)", 1, float(big == ("houses", "before 2000")), 0)
     print("Beat 5")
     h0, w0 = P12.load("2009", "135", cpi)
     h1, w1 = P12.load("2024", "135", cpi)

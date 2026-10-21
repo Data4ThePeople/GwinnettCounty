@@ -32,9 +32,8 @@ CHARTS = ROOT / "charts"
 SLUG = "gwinnett-county-rents"
 # draft chart -> its name in the post, in order of appearance
 POST_ORDER = {"10-least-affordable.png": "01-least-affordable.png", "12-rentals-stacked.png": "02-rentals-within-reach.png",
-              "09-income-vs-rent.png": "03-income-vs-rent.png", "05-rent-by-year-built.png": "04-rent-by-year-built.png",
-              "04-older-apartments.png": "05-older-apartments.png", "07-permits-per-household.png": "06-permits-per-household.png",
-              "11-renter-pay.png": "07-renter-pay.png"}
+              "09-income-vs-rent.png": "03-income-vs-rent.png", "13-growth-by-age.png": "04-growth-by-age.png",
+              "07-permits-per-household.png": "05-permits-per-household.png", "11-renter-pay.png": "06-renter-pay.png"}
 FK = ["2009", "2014", "2019", "2024"]
 LABEL = {"2009": "2005-09", "2014": "2010-14", "2019": "2015-19", "2024": "2020-24"}
 G = "13135"
@@ -398,6 +397,7 @@ def growth_by_age():
     in_ch = [d[g]["2024"][1] - d[g]["2009"][1] for g in GROUP_ROWS]
     tot = sum(all_ch)
     f = H_["units"][G]["f"]
+    tool_add = sum(f["2024"]["r"]) - sum(f["2009"]["r"])
     tool_drop = sum(f["2024"]["r"]) * tool_share(f["2024"], "2024") / 100 - sum(f["2009"]["r"]) * tool_share(f["2009"], "2009") / 100
     houses = sum(c for g, c in zip(GROUP_ROWS, all_ch) if g[0] == "houses")
     fig = plt.figure(figsize=(W, H))
@@ -420,8 +420,8 @@ def growth_by_age():
                f"Change in renter households with a cash rent, 2005-09 to 2020-24, by building type and year built, rounded to the nearest 100.\n"
                f"All rentals grew by about {round(tot, -2):,.0f}; houses account for {100 * houses / tot:.0f}% of that. "
                f"Rentals within reach fell by about {round(-sum(in_ch), -2):,.0f}.\n" + REACH.replace(",\nthe", ", the"))
-    credit(fig, PUMS + f"\nThe tool, which reads rents from price ranges in the published tables, shows a fall of about"
-           f" {round(-tool_drop, -2):,.0f} within reach.")
+    credit(fig, PUMS + f"\nThe tool's counts: about {round(tool_add, -2):,.0f} more rentals and {round(-tool_drop, -2):,.0f} fewer within reach"
+           " (from rent ranges, not exact rents).")
     save(fig, "13-growth-by-age.png")
 
 
