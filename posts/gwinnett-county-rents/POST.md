@@ -18,7 +18,7 @@ dividers: false
 
 # [Eric: title]
 
-Last week, we dug into our [Rentals Within Reach](https://www.data4thepeople.com/p/rentals-within-reach) visualization and pulled out what looked like one of the most affordable counties in America for renters. That was Dawson County, Nebraska, and while it’s true that it used to be affordable, that all changed earlier this year when its largest employer – the Tyson meatpacking plant – shut its doors. 
+Last week, we dug into our [Rentals Within Reach](https://www.data4thepeople.com/p/rentals-within-reach) visualization and pulled out what looked like one of the most affordable counties in America for renters. That was [Dawson County, Nebraska](https://www.data4thepeople.com/p/lexington-tyson-plant-closure), and while it’s true that it used to be affordable, that all changed earlier this year when its largest employer – the Tyson meatpacking plant – shut its doors. 
 
 Today, we went hunting on the opposite side of the ledger – the counties that were the least affordable for renters. Interestingly, three of the ten least affordable counties outside college towns were in the Atlanta metro area. But one county stood out from the rest – Gwinnett County, situated northeast of downtown Atlanta. Gwinnett County had just 10.5% of rental units “within reach” of the median renter household income. We define within reach as a rent of no more than 30% of the median renter household’s after-tax income. 
 
