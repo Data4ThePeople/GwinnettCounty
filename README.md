@@ -32,6 +32,9 @@ rentals priced within reach of the median renter household fell from 25.5% in
   `scripts/08_owner_renter_gap.py`.
 - `research/investor-sources.md`: published research on investor ownership
   of single-family homes in Gwinnett and metro Atlanta.
+- `charts/`: draft charts, drawn by `scripts/09_charts.py` with the house
+  style in `scripts/plot_style.py`. Every number is recomputed when the charts
+  are drawn.
 - `DATASETS.md`: every dataset used, with its limits and quirks.
 
 ## Data sources
@@ -60,6 +63,7 @@ python scripts/05_why_rents.py
 python scripts/06_pums_turnover.py
 python scripts/07_new_rentals.py
 python scripts/08_owner_renter_gap.py
+python scripts/09_charts.py
 ```
 
 The NCHS and OMB files go in `data/raw/nchs/` and `data/raw/omb/` (links in

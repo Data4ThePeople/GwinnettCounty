@@ -77,3 +77,9 @@ None.
   53.0% nationally; 220th of 282 large counties from the widest; narrowed 5.3
   pts. Gwinnett owners' median fell 2% after inflation while most neighbors'
   rose. Waiting on Eric.
+- 2026-10-21 Eric asked for draft charts. Eight drawn in charts/ by
+  scripts/09_charts.py (house dark style, numbers recomputed at render):
+  share within reach vs US, rentals vs within-reach counts, rent vs renter
+  income after inflation, older apartments, rent by year built, permits by
+  year, permits per added household, single-family share change. Waiting on
+  Eric's pick of charts.
