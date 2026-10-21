@@ -346,6 +346,30 @@ def renter_pay():
     save(fig, "11-renter-pay.png")
 
 
+# ---------------------------------------------------------------- 12 stacked bars: rentals within reach and the rest, by period
+def stacked():
+    f = H_["units"][G]["f"]
+    n = {fk: sum(f[fk]["r"]) for fk in FK}
+    sh = {fk: tool_share(f[fk], fk) for fk in FK}
+    w = {fk: n[fk] * sh[fk] / 100 for fk in FK}
+    fig, ax = frame(top=0.76)
+    xs = list(range(len(FK)))
+    ax.bar(xs, [w[k] for k in FK], color=BLUE, width=0.62, edgecolor="#181A1B", linewidth=2)
+    ax.bar(xs, [n[k] - w[k] for k in FK], bottom=[w[k] for k in FK], color=MUTED, width=0.62, edgecolor="#181A1B", linewidth=2)
+    for x, k in zip(xs, FK):
+        ax.text(x, w[k] / 2, f"{round(w[k], -2):,.0f}\n{sh[k]:.1f}%", ha="center", va="center", color=INK, fontsize=10)
+        ax.text(x, n[k] + 1500, f"{round(n[k], -2):,.0f}", ha="center", va="bottom", color=INK, fontsize=10.5, fontweight="bold")
+    ax.set_xticks(xs, [LABEL[k] for k in FK])
+    ax.set_ylim(0, max(n.values()) * 1.12)
+    ax.yaxis.set_major_formatter(matplotlib.ticker.FuncFormatter(lambda v, _: f"{v:,.0f}"))
+    ax.grid(axis="y")
+    titleblock(fig, f"Gwinnett's rentals grew {pct(n['2009'], n['2024']):.0f}%, but the number within reach fell {-pct(w['2009'], w['2024']):.0f}%",
+               "Rentals with a cash rent in Gwinnett County: within reach of the median renter household (blue, with the share)\n"
+               "and out of reach (gray). Bar totals on top. Rounded to the nearest 100.\n" + REACH.replace(",\nthe", ", the"))
+    credit(fig, TOOL + "\nWithin-reach counts are the tool's share times its count of rentals.")
+    save(fig, "12-rentals-stacked.png")
+
+
 if __name__ == "__main__":
     use_house_style()
     share_line()
@@ -359,6 +383,7 @@ if __name__ == "__main__":
     income_vs_rent()
     ranking()
     renter_pay()
+    stacked()
     out = ROOT / "posts" / SLUG / "images"
     out.mkdir(parents=True, exist_ok=True)
     for src, dst in POST_ORDER.items():
