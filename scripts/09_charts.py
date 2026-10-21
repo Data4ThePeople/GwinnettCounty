@@ -419,9 +419,9 @@ def growth_by_age():
     titleblock(fig, "Houses added most new rentals; older apartments lost the most within reach",
                f"Change in renter households with a cash rent, 2005-09 to 2020-24, by building type and year built, rounded to the nearest 100.\n"
                f"All rentals grew by about {round(tot, -2):,.0f}; houses account for {100 * houses / tot:.0f}% of that. "
-               f"Rentals within reach fell by about {round(-sum(in_ch), -2):,.0f} in these records\n"
-               f"(the tool, which reads rents from price ranges, shows about {round(-tool_drop, -2):,.0f}). " + REACH.replace(",\nthe", ", the").replace("Within reach: g", "G"))
-    credit(fig, PUMS)
+               f"Rentals within reach fell by about {round(-sum(in_ch), -2):,.0f}.\n" + REACH.replace(",\nthe", ", the"))
+    credit(fig, PUMS + f"\nThe tool, which reads rents from price ranges in the published tables, shows a fall of about"
+           f" {round(-tool_drop, -2):,.0f} within reach.")
     save(fig, "13-growth-by-age.png")
 
 
