@@ -125,3 +125,8 @@ None.
   8%. Ready to ask Eric to close Step 1.
 - 2026-10-21 Step 1 confirmed by Eric. Slug: gwinnett-county-rents. Step 2a opened:
   posts/gwinnett-county-rents/ created; waiting on Eric's draft.
+- 2026-10-21 Eric asked Claude to write the beats with placeholders for his
+  intro, closing and title, charts carrying the story with light text.
+  POST.md drafted (8 charts, limits, method); charts copied to
+  posts/gwinnett-county-rents/images/ by 09_charts.py. Fixed "Clayton, next
+  door" in thread.md (Clayton does not border Gwinnett). Waiting on Eric.

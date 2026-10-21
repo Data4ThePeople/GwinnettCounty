@@ -3,6 +3,7 @@ cached ACS tables, permits and PUMS, through the same functions as scripts 05 an
 Output: charts/01-*.png onward."""
 import importlib.util
 import json
+import shutil
 import sys
 from importlib import import_module
 from pathlib import Path
@@ -28,6 +29,12 @@ C1 = import_module("01_candidate_selection")
 P12 = import_module("12_renter_income")
 
 CHARTS = ROOT / "charts"
+SLUG = "gwinnett-county-rents"
+# draft chart -> its name in the post, in order of appearance
+POST_ORDER = {"10-least-affordable.png": "01-least-affordable.png", "01-share-within-reach.png": "02-share-within-reach.png",
+              "02-rentals-and-within-reach.png": "03-rentals-and-within-reach.png", "09-income-vs-rent.png": "04-income-vs-rent.png",
+              "05-rent-by-year-built.png": "05-rent-by-year-built.png", "04-older-apartments.png": "06-older-apartments.png",
+              "07-permits-per-household.png": "07-permits-per-household.png", "11-renter-pay.png": "08-renter-pay.png"}
 FK = ["2009", "2014", "2019", "2024"]
 LABEL = {"2009": "2005-09", "2014": "2010-14", "2019": "2015-19", "2024": "2020-24"}
 G = "13135"
@@ -352,3 +359,8 @@ if __name__ == "__main__":
     income_vs_rent()
     ranking()
     renter_pay()
+    out = ROOT / "posts" / SLUG / "images"
+    out.mkdir(parents=True, exist_ok=True)
+    for src, dst in POST_ORDER.items():
+        shutil.copyfile(CHARTS / src, out / dst)
+    print(f"copied {len(POST_ORDER)} charts to posts/{SLUG}/images/")

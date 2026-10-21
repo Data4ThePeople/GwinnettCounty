@@ -14,7 +14,7 @@ the country outside college counties.**
   more of residents age 3 and over are enrolled in college).
 - Caveats:
   - With college counties included, it ranks 3rd of 1,987.
-  - Clayton County, next door, is at 11.0%, half a point behind.
+  - Clayton County, also in metro Atlanta, is at 11.0%, half a point behind.
   - The ranking uses the tool's default settings (the median renter household,
     after taxes, 30% of income). Other settings give other rankings.
   - Counties with under 1,000 rentals, or marked low reliability, are left out.
