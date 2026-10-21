@@ -20,7 +20,7 @@ dividers: false
 
 Last week, we dug into our [Rentals Within Reach](https://www.data4thepeople.com/p/rentals-within-reach) visualization and pulled out what looked like one of the most affordable counties in America for renters. That was [Dawson County, Nebraska](https://www.data4thepeople.com/p/lexington-tyson-plant-closure), and while it’s true that it used to be affordable, that all changed earlier this year when its largest employer – the Tyson meatpacking plant – shut its doors. 
 
-Today, we went hunting on the opposite side of the ledger – the counties that were the least affordable for renters. Interestingly, three of the ten least affordable counties outside college towns were in the Atlanta metro area. But one county stood out from the rest – Gwinnett County, situated northeast of downtown Atlanta. Gwinnett County had just 10.5% of rental units “within reach” of the median renter household income. We define within reach as a rent of no more than 30% of the median renter household’s after-tax income. 
+Today, we went hunting on the opposite side of the ledger – the counties that were the least affordable for renters. Interestingly, three of the ten least affordable counties outside college counties were in the Atlanta metro area. But one county stood out from the rest – Gwinnett County, situated northeast of downtown Atlanta. Gwinnett County had just 10.5% of rental units “within reach” of the median renter household income. We define within reach as a rent of no more than 30% of the median renter household’s after-tax income. 
 
 ![Map of the 29 counties of the Atlanta metro area, shaded red by the share of rentals within reach in 2020-2024, brighter for smaller shares. Gwinnett County, northeast of downtown Atlanta and outlined, is lowest at 10.5%. Clayton is 11.0%, DeKalb 14.0%, Henry 18.2%, Cobb 23.9% and Fulton 24.6%. Outer counties run higher, up to 70.0% in Haralson County.](images/01-atlanta-map.png)
 *Source: Data 4 The People, Rentals Within Reach, from Census Bureau American Community Survey 5-year estimates, 2020-2024. County lines: Census Bureau, 2024.*
@@ -52,7 +52,7 @@ Home prices rose fast in Gwinnett, but they rose about as fast in Cobb County, w
 
 ## New rentals came in out of reach
 
-Gwinnett added about 41,000 rentals over this period. Two kinds account for more than half of them: about 11,300 older houses, built before 2000, that became rentals, and about 11,000 apartments built since 2010. Houses built since 2010 added about 6,700 more. The typical rental in each of the three cost more than the median renter household could afford: about $1,250 a month, 30% of its after-tax income. In 2020-2024, older houses rented for a median of about $1,990 and new apartments for $1,870. About 10% of the older houses and 8% of the new apartments were within reach. Houses built since 2010 rented for a median of about $2,500, and 2% were within reach.
+Gwinnett added about 41,000 rentals over this period. Two kinds account for more than half of them: about 11,300 more rentals in older houses, built before 2000, and about 11,000 apartments built since 2010. Houses built since 2010 added about 6,700 more. The typical rental in each of the three cost more than the median renter household could afford: about $1,250 a month, 30% of its after-tax income. In 2020-2024, older houses rented for a median of about $1,990 and new apartments for $1,870. About 10% of the older houses and 8% of the new apartments were within reach. Houses built since 2010 rented for a median of about $2,500, and 2% were within reach.
 
 ![Bar chart of median monthly rent in Gwinnett County in 2020-2024, against the $1,250 the median renter household could afford. Houses built before 2000 $1,990, with 10% within reach. Apartments built 2010 or later $1,870, with 8% within reach. Houses built 2010 or later $2,500, with 2% within reach.](images/05-new-to-market-rents.png)
 *Source: Census Bureau, American Community Survey 5-year microdata. Rents include utilities.*
@@ -62,7 +62,7 @@ That does not account for the drop in rentals within reach. Most of that drop is
 ![Bar chart of Gwinnett County amounts in 2024 dollars. In 2005-2009, the median rent for apartments built before 2000 was $1,260, and the median renter household could afford $1,160. In 2020-2024, the median rent was $1,660, and the household could afford $1,250.](images/06-older-apartment-rents.png)
 *Source: Census Bureau, American Community Survey 5-year microdata; Data 4 The People, Rentals Within Reach. Amounts in 2024 dollars.*
 
-In other words, the rentals new to the market came in out of reach, and the older apartments that used to be close to reach rose far faster than renters' income.
+In other words, most of the rentals added cost more than the median renter household could afford, and the older apartments that used to be close to reach rose far faster than renters' income.
 
 ## Renters' pay did not keep up
 

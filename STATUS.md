@@ -166,3 +166,6 @@ None.
   images 01, 02, 05-07 matches. Wording fixes applied to Claude's text and
   chart titles (cause words, "after-tax", "median renter", pay-drop margins,
   ranked-county limits). Three edits to Eric-derived wording sent as a list.
+- 2026-10-21 Eric accepted edits 1-3 (college counties, rentals-added sentence,
+  net rentals in older houses); applied. Asked for the median rent as a share
+  of after-tax renter income: 43.3% in 2020-24, 35.6% in 2005-09 (not yet in post).
