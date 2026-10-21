@@ -297,6 +297,12 @@ when the household moved in (MV), units in structure (BLD), bedrooms
 
 **Changes over time.**
 - Variable names changed: BDS became BDSP, YBL became YRBLT.
+- Year built uses different codes. In the 2005-09 file, YBL 1 = 2005 or
+  later, 2 = 2000-04, 3 = 1990s, down to 9 = 1939 or earlier. In the 2020-24
+  file, YRBLT gives the first year of a decade (2000 = 2000-09, 2010 =
+  2010-19) and single years from 2020. Both files can be split at 2000, so
+  "built before 2000" lines up across them. Year built is reported by the
+  household, and renters may not know it exactly.
 - The MV categories differ between files, and we map them to "moved in within
   the last 2 years" or "longer."
 - Dollar amounts are in the survey year's dollars. ADJHSG brings housing costs

@@ -65,3 +65,10 @@ None.
   renter pool, turnover pricing. Investor sources gathered by an agent in
   research/investor-sources.md; GAO and ARC/AJC figures checked by hand.
   DATASETS.md sections 5-8 added. Waiting on Eric.
+- 2026-10-21 Eric asked whether new high-priced apartments explain the loss.
+  PUMS by year built (research/new-rentals.md, scripts/07_new_rentals.py):
+  mostly no. Apartments built 2010+ are 10% of rentals, median $1,870 vs
+  county $1,812. Pre-2000 rentals went from 27.5% to 13.5% within reach;
+  pre-2000 apartments lost about 5,500 within reach, more than the county's
+  net loss. Microdata number within reach -26% vs the tool's -33% (exact
+  rents vs rent ranges). Waiting on Eric.

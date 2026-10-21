@@ -24,6 +24,9 @@ rentals priced within reach of the median renter household fell from 25.5% in
   tested against seven neighboring counties, with
   `scripts/04_fetch_county_tables.py`, `scripts/05_why_rents.py` and
   `scripts/06_pums_turnover.py`.
+- `research/new-rentals.md`: whether new apartments or older rentals account
+  for the loss of rentals within reach, by year built and building type, with
+  `scripts/07_new_rentals.py`.
 - `research/investor-sources.md`: published research on investor ownership
   of single-family homes in Gwinnett and metro Atlanta.
 - `DATASETS.md`: every dataset used, with its limits and quirks.
@@ -52,6 +55,7 @@ python scripts/03_city_vs_suburb.py
 python scripts/04_fetch_county_tables.py
 python scripts/05_why_rents.py
 python scripts/06_pums_turnover.py
+python scripts/07_new_rentals.py
 ```
 
 The NCHS and OMB files go in `data/raw/nchs/` and `data/raw/omb/` (links in
