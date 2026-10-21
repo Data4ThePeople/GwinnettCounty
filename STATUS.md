@@ -130,3 +130,6 @@ None.
   POST.md drafted (8 charts, limits, method); charts copied to
   posts/gwinnett-county-rents/images/ by 09_charts.py. Fixed "Clayton, next
   door" in thread.md (Clayton does not border Gwinnett). Waiting on Eric.
+- 2026-10-21 Eric swapped the share line and counts bar (post charts 02, 03)
+  for one stacked bar of rentals within reach by period (draft chart 12).
+  Post now has 7 charts, renumbered 01-07.

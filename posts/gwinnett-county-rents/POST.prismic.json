@@ -144,7 +144,7 @@
           },
           {
             "type": "paragraph",
-            "text": "In 2005-2009, 25.5% of Gwinnett's rentals were within reach of its median renter household. By 2020-2024, 10.5% were. The national share was 32% at the start and 31% at the end.",
+            "text": "In 2005-2009, 25.5% of Gwinnett's rentals were within reach of its median renter household. By 2020-2024, 10.5% were. The national share was 32% at the start and 31% at the end. Gwinnett added rentals over those years, but the number within reach still fell.",
             "spans": [],
             "direction": "ltr"
           }
@@ -159,71 +159,17 @@
       "items": [],
       "primary": {
         "image": {
-          "alt": "Line chart of the share of rentals within reach, 2005-2009 to 2020-2024. Gwinnett County went from 25.5% to 18.1%, then 21.5%, then 10.5%. The United States went from 32.0% to 27.6%, then 32.0%, then 31.3%.",
+          "alt": "Stacked bar chart of Gwinnett County rentals in four periods. All rentals grew from 65,800 in 2005-2009 to 85,500, 97,300 and 107,200 in 2020-2024. Rentals within reach were 16,800 (25.5%), then 15,500 (18.1%), then 20,900 (21.5%), then 11,300 (10.5%).",
           "copyright": null
         },
         "source_text": [
           {
             "type": "paragraph",
-            "text": "Source: Data 4 The People, Rentals Within Reach, from Census Bureau American Community Survey 5-year estimates.",
+            "text": "Source: Data 4 The People, Rentals Within Reach, from Census Bureau American Community Survey 5-year estimates. Rentals within reach are the tool's share times its count of rentals.",
             "spans": [
               {
                 "start": 0,
-                "end": 111,
-                "type": "em"
-              }
-            ],
-            "direction": "ltr"
-          }
-        ]
-      }
-    },
-    {
-      "slice_type": "spacer",
-      "slice_label": null,
-      "variation": "default",
-      "version": "initial",
-      "items": [],
-      "primary": {
-        "spacer_value": "20px"
-      }
-    },
-    {
-      "slice_type": "paragarph_text",
-      "slice_label": null,
-      "variation": "default",
-      "version": "initial",
-      "items": [],
-      "primary": {
-        "paragraph_text": [
-          {
-            "type": "paragraph",
-            "text": "Gwinnett added rentals over those years. The number within reach still fell.",
-            "spans": [],
-            "direction": "ltr"
-          }
-        ]
-      }
-    },
-    {
-      "slice_type": "blog_body_content_image",
-      "slice_label": null,
-      "variation": "default",
-      "version": "initial",
-      "items": [],
-      "primary": {
-        "image": {
-          "alt": "Bar chart of Gwinnett County rentals. All rentals grew from 65,785 in 2005-2009 to 107,229 in 2020-2024, up 63%. Rentals within reach fell from 16,789 to 11,269, down 33%.",
-          "copyright": null
-        },
-        "source_text": [
-          {
-            "type": "paragraph",
-            "text": "Source: Data 4 The People, Rentals Within Reach. Rentals within reach are the tool's share times its count of rentals.",
-            "spans": [
-              {
-                "start": 0,
-                "end": 118,
+                "end": 181,
                 "type": "em"
               }
             ],
