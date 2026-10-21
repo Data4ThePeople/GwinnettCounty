@@ -146,3 +146,9 @@ None.
   Tie-out extended (G1-G12): 75 of 75 pass.
 - 2026-10-21 Eric dropped the growth-by-age chart (draft 13) from the post as
   confusing; its numbers stay in the text. Post has 6 charts.
+- 2026-10-21 Eric asked to compare Gwinnett's renter pay with large-metro
+  counties where rent rose 25%+ after inflation (research/national-pay.md,
+  DATASETS 13). 37 measurable counties; Gwinnett -3.3% is 2nd lowest, after
+  Cherokee GA; only those two show a drop; middle county +14.5%. Chart 16
+  replaces the Atlanta renter-pay chart as post image 06. Tie-out 81 of 81.
+  New numbers since Step 1 have Claude's tie-out only.

@@ -442,3 +442,44 @@ self-employed are not. We compare the average of 2005-2009 with the average of
 2020-2024 to match the ACS periods.
 
 **License.** Public domain.
+
+## 13. National PUMS: full-time year-round renter workers, and PUMA maps for every state
+
+**What it is.** Person records for workers in renter households (TEN 3 or 4)
+who were employed (ESR 1, 2, 4 or 5), usually worked 35+ hours a week (WKHP
+35-99) and worked 50+ weeks (WKW 1 in 2005-09; WKWN 50-52 in 2020-24).
+Variables: SERIALNO, SPORDER, PERNP, ADJINC, PWGTP and PWGTP1-80. The filters
+are applied by the API, so only these workers are downloaded.
+
+**Where it comes from.** Census microdata API, `2009/acs/acs5/pums` and
+`2024/acs/acs5/pums`, one state at a time (`for=public use microdata
+area:*&in=state:XX`), three calls per state and period because of the
+50-variable limit. Cached in `data/raw/pums_ftyr/`.
+
+**PUMA maps.** (Wisconsin's 2000 file is named `PUMEQ5-55.TXT`; it is saved as `PUMEQ5-WI.TXT`.)
+- **2000 PUMAs (2005-09 file):** the Census 2000 5% equivalency files,
+  `https://www2.census.gov/census_2000/datasets/PUMS/FivePercent/<State>/PUMEQ5-XX.TXT`,
+  one per state, saved in `data/raw/puma/`. Summary level 781 lines give each
+  PUMA's counties.
+- **2020 PUMAs (2020-24 file):** the 2020 tract-to-PUMA file already in
+  `data/raw/puma/tract2020_puma2020.txt`; the county is the first five digits
+  of state plus county.
+
+**Which counties can be measured.** A county is used only if, in both
+periods, every PUMA that touches it lies wholly inside it, so the county is
+exactly a set of whole PUMAs. Counties that share a PUMA with another county
+are left out, and the count left out is reported.
+
+**Quirks.**
+- One pull (Pennsylvania, 2005-09, replicate weights 41-80) once came back with
+  the right row count but 58 wrong rows. It was downloaded again, and the
+  analysis now checks that all three pulls hold the same people.
+- The 2005-09 API returns PUMA codes without leading zeros ("1501"); they are
+  padded to five digits to match the equivalency files.
+- Connecticut's 2020-24 file uses planning regions, not the old counties, so
+  Connecticut drops out.
+- Earnings are PERNP x ADJINC, in each file's final-year dollars, then CPI-U
+  to 2024 dollars. Standard errors use the 80 replicate weights, as in
+  section 7.
+
+**License.** Public domain.

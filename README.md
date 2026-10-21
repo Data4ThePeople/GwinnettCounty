@@ -35,6 +35,9 @@ rentals priced within reach of the median renter household fell from 25.5% in
 - `research/renter-income.md`: why Gwinnett's renter income lagged its
   neighbors, with `scripts/11_fetch_renter_people.py` and
   `scripts/12_renter_income.py`.
+- `research/national-pay.md`: Gwinnett's renter pay against large-metro
+  counties where rent rose 25% or more, with `scripts/14_fetch_national_pay.py`
+  and `scripts/15_national_pay.py`.
 - `research/investor-sources.md`: published research on investor ownership
   of single-family homes in Gwinnett and metro Atlanta.
 - `charts/`: draft charts, drawn by `scripts/09_charts.py` with the house
@@ -79,6 +82,8 @@ python scripts/09_charts.py
 python scripts/10_values_vs_rents.py
 python scripts/11_fetch_renter_people.py
 python scripts/12_renter_income.py
+python scripts/14_fetch_national_pay.py
+python scripts/15_national_pay.py
 python scripts/13_tieout.py
 ```
 

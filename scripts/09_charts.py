@@ -27,13 +27,14 @@ N7 = import_module("07_new_rentals")
 G8 = import_module("08_owner_renter_gap")
 C1 = import_module("01_candidate_selection")
 P12 = import_module("12_renter_income")
+N15 = import_module("15_national_pay")
 
 CHARTS = ROOT / "charts"
 SLUG = "gwinnett-county-rents"
 # draft chart -> its name in the post, in order of appearance
 POST_ORDER = {"10-least-affordable.png": "01-least-affordable.png", "12-rentals-stacked.png": "02-rentals-within-reach.png",
               "09-income-vs-rent.png": "03-income-vs-rent.png", "14-new-to-market-rents.png": "04-new-to-market-rents.png",
-              "15-older-apartment-rents.png": "05-older-apartment-rents.png", "11-renter-pay.png": "06-renter-pay.png"}
+              "15-older-apartment-rents.png": "05-older-apartment-rents.png", "16-national-renter-pay.png": "06-renter-pay.png"}
 FK = ["2009", "2014", "2019", "2024"]
 LABEL = {"2009": "2005-09", "2014": "2010-14", "2019": "2015-19", "2024": "2020-24"}
 G = "13135"
@@ -494,6 +495,38 @@ def older_apartment_rents():
     save(fig, "15-older-apartment-rents.png")
 
 
+# ---------------------------------------------------------------- 16 renter pay, large-metro counties where rent rose 25%+
+STATE_AB = {st: ab for st, (_, ab) in import_module("14_fetch_national_pay").STATES.items()}
+
+
+def national_pay():
+    res, rent, hot, metro, names, counts = N15.compute()
+    pool = sorted((f for f in res if f in hot), key=lambda f: res[f][0], reverse=True)
+    labels = [names[f].replace(" County", "").split(",")[0] + ", " + STATE_AB[f[:2]] for f in pool]
+    vals = [res[f][0] for f in pool]
+    atl = [metro[f].startswith("Atlanta") for f in pool]
+    fig, ax = frame(left=0.2, top=0.865, bottom=0.07, h=12)
+    hbars(ax, labels, vals, [BLUE if f == G else (YELLOW if a else MUTED) for f, a in zip(pool, atl)], lambda v: f"{v:+.1f}%", 0.5)
+    ax.tick_params(axis="y", labelsize=9.5)
+    for t in ax.texts:
+        t.set_fontsize(8.5)
+    ax.set_xlim(min(vals) - 6, max(vals) + 6)
+    rank = len(pool) - pool.index(G)
+    med = sorted(vals)[len(vals) // 2]
+    fell = [names[f].replace(" County", "").split(",")[0] for f in pool if res[f][0] < 0]
+    titleblock(fig, f"Where rent rose 25%+, renter pay did worst in {' and '.join(sorted(fell))}",
+               f"Change in median earnings of renters who worked full time all year, 2005-09 to 2020-24, after inflation. Counties in metros of\n"
+               f"1 million or more where median rent rose 25% or more after inflation. Gwinnett in blue, other Atlanta-area counties in yellow.\n"
+               f"Of the {len(pool)} counties, only {' and '.join(fell)} show a fall; the middle county's pay rose {med:.0f}%.\n"
+               f"Gwinnett's change is within about {1.645 * res[G][1]:.0f} points either way, so the order near the bottom is not certain.",
+               y=0.975)
+    left = counts[2] - counts[3]
+    credit(fig, "Source: U.S. Census Bureau, American Community Survey 5-year microdata (PUMS); BLS CPI-U. Full time: 35+ hours a week, 50+ weeks a year.\n"
+           f"Only counties the microdata can measure on their own in both periods; {left} other counties with rent up 25%+ share a microdata area with"
+           " a neighbor\nand are left out, including Forsyth, Fayette, Paulding and Dawson in metro Atlanta. Metros: NCHS 2023 large central and fringe counties.")
+    save(fig, "16-national-renter-pay.png")
+
+
 if __name__ == "__main__":
     use_house_style()
     share_line()
@@ -511,6 +544,7 @@ if __name__ == "__main__":
     growth_by_age()
     new_to_market_rents()
     older_apartment_rents()
+    national_pay()
     out = ROOT / "posts" / SLUG / "images"
     out.mkdir(parents=True, exist_ok=True)
     for src, dst in POST_ORDER.items():
