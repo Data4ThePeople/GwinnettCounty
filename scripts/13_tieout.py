@@ -60,6 +60,12 @@ def main():
     atl = sum(u in ("13135", "13063", "13089") for u in nc[:4])
     check("A5", "Atlanta-area counties among the lowest four", 3, atl, 0)
 
+    import pandas as pd
+    l1 = pd.read_excel(ROOT / "data" / "raw" / "omb" / "list1_2023.xlsx", header=2, dtype=str)
+    atl = set(l1[l1["CBSA Code"] == "12060"]["FIPS State Code"] + l1[l1["CBSA Code"] == "12060"]["FIPS County Code"])
+    check("I1", "map: Gwinnett lowest of the 29 metro counties (1 = yes)", 1, float(min(atl, key=lambda f: S[f]["2024"]) == G), 0)
+    check("I2", "intro: Atlanta-metro counties in the ten lowest, non-college", 3, sum(u in atl for u in nc[:10]), 0)
+    check("I3", "map: Haralson, highest share (%)", 70.0, max(S[f]["2024"] for f in atl), 0.05)
     print("Beat 2")
     check("B1", "share 2005-09 (%)", 25.5, s["2009"], 0.05)
     check("B2", "decline in share (%)", -59, pct(s["2009"], s["2024"]), 0.5)

@@ -13,8 +13,52 @@
         "drop_cap_text": [
           {
             "type": "paragraph",
-            "text": "[Eric: intro]",
+            "text": "Last week, we dug into our Rentals within Reach visualization and pulled out what looked like one of the most affordable counties in America for renters. That was Dawson County, Nebraska, and while it\u2019s true that it used to be affordable, that all changed earlier this year when its largest employer \u2013 the Tyson\u2019s meatpacking plant \u2013 shut its doors.",
             "spans": [],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "paragarph_text",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "paragraph_text": [
+          {
+            "type": "paragraph",
+            "text": "Today, we went hunting on the opposite side of the ledger \u2013 the counties that were the least affordable for renters. Interestingly, three of the top ten counties were all in the Atlanta metro area. Interesting. But one county stood out from the rest \u2013 Gwinnett County, situated immediately northwest of downtown Atlanta. Gwinnett County had just 10.5% of rental units \u201cwithin reach\u201d of the median renter household income. We define within reach as no more than 30% of a family\u2019s after-tax income.",
+            "spans": [],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "blog_body_content_image",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "image": {
+          "alt": "Map of the 29 counties of the Atlanta metro area, shaded red by the share of rentals within reach in 2020-2024, brighter for smaller shares. Gwinnett County, northeast of downtown Atlanta and outlined, is lowest at 10.5%. Clayton is 11.0%, DeKalb 14.0%, Henry 18.2%, Cobb 23.9% and Fulton 24.6%. Outer counties run higher, up to 70.0% in Haralson County.",
+          "copyright": null
+        },
+        "source_text": [
+          {
+            "type": "paragraph",
+            "text": "Source: Data 4 The People, Rentals Within Reach, from Census Bureau American Community Survey 5-year estimates, 2020-2024. County lines: Census Bureau, 2024.",
+            "spans": [
+              {
+                "start": 0,
+                "end": 157,
+                "type": "em"
+              }
+            ],
             "direction": "ltr"
           }
         ]
@@ -46,19 +90,8 @@
           },
           {
             "type": "paragraph",
-            "text": "Our Rentals Within Reach tool measures how many of a county's rentals its median renter household could afford, spending 30% of its income after taxes on rent. In 2020-2024, Gwinnett County, Georgia, had the lowest share of the 1,922 counties we ranked, leaving out college counties.",
-            "spans": [
-              {
-                "start": 4,
-                "end": 24,
-                "type": "hyperlink",
-                "data": {
-                  "link_type": "Web",
-                  "url": "https://www.data4thepeople.com/p/rentals-within-reach",
-                  "target": "_blank"
-                }
-              }
-            ],
+            "text": "Nationally, Gwinnett's 10.5% was the lowest of the 1,922 counties we ranked with at least 1,000 rentals, leaving out college counties.",
+            "spans": [],
             "direction": "ltr"
           }
         ]
@@ -111,7 +144,7 @@
         "paragraph_text": [
           {
             "type": "paragraph",
-            "text": "Two caveats. Clayton County, also in metro Atlanta, is only half a point behind. And with college counties included, Gwinnett ranks third, behind Whitman County, Washington, and Benton County, Oregon. Three of the four lowest counties on this list are in the Atlanta area.",
+            "text": "Two caveats. Clayton County is only half a point behind. And with college counties included, Gwinnett ranks third, behind Whitman County, Washington, and Benton County, Oregon.",
             "spans": [],
             "direction": "ltr"
           }
@@ -438,7 +471,7 @@
           },
           {
             "type": "paragraph",
-            "text": "Few counties with rents rising this fast saw that. We looked at 37 counties in large metro areas where rent rose 25% or more after inflation and the survey can measure the county on its own. Only two showed a drop in full-time renter pay: Gwinnett and Cherokee County, also in metro Atlanta. In the middle county of the group, it rose 15%.",
+            "text": "Few counties with rents rising this fast saw that. We looked at 37 counties in large metro areas where rent rose 25% or more after inflation and the survey can measure the county on its own. Only two showed a drop in full-time renter pay: Gwinnett, and Cherokee County, also in metro Atlanta, whose estimate is much less certain. In the middle county of the group, it rose 15%.",
             "spans": [],
             "direction": "ltr"
           }
@@ -453,17 +486,17 @@
       "items": [],
       "primary": {
         "image": {
-          "alt": "Bar chart of the change in median earnings of renters who worked full time all year, 2005-2009 to 2020-2024, after inflation, in 37 counties in large metro areas where median rent rose 25% or more after inflation. San Francisco is highest at 44.5%. The middle county rose about 15%. Cobb rose 6.7%, DeKalb 9.9% and Fulton 21.2%. Only Gwinnett, down 3.3%, and Cherokee, down 6.0%, fell.",
+          "alt": "Bar chart of the change in median earnings of renters who worked full time all year, 2005-2009 to 2020-2024, after inflation, in 37 counties in large metro areas where median rent rose 25% or more after inflation. San Francisco is highest at 44.5%. The middle county rose about 15%. Cobb rose 6.7%, DeKalb 9.9% and Fulton 21.2%. Only Gwinnett, down 3.3%, and Cherokee, down 6.0%, show a drop. Lines on each bar show the margin of error, widest for Cherokee.",
           "copyright": null
         },
         "source_text": [
           {
             "type": "paragraph",
-            "text": "Source: Census Bureau, American Community Survey 5-year microdata; BLS consumer price index. Gwinnett's change has a margin of about 5 points either way, so the order near the bottom is not certain. Another 44 counties with rent up 25% or more share a microdata area with a neighbor and could not be measured on their own.",
+            "text": "Source: Census Bureau, American Community Survey 5-year microdata; BLS consumer price index. Lines show 90% margins: about 5 points either way for Gwinnett and 11 for Cherokee, so the order near the bottom is not certain. Another 44 counties with rent up 25% or more share a microdata area with a neighbor and could not be measured on their own.",
             "spans": [
               {
                 "start": 0,
-                "end": 322,
+                "end": 345,
                 "type": "em"
               }
             ],

@@ -155,3 +155,7 @@ None.
 - 2026-10-21 Eric asked whether to keep Cherokee (margin +/-10.8). Kept;
   90% margin lines added to every bar of chart 16, and the post text notes
   Cherokee's estimate is much less certain.
+- 2026-10-21 Eric's intro placed verbatim; its map bracket resolved with chart
+  17 (Atlanta metro map, Gwinnett outlined). Beat 1 trimmed to avoid overlap.
+  Proposed edits to Eric's intro sent as a numbered list (not applied).
+  Post has 7 charts. Tie-out 84 of 84. DATASETS 14 (county boundaries).

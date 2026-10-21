@@ -483,3 +483,16 @@ are left out, and the count left out is reported.
   section 7.
 
 **License.** Public domain.
+
+## 14. County boundaries for the map (Census Bureau)
+
+**What it is.** The 2024 cartographic boundary file for counties at 1:500,000
+(`cb_2024_us_county_500k.zip`), read from the AffordableHousing project's copy
+(`data/raw/cb/`, downloaded from
+`www2.census.gov/geo/tiger/GENZ2024/shp/`). Read with `pyshp`.
+
+**Quirks.** Generalized lines, fine for a county map, not for measuring area.
+The map uses a simple projection: longitude scaled by the cosine of 33.8
+degrees north.
+
+**License.** Public domain.

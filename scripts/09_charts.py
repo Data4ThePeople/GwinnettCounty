@@ -32,9 +32,10 @@ N15 = import_module("15_national_pay")
 CHARTS = ROOT / "charts"
 SLUG = "gwinnett-county-rents"
 # draft chart -> its name in the post, in order of appearance
-POST_ORDER = {"10-least-affordable.png": "01-least-affordable.png", "12-rentals-stacked.png": "02-rentals-within-reach.png",
-              "09-income-vs-rent.png": "03-income-vs-rent.png", "14-new-to-market-rents.png": "04-new-to-market-rents.png",
-              "15-older-apartment-rents.png": "05-older-apartment-rents.png", "16-national-renter-pay.png": "06-renter-pay.png"}
+POST_ORDER = {"17-atlanta-map.png": "01-atlanta-map.png", "10-least-affordable.png": "02-least-affordable.png",
+              "12-rentals-stacked.png": "03-rentals-within-reach.png", "09-income-vs-rent.png": "04-income-vs-rent.png",
+              "14-new-to-market-rents.png": "05-new-to-market-rents.png", "15-older-apartment-rents.png": "06-older-apartment-rents.png",
+              "16-national-renter-pay.png": "07-renter-pay.png"}
 FK = ["2009", "2014", "2019", "2024"]
 LABEL = {"2009": "2005-09", "2014": "2010-14", "2019": "2015-19", "2024": "2020-24"}
 G = "13135"
@@ -536,6 +537,83 @@ def national_pay():
     save(fig, "16-national-renter-pay.png")
 
 
+# ---------------------------------------------------------------- 17 map: share within reach, Atlanta metro counties
+NUDGE_MAP = {"Fulton": (0.09, 0.3), "Rockdale": (0.03, 0.0)}                                              # label placement only, in map degrees
+
+
+def atlanta_map():
+    import io as _io
+    import math
+    import zipfile
+
+    import pandas as pd
+    import shapefile
+    from matplotlib.colors import LinearSegmentedColormap
+    from matplotlib.patches import Polygon
+
+    H, S, weak, ranked, _ = C1.build()
+    l1 = pd.read_excel(ROOT / "data" / "raw" / "omb" / "list1_2023.xlsx", header=2, dtype=str)
+    metro = l1[l1["CBSA Code"] == "12060"]
+    fips = set(metro["FIPS State Code"] + metro["FIPS County Code"])
+    z = zipfile.ZipFile(AH / "data" / "raw" / "cb" / "cb_2024_us_county_500k.zip")
+    base = "cb_2024_us_county_500k"
+    sf = shapefile.Reader(shp=_io.BytesIO(z.read(base + ".shp")), dbf=_io.BytesIO(z.read(base + ".dbf")))
+    names = [f[0] for f in sf.fields[1:]]
+    shapes = {}
+    for rec, shp in zip(sf.records(), sf.shapes()):
+        r = dict(zip(names, rec))
+        if r["GEOID"] in fips:
+            pts = shp.points
+            parts = list(shp.parts) + [len(pts)]
+            shapes[r["GEOID"]] = (r["NAME"], [pts[parts[i]:parts[i + 1]] for i in range(len(parts) - 1)])
+    assert len(shapes) == 29
+    vals = {f: S[f]["2024"] for f in fips}
+    lo, hi = min(vals.values()), max(vals.values())
+    top = 40                                                # the scale stops at 40%; higher shares get the darkest step
+    # sequential, one hue: the smaller the share within reach, the brighter the red
+    cmap = LinearSegmentedColormap.from_list("reach", ["#FF5A5F", "#3B2425"])
+    kx = math.cos(math.radians(33.8))
+    fig = plt.figure(figsize=(W, 9))
+    ax = fig.add_axes([0.03, 0.07, 0.94, 0.78])
+    ax.set_axis_off()
+    for f, (nm, rings) in shapes.items():
+        col = cmap(min(vals[f] - 10, top - 10) / (top - 10))
+        for ring in rings:
+            ax.add_patch(Polygon([(x * kx, y) for x, y in ring], closed=True, facecolor=col, edgecolor="#181A1B", lw=1.2,
+                                 hatch="///" if weak[f][3] else None))
+    for ring in shapes[G][1]:
+        ax.add_patch(Polygon([(x * kx, y) for x, y in ring], closed=True, fill=False, edgecolor=INK, lw=3, zorder=5))
+    for f, (nm, rings) in shapes.items():
+        ring = [(x * kx, y) for x, y in max(rings, key=len)]
+        a2 = sum(x0 * y1 - x1 * y0 for (x0, y0), (x1, y1) in zip(ring, ring[1:] + ring[:1]))
+        cx = sum((x0 + x1) * (x0 * y1 - x1 * y0) for (x0, y0), (x1, y1) in zip(ring, ring[1:] + ring[:1])) / (3 * a2)
+        cy = sum((y0 + y1) * (x0 * y1 - x1 * y0) for (x0, y0), (x1, y1) in zip(ring, ring[1:] + ring[:1])) / (3 * a2)
+        cx, cy = cx + NUDGE_MAP.get(nm, (0, 0))[0], cy + NUDGE_MAP.get(nm, (0, 0))[1]
+        big = f == G
+        ax.text(cx, cy, f"{nm}\n{vals[f]:.1f}%", ha="center", va="center", color="#FFFFFF" if big else "#EDEEEF",
+                fontsize=10.5 if big else 7.5, fontweight="bold" if big else "normal", zorder=6)
+    # downtown Atlanta (Five Points), for orientation
+    ax.plot(-84.3915 * kx, 33.7537, marker="*", ms=13, color=INK, markeredgecolor="#181A1B", zorder=7)
+    ax.text(-84.3915 * kx - 0.03, 33.7537 - 0.035, "Downtown\nAtlanta", color=INK, fontsize=8, ha="right", va="top", zorder=7)
+    ax.autoscale_view()
+    ax.set_aspect("equal")
+    cax = fig.add_axes([0.62, 0.105, 0.3, 0.018])
+    import numpy as np
+    cax.imshow(np.linspace(0, 1, 200)[None, :], cmap=cmap, aspect="auto", extent=[10, top, 0, 1])
+    cax.set_yticks([])
+    cax.set_xticks([10, 20, 30, 40], ["10%", "20%", "30%", "40%+"], fontsize=8.5, color=INK_DIM)
+    cax.tick_params(length=0)
+    for sp in cax.spines.values():
+        sp.set_visible(False)
+    cax.set_title("Share within reach", fontsize=9, color=INK_DIM, loc="left", pad=4)
+    titleblock(fig, f"Gwinnett had the smallest share of rentals within reach in metro Atlanta: {vals[G]:.1f}%",
+               "Share of rentals within reach of the median renter household, 2020-24, for the 29 counties of the Atlanta metro area.\n"
+               f"Brighter red means a smaller share within reach ({lo:.1f}% to {hi:.1f}%). Hatched: the tool marks the county low reliability.\n"
+               + REACH.replace(",\nthe", ", the"))
+    credit(fig, TOOL + "\nCounty lines: Census Bureau cartographic boundary file, 2024. Metro area: OMB, July 2023.")
+    save(fig, "17-atlanta-map.png")
+
+
 if __name__ == "__main__":
     use_house_style()
     share_line()
@@ -554,6 +632,7 @@ if __name__ == "__main__":
     new_to_market_rents()
     older_apartment_rents()
     national_pay()
+    atlanta_map()
     out = ROOT / "posts" / SLUG / "images"
     out.mkdir(parents=True, exist_ok=True)
     for src, dst in POST_ORDER.items():

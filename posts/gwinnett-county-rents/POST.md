@@ -18,29 +18,34 @@ dividers: false
 
 # [Eric: title]
 
-[Eric: intro]
+Last week, we dug into our Rentals within Reach visualization and pulled out what looked like one of the most affordable counties in America for renters. That was Dawson County, Nebraska, and while it’s true that it used to be affordable, that all changed earlier this year when its largest employer – the Tyson’s meatpacking plant – shut its doors. 
+
+Today, we went hunting on the opposite side of the ledger – the counties that were the least affordable for renters. Interestingly, three of the top ten counties were all in the Atlanta metro area. Interesting. But one county stood out from the rest – Gwinnett County, situated immediately northwest of downtown Atlanta. Gwinnett County had just 10.5% of rental units “within reach” of the median renter household income. We define within reach as no more than 30% of a family’s after-tax income. 
+
+![Map of the 29 counties of the Atlanta metro area, shaded red by the share of rentals within reach in 2020-2024, brighter for smaller shares. Gwinnett County, northeast of downtown Atlanta and outlined, is lowest at 10.5%. Clayton is 11.0%, DeKalb 14.0%, Henry 18.2%, Cobb 23.9% and Fulton 24.6%. Outer counties run higher, up to 70.0% in Haralson County.](images/01-atlanta-map.png)
+*Source: Data 4 The People, Rentals Within Reach, from Census Bureau American Community Survey 5-year estimates, 2020-2024. County lines: Census Bureau, 2024.*
 
 ## The lowest share in the country, outside college counties
 
-Our [Rentals Within Reach](https://www.data4thepeople.com/p/rentals-within-reach) tool measures how many of a county's rentals its median renter household could afford, spending 30% of its income after taxes on rent. In 2020-2024, Gwinnett County, Georgia, had the lowest share of the 1,922 counties we ranked, leaving out college counties.
+Nationally, Gwinnett's 10.5% was the lowest of the 1,922 counties we ranked with at least 1,000 rentals, leaving out college counties.
 
-![Bar chart of the 10 counties with the lowest share of rentals within reach in 2020-2024, leaving out college counties. Gwinnett County, Georgia, is lowest at 10.5%, followed by Clayton County, Georgia, at 11.0%, Lincoln County, New Mexico, at 11.8% and DeKalb County, Georgia, at 14.0%. The rest range from 14.2% to 15.4%.](images/01-least-affordable.png)
+![Bar chart of the 10 counties with the lowest share of rentals within reach in 2020-2024, leaving out college counties. Gwinnett County, Georgia, is lowest at 10.5%, followed by Clayton County, Georgia, at 11.0%, Lincoln County, New Mexico, at 11.8% and DeKalb County, Georgia, at 14.0%. The rest range from 14.2% to 15.4%.](images/02-least-affordable.png)
 *Source: Data 4 The People, Rentals Within Reach, from Census Bureau American Community Survey 5-year estimates, 2020-2024.*
 
-Two caveats. Clayton County, also in metro Atlanta, is only half a point behind. And with college counties included, Gwinnett ranks third, behind Whitman County, Washington, and Benton County, Oregon. Three of the four lowest counties on this list are in the Atlanta area.
+Two caveats. Clayton County is only half a point behind. And with college counties included, Gwinnett ranks third, behind Whitman County, Washington, and Benton County, Oregon.
 
 ## A 59% decline
 
 In 2005-2009, 25.5% of Gwinnett's rentals were within reach of its median renter household. By 2020-2024, 10.5% were. The national share was 32% at the start and 31% at the end. Gwinnett added rentals over those years, but the number within reach still fell.
 
-![Stacked bar chart of Gwinnett County rentals in four periods. All rentals grew from 65,800 in 2005-2009 to 85,500, 97,300 and 107,200 in 2020-2024. Rentals within reach were 16,800 (25.5%), then 15,500 (18.1%), then 20,900 (21.5%), then 11,300 (10.5%).](images/02-rentals-within-reach.png)
+![Stacked bar chart of Gwinnett County rentals in four periods. All rentals grew from 65,800 in 2005-2009 to 85,500, 97,300 and 107,200 in 2020-2024. Rentals within reach were 16,800 (25.5%), then 15,500 (18.1%), then 20,900 (21.5%), then 11,300 (10.5%).](images/03-rentals-within-reach.png)
 *Source: Data 4 The People, Rentals Within Reach, from Census Bureau American Community Survey 5-year estimates. Rentals within reach are the tool's share times its count of rentals.*
 
 ## Rent rose 32%. Renter income rose 8%.
 
 After inflation, Gwinnett's median rent rose 32% from 2005-2009 to 2020-2024, while its median renter household income rose 8%. Among the 15 Atlanta-area counties with at least 10,000 renter households, Gwinnett's gap between the two was one of the widest.
 
-![Scatter plot of 15 Atlanta-area counties, with the change in median renter income across and the change in median rent up, 2005-2009 to 2020-2024, after inflation. Gwinnett, at income up 8% and rent up 32%, sits farthest above the line where the two rose at the same rate. Clayton, DeKalb and Cherokee are close behind it.](images/03-income-vs-rent.png)
+![Scatter plot of 15 Atlanta-area counties, with the change in median renter income across and the change in median rent up, 2005-2009 to 2020-2024, after inflation. Gwinnett, at income up 8% and rent up 32%, sits farthest above the line where the two rose at the same rate. Clayton, DeKalb and Cherokee are close behind it.](images/04-income-vs-rent.png)
 *Source: Census Bureau, American Community Survey 5-year estimates; BLS consumer price index. Gwinnett's income change has a margin of about 5 points either way.*
 
 Home prices rose fast in Gwinnett, but they rose about as fast in Cobb County, where renters' income rose 18%.
@@ -49,12 +54,12 @@ Home prices rose fast in Gwinnett, but they rose about as fast in Cobb County, w
 
 Gwinnett added about 41,000 rentals over this period. Two kinds account for more than half of them: about 11,300 older houses, built before 2000, that became rentals, and about 11,000 apartments built since 2010. Neither was priced for the median renter household, which could afford about $1,250 a month at 30% of its income. In 2020-2024, older houses rented for a median of about $1,990 and new apartments for $1,870. About 10% of the older houses and 8% of the new apartments were within reach. Houses built since 2010 rented for more still.
 
-![Bar chart of median monthly rent in Gwinnett County in 2020-2024, against the $1,250 the median renter household could afford. Houses built before 2000 $1,990, with 10% within reach. Apartments built 2010 or later $1,870, with 8% within reach. Houses built 2010 or later $2,500, with 2% within reach.](images/04-new-to-market-rents.png)
+![Bar chart of median monthly rent in Gwinnett County in 2020-2024, against the $1,250 the median renter household could afford. Houses built before 2000 $1,990, with 10% within reach. Apartments built 2010 or later $1,870, with 8% within reach. Houses built 2010 or later $2,500, with 2% within reach.](images/05-new-to-market-rents.png)
 *Source: Census Bureau, American Community Survey 5-year microdata. Rents include utilities.*
 
 That does not explain why the number of rentals within reach fell. The answer is in older apartments, built before 2000. Gwinnett had about the same number of them in both periods, but their median rent went from about $860 to $1,660, up 92%. After inflation, that is a 31% rise, while the amount the median renter household could afford rose 8%. In 2005-2009, the median older apartment rented for about $100 more than that amount. By 2020-2024, it was about $400 more.
 
-![Bar chart of Gwinnett County amounts in 2024 dollars. In 2005-2009, the median rent for apartments built before 2000 was $1,260, and the median renter household could afford $1,160. In 2020-2024, the median rent was $1,660, and the household could afford $1,250.](images/05-older-apartment-rents.png)
+![Bar chart of Gwinnett County amounts in 2024 dollars. In 2005-2009, the median rent for apartments built before 2000 was $1,260, and the median renter household could afford $1,160. In 2020-2024, the median rent was $1,660, and the household could afford $1,250.](images/06-older-apartment-rents.png)
 *Source: Census Bureau, American Community Survey 5-year microdata; Data 4 The People, Rentals Within Reach. Amounts in 2024 dollars.*
 
 In other words, the rentals new to the market came in out of reach, and the older apartments that used to be close to reach rose far faster than renters' income.
@@ -65,7 +70,7 @@ Why did renter income not keep up? For the same kind of renter household (the sa
 
 Few counties with rents rising this fast saw that. We looked at 37 counties in large metro areas where rent rose 25% or more after inflation and the survey can measure the county on its own. Only two showed a drop in full-time renter pay: Gwinnett, and Cherokee County, also in metro Atlanta, whose estimate is much less certain. In the middle county of the group, it rose 15%.
 
-![Bar chart of the change in median earnings of renters who worked full time all year, 2005-2009 to 2020-2024, after inflation, in 37 counties in large metro areas where median rent rose 25% or more after inflation. San Francisco is highest at 44.5%. The middle county rose about 15%. Cobb rose 6.7%, DeKalb 9.9% and Fulton 21.2%. Only Gwinnett, down 3.3%, and Cherokee, down 6.0%, show a drop. Lines on each bar show the margin of error, widest for Cherokee.](images/06-renter-pay.png)
+![Bar chart of the change in median earnings of renters who worked full time all year, 2005-2009 to 2020-2024, after inflation, in 37 counties in large metro areas where median rent rose 25% or more after inflation. San Francisco is highest at 44.5%. The middle county rose about 15%. Cobb rose 6.7%, DeKalb 9.9% and Fulton 21.2%. Only Gwinnett, down 3.3%, and Cherokee, down 6.0%, show a drop. Lines on each bar show the margin of error, widest for Cherokee.](images/07-renter-pay.png)
 *Source: Census Bureau, American Community Survey 5-year microdata; BLS consumer price index. Lines show 90% margins: about 5 points either way for Gwinnett and 11 for Cherokee, so the order near the bottom is not certain. Another 44 counties with rent up 25% or more share a microdata area with a neighbor and could not be measured on their own.*
 
 [Eric: closing]
