@@ -20,6 +20,12 @@ rentals priced within reach of the median renter household fell from 25.5% in
 - `scripts/02_core_vs_suburb_counties.py` and
   `scripts/03_city_vs_suburb.py`: the two tests, with their output in
   `research/`.
+- `research/why-rents.md`: five explanations for Gwinnett's rent rise, each
+  tested against seven neighboring counties, with
+  `scripts/04_fetch_county_tables.py`, `scripts/05_why_rents.py` and
+  `scripts/06_pums_turnover.py`.
+- `research/investor-sources.md`: published research on investor ownership
+  of single-family homes in Gwinnett and metro Atlanta.
 - `DATASETS.md`: every dataset used, with its limits and quirks.
 
 ## Data sources
@@ -30,8 +36,9 @@ American Community Survey 5-year files (Census Bureau tables B25063, B25119
 and others), NBER TAXSIM35 for taxes, and the BLS Consumer Price Index.
 Its `DATASETS.md` lists every limit of those data. The suburb and city
 tests also use the NCHS 2023 Urban-Rural Classification Scheme for Counties,
-the OMB July 2023 metro delineation, and ACS 5-year place-level tables B25063,
-B25118 and B25119.
+the OMB July 2023 metro delineation, ACS 5-year place-level tables B25063,
+B25118 and B25119, ACS 5-year county tables on housing stock and renters, ACS
+5-year microdata (PUMS), and the Census Building Permits Survey.
 
 ## How to rebuild
 
@@ -42,6 +49,9 @@ project, expected at `~/PycharmProjects/AffordableHousing`:
 python scripts/01_candidate_selection.py
 python scripts/02_core_vs_suburb_counties.py
 python scripts/03_city_vs_suburb.py
+python scripts/04_fetch_county_tables.py
+python scripts/05_why_rents.py
+python scripts/06_pums_turnover.py
 ```
 
 The NCHS and OMB files go in `data/raw/nchs/` and `data/raw/omb/` (links in

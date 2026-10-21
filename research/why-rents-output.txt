@@ -1,0 +1,54 @@
+Check: Gwinnett median gross rent 2005-09 $939, 2020-24 $1,810
+
+1. Bedroom mix. Share of cash-rent units within reach (tool ceiling), read from B25068's coarse rent bands.
+   'actual' uses each period's own bedroom mix; 'fixed' holds the 2005-09 mix. The rule looks at the gap between them.
+   Gwinnett  mix 2005-09  1.4 22.6 42.0 34.0  2020-24  3.8 18.7 35.4 42.1 | within reach 2005-09 25.8, 2020-24 actual 14.2, fixed mix 15.0, gap +0.8 pts
+             within reach by bedroom group 2005-09 -> 2020-24: studio 60% -> 21%, 1 bedroom 56% -> 27%, 2 bedrooms 21% -> 14%, 3+ bedrooms 10% -> 8%
+   Fulton    mix 2005-09  3.4 32.3 41.4 22.9  2020-24  6.7 34.6 37.3 21.4 | within reach 2005-09 27.5, 2020-24 actual 26.3, fixed mix 26.1, gap -0.3 pts
+   DeKalb    mix 2005-09  2.3 28.3 44.5 24.9  2020-24  5.3 24.7 42.7 27.4 | within reach 2005-09 23.1, 2020-24 actual 15.7, fixed mix 15.8, gap +0.1 pts
+   Cobb      mix 2005-09  1.9 25.2 45.0 27.9  2020-24  3.0 24.5 39.8 32.7 | within reach 2005-09 29.8, 2020-24 actual 26.1, fixed mix 26.5, gap +0.4 pts
+   Clayton   mix 2005-09  1.8 17.5 43.1 37.5  2020-24  2.7 16.2 34.4 46.6 | within reach 2005-09 24.1, 2020-24 actual 11.4, fixed mix 11.6, gap +0.2 pts
+   Henry     mix 2005-09  1.2 14.1 34.1 50.6  2020-24  1.5 13.6 29.7 55.2 | within reach 2005-09 24.3, 2020-24 actual 22.1, fixed mix 22.6, gap +0.5 pts
+   Cherokee  mix 2005-09  1.0 15.0 41.0 43.1  2020-24  3.1 16.2 34.2 46.5 | within reach 2005-09 32.7, 2020-24 actual 24.3, fixed mix 24.3, gap +0.1 pts
+   Forsyth   mix 2005-09  1.4  8.0 34.3 56.3  2020-24  2.5 10.9 33.6 53.0 | within reach 2005-09 38.4, 2020-24 actual 22.9, fixed mix 22.4, gap -0.5 pts
+
+2. Single-family homes as a share of renter-occupied units (B25032, 1-unit detached + attached), and owner households (B25003)
+   Gwinnett  SF share 31.0 41.0 43.0 39.5  SF renter units  20,868 ->  43,526 (+22,658)  of all renter growth   53%  owners 187,119 -> 216,729 (+16%)
+   Fulton    SF share 20.3 23.5 22.3 19.2  SF renter units  30,349 ->  40,502 (+10,153)  of all renter growth   16%  owners 206,023 -> 251,193 (+22%)
+   DeKalb    SF share 23.6 28.4 30.2 27.6  SF renter units  25,870 ->  32,612 (+6,742)  of all renter growth   75%  owners 160,724 -> 168,868 (+5%)
+   Cobb      SF share 28.5 35.8 38.1 32.8  SF renter units  20,827 ->  32,009 (+11,182)  of all renter growth   46%  owners 177,268 -> 198,190 (+12%)
+   Clayton   SF share 32.8 42.3 44.0 40.9  SF renter units  11,171 ->  19,716 (+8,545)  of all renter growth   61%  owners 54,009 -> 57,782 (+7%)
+   Henry     SF share 50.5 57.9 57.3 51.2  SF renter units   5,754 ->  11,151 (+5,397)  of all renter growth   52%  owners 51,256 -> 64,904 (+27%)
+   Cherokee  SF share 44.2 49.3 51.2 45.8  SF renter units   6,340 ->  10,565 (+4,225)  of all renter growth   48%  owners 57,495 -> 78,464 (+36%)
+   Forsyth   SF share 62.8 64.3 59.1 57.7  SF renter units   4,655 ->   7,998 (+3,343)  of all renter growth   52%  owners 46,746 -> 75,167 (+61%)
+
+3. Supply. Permitted units 2007-2021 (the years between the two periods' midpoints) per added household, and rental vacancy (B25004)
+   Gwinnett  households 254,515 -> 327,043 (+72,528); permits 47,411 ( 12% in 5+ unit buildings, 1.3% imputed) = 0.65 per added household; rental vacancy 11.4%  8.6%  6.1%  5.1%
+   Fulton    households 355,452 -> 462,481 (+107,029); permits 97,948 ( 59% in 5+ unit buildings, 0.7% imputed) = 0.92 per added household; rental vacancy 14.9% 10.5%  7.9%  7.9%
+   DeKalb    households 270,124 -> 287,239 (+17,115); permits 31,831 ( 49% in 5+ unit buildings, 4.2% imputed) = 1.86 per added household; rental vacancy 10.8% 11.1%  5.6% 10.9%
+   Cobb      households 250,395 -> 295,714 (+45,319); permits 36,253 ( 39% in 5+ unit buildings, 0.1% imputed) = 0.80 per added household; rental vacancy 13.2%  8.3%  5.1%  5.3%
+   Clayton   households  88,071 -> 105,941 (+17,870); permits  7,472 (  6% in 5+ unit buildings, 0.3% imputed) = 0.42 per added household; rental vacancy 18.3% 17.2% 10.4% 10.3%
+   Henry     households  62,656 ->  86,704 (+24,048); permits 18,234 ( 10% in 5+ unit buildings, 5.2% imputed) = 0.76 per added household; rental vacancy 11.2%  9.1%  5.9%  6.5%
+   Cherokee  households  71,826 -> 101,514 (+29,688); permits 27,141 ( 12% in 5+ unit buildings, 0.4% imputed) = 0.91 per added household; rental vacancy 11.2%  9.0%  2.7%  6.1%
+   Forsyth   households  54,161 ->  89,030 (+34,869); permits 36,065 ( 12% in 5+ unit buildings, 0.0% imputed) = 1.03 per added household; rental vacancy  5.4% 10.3%  4.0%  6.1%
+   Gwinnett permits by year 2000-2025: 2000:12,372, 2001:11,274, 2002:10,362, 2003:9,617, 2004:10,463, 2005:9,938, 2006:9,033, 2007:4,408, 2008:1,959, 2009:719, 2010:1,239, 2011:873, 2012:2,469, 2013:3,347, 2014:3,379, 2015:3,918, 2016:3,977, 2017:3,917, 2018:3,716, 2019:4,204, 2020:4,551, 2021:4,735, 2022:5,485, 2023:5,423, 2024:5,603, 2025:3,946
+
+4. Renter households by income in constant 2024 dollars (B25118 buckets, CPI-U), and renters who moved in during the 5-year window (B25038)
+   Gwinnett  under $35k   17,598 ->   29,076 ( +11,478) | $75k+   23,540 ->   41,052 ( +17,512) | all  +42,918; $75k+ share of growth   41% | moved in within window 66% -> 47%
+   Fulton    under $35k   54,411 ->   64,666 ( +10,255) | $75k+   47,482 ->   89,435 ( +41,953) | all  +61,859; $75k+ share of growth   68% | moved in within window 60% -> 51%
+   DeKalb    under $35k   38,743 ->   37,249 (  -1,494) | $75k+   31,293 ->   40,851 (  +9,558) | all   +8,971; $75k+ share of growth  107% | moved in within window 61% -> 45%
+   Cobb      under $35k   20,734 ->   22,126 (  +1,392) | $75k+   25,556 ->   43,220 ( +17,664) | all  +24,397; $75k+ share of growth   72% | moved in within window 64% -> 51%
+   Clayton   under $35k   11,696 ->   17,624 (  +5,928) | $75k+    8,238 ->   12,546 (  +4,308) | all  +14,097; $75k+ share of growth   31% | moved in within window 65% -> 41%
+   Henry     under $35k    2,838 ->    5,345 (  +2,507) | $75k+    4,071 ->    8,004 (  +3,933) | all  +10,400; $75k+ share of growth   38% | moved in within window 69% -> 48%
+   Cherokee  under $35k    3,929 ->    6,122 (  +2,193) | $75k+    5,050 ->    9,628 (  +4,578) | all   +8,719; $75k+ share of growth   53% | moved in within window 67% -> 46%
+   Forsyth   under $35k    1,947 ->    2,528 (    +581) | $75k+    3,341 ->    7,818 (  +4,477) | all   +6,448; $75k+ share of growth   69% | moved in within window 61% -> 50%
+
+   Renter-occupied units built 2010 or later, 2020-24 (B25036)
+   Gwinnett  18.1%
+   Fulton    24.3%
+   DeKalb    14.7%
+   Cobb      16.1%
+   Clayton    6.8%
+   Henry     20.6%
+   Cherokee  23.3%
+   Forsyth   38.0%

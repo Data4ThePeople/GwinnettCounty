@@ -202,3 +202,139 @@ compute margins for the subtracted rest-of-metro counts.
 
 **License and attribution.** Public domain. Credit: U.S. Census Bureau,
 American Community Survey 5-year estimates.
+
+## 5. ACS 5-year county tables on housing stock and renters (Census Bureau)
+
+**What it is.** Tables for Gwinnett and seven peer counties (Fulton, DeKalb,
+Cobb, Clayton, Henry, Cherokee, Forsyth), all four periods:
+- B25068 bedrooms by gross rent
+- B25042 tenure by bedrooms
+- B25032 tenure by units in structure
+- B25036 tenure by year built
+- B25038 tenure by year the householder moved in
+- B25003 tenure
+- B25004 vacancy status
+- B25001 housing units
+- B11001 households
+
+**Where it comes from.** Census API, `{year}/acs/acs5`, `group(...)`,
+`for=county:...&in=state:13`, cached in `data/raw/acs/`. Table layouts are
+saved in `data/raw/meta/`.
+
+**Version and vintage.** 2009, 2014, 2019 and 2024 releases. They are not
+revised.
+
+**Changes over time.**
+- **B25068 rent bands.** There are only six rent bands per bedroom group, and
+  they changed. In 2009 the bands are under $200, $200-299, $300-499, $500-749,
+  $750-999 and $1,000 or more. In 2024 they are under $300, $300-499, $500-749,
+  $750-999, $1,000-1,499 and $1,500 or more. A share within reach read from
+  these bands is rough. So the bedroom-mix test compares two figures built from
+  the same bands (actual mix against fixed mix) and reports the difference, not
+  the level.
+- **B25036 year built and B25038 year moved in.** The bands move with each
+  release. For example, the newest band is "2005 or later" in 2009 and "2020
+  or later" in 2024. We compare "built in the last 15 to 20 years" and "moved
+  in within the five-year window" only where the bands line up, and say so.
+- **B25031 median gross rent by bedrooms.** Not published in the 2009 release
+  (the API returns 404), so it is not used for the comparison over time.
+
+**Suppressed or missing values.** None expected for counties of this size.
+
+**Uncertainty.** Each cell has a 90% margin of error. Counts of renter units by
+structure type and bedrooms in the smaller peers (Cherokee, Forsyth, Henry)
+have wide margins, which we report where a finding rests on them.
+
+**License.** Public domain.
+
+## 6. Building Permits Survey, county annual (Census Bureau)
+
+**What it is.** New privately owned housing units authorized by building
+permits, by county and year. Reported as 1-unit, 2-unit, 3-4 unit and 5+ unit
+buildings, with buildings, units and value for each.
+
+**Where it comes from.**
+`https://www2.census.gov/econ/bps/County/co{YYYY}a.txt`, 2000-2025. Saved in
+`data/raw/bps/`.
+
+**Coverage and filling.** Each file has two sets of columns:
+- **Estimates:** reported counts plus Census imputation for permit offices
+  that did not report every month.
+- **"rep":** reported only.
+
+We use the estimates and report how much of each county's total was imputed
+(estimate minus reported).
+
+**Known quirks.** Permits are authorizations, not homes built. Some are never
+built, and timing lags vary. A unit permitted as 1-unit can be owned or
+rented; permits do not record tenure. Permit offices are cities and counties,
+summed to counties by Census.
+
+**Revisions.** Annual files replace the monthly figures. We use the annual
+files as published.
+
+**License.** Public domain.
+
+## 7. ACS 5-year PUMS (Census Bureau)
+
+**What it is.** Household microdata with weights. We use gross rent (GRNTP),
+when the household moved in (MV), units in structure (BLD), bedrooms
+(BDS/BDSP), year built (YBL/YRBLT), tenure (TEN) and household income (HINCP).
+
+**Where it comes from.** Census microdata API, `2009/acs/acs5/pums` and
+`2024/acs/acs5/pums`, by PUMA. Cached in `data/raw/pums/`.
+
+**Geography.**
+- **2005-09 file:** uses 2000 PUMAs. In the Census 2000 5% equivalency file
+  (`data/raw/puma/PUMEQ5-GA.TXT`), Gwinnett is PUMAs 01501-01505, all inside
+  the county. Fulton, DeKalb, Cobb, Clayton, Henry and Cherokee also nest.
+  **Forsyth does not:** its PUMA 00800 also covers Dawson and Pickens, so
+  Forsyth is left out of the PUMS test.
+- **2020-24 file:** uses 2020 PUMAs for every record ("based on 2020 Census
+  definition"). The 2020 tract-to-PUMA file
+  (`data/raw/puma/tract2020_puma2020.txt`) shows Gwinnett as PUMAs
+  01601-01607, all inside the county. All eight counties nest.
+
+**Changes over time.**
+- Variable names changed: BDS became BDSP, YBL became YRBLT.
+- The MV categories differ between files, and we map them to "moved in within
+  the last 2 years" or "longer."
+- Dollar amounts are in the survey year's dollars. ADJHSG brings housing costs
+  to the final year of the file.
+
+**Uncertainty.** We use the 80 replicate weights (WGTP1-80) for standard
+errors on any difference we report.
+
+**License.** Public domain.
+
+## 8. Published sources on investor ownership of single-family homes
+
+**What it is.** Reports, articles and vendor pages, not a dataset we
+compute from. The full list, with quotes, pages, definitions and status, is in
+`research/investor-sources.md`.
+
+**What we checked ourselves (October 21, 2026).**
+- **GAO-24-106643, May 2024, p. 15** (PDF page 19): "institutional
+  investor-owned homes constituted about 25 percent ... of the single-family
+  rental market" in Atlanta, as of June 2022. Owners of 1,000+ homes. GAO
+  footnote 40 says the shares "may be overstated." Gwinnett does not appear in
+  the report. GAO calls the evidence on rents mixed (p. 20).
+- **Atlanta Regional Commission, November 13, 2024.** The text says "Gwinnett
+  County is tops in the region in total single-family units owned by a
+  corporate landlord," with seven named firms and Parcl Labs data. County
+  counts appear only in chart images. The AJC (December 5, 2024) repeats
+  Gwinnett 9,680, Cobb 5,284, Fulton 4,150, DeKalb 3,859, Clayton 3,444. The
+  shares of all single-family units (Gwinnett 3.8%, Henry 7.4%) were read from
+  the chart by the research agent and not checked again here.
+
+**Known traps.**
+- Every source uses a different definition: one home, LLC name keywords, 15+,
+  50+, 100+ or 1,000+ homes, or a named list of firms. They also use
+  different denominators: all single-family homes, single-family rentals, all
+  rentals, or sales. Figures from different sources cannot be compared.
+- No source gives a Gwinnett figure for 2005-2009 or a Gwinnett series across
+  our periods. So these sources can describe ownership around 2022-2024. They
+  cannot show how it changed over our periods or measure an effect on rent.
+- The Georgia Tech figures (53% of single-family rental purchases, 17% of
+  single-family sales, summer 2021) are often quoted as "Atlanta." They cover
+  Gwinnett and DeKalb combined.

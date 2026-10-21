@@ -55,3 +55,13 @@ None.
   its suburbs. By the rules: not a national or Atlanta suburb story; a
   Gwinnett story (-38% at the metro line vs. DeKalb -26%, Clayton +16%, city
   -24%). Memo: research/suburb-vs-city.md. Waiting on Eric's call on framing.
+- 2026-10-21 Eric chose the Gwinnett frame. Gwinnett's median rent ($1,810)
+  is third in the metro after Forsyth and Fayette; what stands out is rent
+  against renter income. Tested five explanations against seven peers with
+  rules set first (research/why-rents.md). Supported: supply (0.65 permitted
+  units per added household, 12% in 5+ unit buildings) and single-family
+  rentals (share of rentals 31.0% to 39.5%, the largest rise; ARC says the
+  region's most corporate-owned homes). Not supported: bedroom mix, richer
+  renter pool, turnover pricing. Investor sources gathered by an agent in
+  research/investor-sources.md; GAO and ARC/AJC figures checked by hand.
+  DATASETS.md sections 5-8 added. Waiting on Eric.
