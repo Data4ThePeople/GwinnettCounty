@@ -72,3 +72,8 @@ None.
   pre-2000 apartments lost about 5,500 within reach, more than the county's
   net loss. Microdata number within reach -26% vs the tool's -33% (exact
   rents vs rent ranges). Waiting on Eric.
+- 2026-10-21 Eric asked about the owner-renter income gap. Not wide
+  (research/owner-renter-gap.md): renter median 54.8% of owner median vs
+  53.0% nationally; 220th of 282 large counties from the widest; narrowed 5.3
+  pts. Gwinnett owners' median fell 2% after inflation while most neighbors'
+  rose. Waiting on Eric.

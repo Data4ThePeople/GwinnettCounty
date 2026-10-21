@@ -344,3 +344,22 @@ compute from. The full list, with quotes, pages, definitions and status, is in
 - The Georgia Tech figures (53% of single-family rental purchases, 17% of
   single-family sales, summer 2021) are often quoted as "Atlanta." They cover
   Gwinnett and DeKalb combined.
+
+## 9. ACS 5-year table B25119 for every county (Census Bureau)
+
+**What it is.** Median household income in the past 12 months, by tenure
+(owner and renter), with B25003 for household and renter counts.
+
+**Where it comes from.** Census API, `2009/acs/acs5` and `2024/acs/acs5`, all
+counties and the nation. Cached in `data/raw/acs/tenure_income_*.json`.
+
+**Quirks.**
+- Dollars are in each file's final-year dollars; we bring them to 2024 with
+  CPI-U, as for the tool.
+- Connecticut reports nine planning regions in 2020-24 and eight counties in
+  2005-09, so Connecticut drops out of any change between the two periods.
+- Puerto Rico's municipios are included.
+- The margin for the renter-to-owner ratio uses the Census formula for a ratio
+  of two estimates (renters are not a subset of owners), with 90% MOEs.
+
+**License.** Public domain.

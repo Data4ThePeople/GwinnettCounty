@@ -1,0 +1,35 @@
+Median household income by tenure (B25119), 2024 dollars. Gap = renter median as % of owner median (90% MOE).
+   United States  | 2005-09 owners $  94,073 renters $ 45,704 gap 48.6% (+/-0.1) | 2020-24 owners $ 100,009 renters $ 52,966 gap 53.0% (+/-0.1) | real change owners +6%, renters +16%
+   Gwinnett       | 2005-09 owners $ 112,869 renters $ 55,858 gap 49.5% (+/-1.7) | 2020-24 owners $ 110,370 renters $ 60,473 gap 54.8% (+/-2.2) | real change owners -2%, renters +8%
+   Fulton         | 2005-09 owners $ 128,396 renters $ 49,651 gap 38.7% (+/-1.1) | 2020-24 owners $ 138,102 renters $ 62,287 gap 45.1% (+/-1.6) | real change owners +8%, renters +25%
+   DeKalb         | 2005-09 owners $ 102,381 renters $ 48,961 gap 47.8% (+/-1.3) | 2020-24 owners $ 110,882 renters $ 54,357 gap 49.0% (+/-2.1) | real change owners +8%, renters +11%
+   Cobb           | 2005-09 owners $ 121,133 renters $ 57,122 gap 47.2% (+/-1.5) | 2020-24 owners $ 129,248 renters $ 67,585 gap 52.3% (+/-1.9) | real change owners +7%, renters +18%
+   Clayton        | 2005-09 owners $  80,291 renters $ 47,449 gap 59.1% (+/-2.8) | 2020-24 owners $  75,697 renters $ 45,679 gap 60.3% (+/-3.6) | real change owners -6%, renters -4%
+   Henry          | 2005-09 owners $ 104,889 renters $ 57,406 gap 54.7% (+/-3.0) | 2020-24 owners $  92,634 renters $ 59,703 gap 64.5% (+/-3.1) | real change owners -12%, renters +4%
+   Cherokee       | 2005-09 owners $ 111,439 renters $ 57,004 gap 51.2% (+/-2.7) | 2020-24 owners $ 122,110 renters $ 66,514 gap 54.5% (+/-4.8) | real change owners +10%, renters +17%
+   Forsyth        | 2005-09 owners $ 138,504 renters $ 67,097 gap 48.4% (+/-5.6) | 2020-24 owners $ 157,188 renters $ 84,052 gap 53.5% (+/-3.2) | real change owners +13%, renters +25%
+
+Counties with at least 1,000 renter households in 2020-24: rank of Gwinnett (1 = renters furthest below owners)
+   2005-09: Gwinnett rank 1344 of 2419, gap 49.5%; middle county 48.4%
+   2020-24: Gwinnett rank 1659 of 2430, gap 54.8%; middle county 50.9%
+
+Counties with at least 100,000 households in 2020-24: rank of Gwinnett (1 = renters furthest below owners)
+   2005-09: Gwinnett rank 190 of 276, gap 49.5%; middle county 46.5%
+   2020-24: Gwinnett rank 220 of 282, gap 54.8%; middle county 50.2%
+   Widest 15 gaps, 2020-24:
+      Essex County, New Jersey                   34.6% (+/-1.3)  owners $148,058 renters $51,273
+      San Juan Municipio, Puerto Rico            36.7% (+/-2.2)  owners $43,431 renters $15,933
+      Greater Bridgeport Planning Region, Connecticut 36.7% (+/-2.1)  owners $127,464 renters $46,805
+      Hampden County, Massachusetts              37.0% (+/-1.5)  owners $99,457 renters $36,774
+      Bristol County, Massachusetts              38.6% (+/-1.6)  owners $118,125 renters $45,612
+      Rockland County, New York                  39.2% (+/-3.2)  owners $141,306 renters $55,338
+      Essex County, Massachusetts                39.6% (+/-1.6)  owners $137,990 renters $54,672
+      Washtenaw County, Michigan                 39.7% (+/-2.1)  owners $122,594 renters $48,680
+      Capitol Planning Region, Connecticut       39.7% (+/-1.5)  owners $123,850 renters $49,201
+      Passaic County, New Jersey                 40.0% (+/-1.5)  owners $129,820 renters $51,907
+      Bronx County, New York                     40.4% (+/-1.6)  owners $100,815 renters $40,723
+      Plymouth County, Massachusetts             40.6% (+/-2.3)  owners $135,062 renters $54,822
+      Naugatuck Valley Planning Region, Connecticut 40.6% (+/-1.8)  owners $111,246 renters $45,215
+      Hamilton County, Ohio                      40.8% (+/-1.1)  owners $102,690 renters $41,891
+      Leon County, Florida                       40.8% (+/-2.0)  owners $100,607 renters $41,086
+   Change in gap, Gwinnett +5.3 pts; rank 179 of 276 (1 = gap widened most)
