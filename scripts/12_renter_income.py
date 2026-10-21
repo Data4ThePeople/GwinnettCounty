@@ -149,6 +149,15 @@ def qcew():
     return out
 
 
+def ftyr_change(c, cpi):
+    """Median earnings of full-time year-round renter workers, 2005-09 and 2020-24 (2024 dollars), and the change
+    in percent with its standard error. Also used by 09_charts.py."""
+    a = [x for x in load("2009", c, cpi)[1] if x["ftyr"]]
+    b = [x for x in load("2024", c, cpi)[1] if x["ftyr"]]
+    ch, s = se_of(lambda r: pct(wmed(a, "earn", weights(a, r)), wmed(b, "earn", weights(b, r))))
+    return wmed(a, "earn", weights(a)), wmed(b, "earn", weights(b)), ch, s
+
+
 def main():
     cpi = json.loads((PROC / "cpi.json").read_text())
     D = {c: {v: load(v, c, cpi) for v in LABEL} for c in NAMES}

@@ -36,13 +36,13 @@ ATLANTA = {"13121": "Fulton", "13089": "DeKalb", "13067": "Cobb", "13135": "Gwin
 DETAIL = ["13135", "35027", "48259", "13063", "13089", "12011", "01047", "28143"]
 
 
-def main():
+def build():
+    """The tool's shares for every county and period, the low-reliability flags, and the 2020-2024 ranking
+    (least affordable first). Also used by 09_charts.py."""
     H = json.loads((PROC / "harmonized.json").read_text())
     tax = json.loads((PROC / "tax_grid.json").read_text())
-    cpi = json.loads((PROC / "cpi.json").read_text())
     M = json.loads((PROC / "map_data.json").read_text())
     weak = {u["id"]: [bool(f.get("lo")) or bool(f.get("pm", 0) & 32) or "x" in f for f in u["f"]] for u in M["units"]}
-    infl = cpi["2024"] / cpi["2009"]
 
     def share(uid, fk, inc=None):
         info = H["units"][uid]
@@ -56,6 +56,13 @@ def main():
     S = {uid: {fk: share(uid, fk) for fk in FK} for uid in H["units"]}
     ranked = sorted((S[u]["2024"], u) for u, info in H["units"].items()
                     if S[u]["2024"] is not None and sum(info["f"]["2024"]["r"]) >= 1000 and not weak[u][3])
+    return H, S, weak, ranked, share
+
+
+def main():
+    H, S, weak, ranked, share = build()
+    cpi = json.loads((PROC / "cpi.json").read_text())
+    infl = cpi["2024"] / cpi["2009"]
     rank = {u: i + 1 for i, (_, u) in enumerate(ranked)}
     print(f"CPI-U, 2009 to 2024: +{100 * (infl - 1):.0f}%")
     print(f"Ranked counties (1,000+ cash-rent units, reliable in 2020-2024): {len(ranked)}")

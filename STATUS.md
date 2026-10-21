@@ -105,3 +105,8 @@ None.
   R2 workers per household: not a factor (rose like peers). R3 full-time
   year-round renter pay: -3.3% vs Cobb +6.7% (supported). R4 QCEW pay of jobs
   in county: +1.0%, lowest of eight (supported). Waiting on Eric.
+- 2026-10-21 Eric proposed five beats. Edited against the findings in
+  research/thread.md (rank caveats, the 59% decline, rent vs income, older
+  rentals not new apartments, renter pay). Two new charts: 10 least
+  affordable, 11 renter pay. Proposed set: 10, 01, 02, 09, 05, 04, 07, 11.
+  Waiting on Eric to confirm the thread, then the tie-outs.

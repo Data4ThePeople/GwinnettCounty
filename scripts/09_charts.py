@@ -24,6 +24,8 @@ spec.loader.exec_module(T0)
 W5 = import_module("05_why_rents")
 N7 = import_module("07_new_rentals")
 G8 = import_module("08_owner_renter_gap")
+C1 = import_module("01_candidate_selection")
+P12 = import_module("12_renter_income")
 
 CHARTS = ROOT / "charts"
 FK = ["2009", "2014", "2019", "2024"]
@@ -298,6 +300,44 @@ def income_vs_rent():
     save(fig, "09-income-vs-rent.png")
 
 
+# ---------------------------------------------------------------- 10 least affordable counties, 2020-24
+def ranking():
+    H, S, weak, ranked, _ = C1.build()
+    top = [(v, u) for v, u in ranked if H["units"][u]["college"] < C1.COLLEGE_SHARE][:10]
+    assert top[0][1] == G
+    n_all = len(ranked)
+    n_nc = sum(1 for _, u in ranked if H["units"][u]["college"] < C1.COLLEGE_SHARE)
+    rank_all = [u for _, u in ranked].index(G) + 1
+    names = [H["units"][u]["name"].replace(" County", "") for _, u in top]
+    fig, ax = frame(left=0.2, top=0.74)
+    hbars(ax, names, [v for v, _ in top], [BLUE if u == G else MUTED for _, u in top], lambda v: f"{v:.1f}%", 0.25)
+    ax.set_xlim(0, max(v for v, _ in top) * 1.15)
+    titleblock(fig, "Gwinnett had the smallest share of rentals within reach outside college towns",
+               f"Share of rentals within reach, 2020-24: the 10 lowest of {n_nc:,} counties with 1,000+ rentals, leaving out college towns.\n"
+               f"With college towns included, Gwinnett ranks {rank_all} of {n_all:,}.\n" + REACH.replace(",\nthe", ", the"))
+    credit(fig, TOOL + "\nCounties the tool marks low reliability in 2020-24 are left out. College towns: the tool's list of 71 counties"
+           " where students are a large share of renters.")
+    save(fig, "10-least-affordable.png")
+
+
+# ---------------------------------------------------------------- 11 renter workers' pay, peers
+def renter_pay():
+    cpi = json.loads((PROC / "cpi.json").read_text())
+    res = {name: P12.ftyr_change(c, cpi) for c, name in P12.NAMES.items()}
+    order = sorted(res, key=lambda n: res[n][2], reverse=True)
+    fig, ax = frame(left=0.13, top=0.74)
+    vals = [res[n][2] for n in order]
+    hbars(ax, order, vals, [BLUE if n == "Gwinnett" else MUTED for n in order], lambda v: f"{v:+.1f}%", 0.4)
+    ax.set_xlim(min(vals) - 5, max(vals) + 5)
+    g = res["Gwinnett"]
+    titleblock(fig, f"Pay for Gwinnett's full-time renter workers fell {-g[2]:.0f}% after inflation; in Cobb it rose {res['Cobb'][2]:.0f}%",
+               "Change in median earnings of renters who worked full time all year, 2005-09 to 2020-24, in 2024 dollars.\n"
+               f"Gwinnett: ${round(g[0], -2):,.0f} to ${round(g[1], -2):,.0f}, within about {g[3] * 1.645:.0f} points either way.")
+    credit(fig, "Source: U.S. Census Bureau, American Community Survey 5-year microdata (PUMS); BLS CPI-U. Full time: 35+ hours a week, 50+ weeks"
+           " a year.\nForsyth is left out because its 2005-09 microdata area also covers Dawson and Pickens counties.")
+    save(fig, "11-renter-pay.png")
+
+
 if __name__ == "__main__":
     use_house_style()
     share_line()
@@ -309,3 +349,5 @@ if __name__ == "__main__":
     permits_per_household()
     single_family_shift()
     income_vs_rent()
+    ranking()
+    renter_pay()
