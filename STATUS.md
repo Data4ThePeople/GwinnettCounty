@@ -83,3 +83,7 @@ None.
   income after inflation, older apartments, rent by year built, permits by
   year, permits per added household, single-family share change. Waiting on
   Eric's pick of charts.
+- 2026-10-21 Eric asked whether Gwinnett's renter income lagged. Yes:
+  +8.3% after inflation vs metro +15.8%, 12th of 15 metro counties with
+  10,000+ renters; rent +31.8%, and rent minus income is the largest of the
+  15. Added to research/owner-renter-gap.md. Waiting on Eric.

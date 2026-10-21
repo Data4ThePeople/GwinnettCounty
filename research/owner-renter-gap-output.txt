@@ -33,3 +33,38 @@ Counties with at least 100,000 households in 2020-24: rank of Gwinnett (1 = rent
       Hamilton County, Ohio                      40.8% (+/-1.1)  owners $102,690 renters $41,891
       Leon County, Florida                       40.8% (+/-2.0)  owners $100,607 renters $41,086
    Change in gap, Gwinnett +5.3 pts; rank 179 of 276 (1 = gap widened most)
+
+Renter median income and median gross rent, change after inflation, 2005-09 to 2020-24 (2024 dollars)
+29 Atlanta metro counties, sorted by renter income change; margin is 90%
+    1 Jasper      renters     859  renter median $ 47,638  income +44.5% (+/-62.1)  rent  +2.2%  rent minus income -42.2 pts
+    2 Haralson    renters   3,335  renter median $ 47,736  income +37.4% (+/-32.8)  rent  -0.7%  rent minus income -38.1 pts
+    3 Barrow      renters   6,619  renter median $ 53,986  income +35.4% (+/-22.4)  rent +12.4%  rent minus income -23.0 pts
+    4 Bartow      renters  11,084  renter median $ 54,527  income +32.6% (+/-17.0)  rent +10.9%  rent minus income -21.7 pts
+    5 Paulding    renters  11,538  renter median $ 68,750  income +30.7% (+/-12.3)  rent +38.3%  rent minus income  +7.6 pts
+    6 Pickens     renters   2,524  renter median $ 47,010  income +29.6% (+/-25.4)  rent +11.8%  rent minus income -17.9 pts
+    7 Dawson      renters   2,470  renter median $ 67,193  income +27.5% (+/-36.1)  rent +33.2%  rent minus income  +5.7 pts
+    8 Fulton      renters 211,288  renter median $ 62,287  income +25.5% (+/- 4.5)  rent +29.7%  rent minus income  +4.3 pts
+    9 Forsyth     renters  13,863  renter median $ 84,052  income +25.3% (+/-13.4)  rent +37.6%  rent minus income +12.3 pts
+   10 Rockdale    renters  10,473  renter median $ 58,783  income +24.5% (+/-19.2)  rent +15.2%  rent minus income  -9.2 pts
+   11 Cobb        renters  97,524  renter median $ 67,585  income +18.3% (+/- 4.5)  rent +27.6%  rent minus income  +9.3 pts
+   12 Fayette     renters   8,867  renter median $ 68,508  income +18.1% (+/-13.4)  rent +29.7%  rent minus income +11.5 pts
+   13 Lumpkin     renters   2,761  renter median $ 46,161  income +17.8% (+/-30.3)  rent  +5.1%  rent minus income -12.7 pts
+   14 Cherokee    renters  23,050  renter median $ 66,514  income +16.7% (+/-10.9)  rent +34.0%  rent minus income +17.3 pts
+   15 Douglas     renters  17,230  renter median $ 60,986  income +13.7% (+/-12.7)  rent +23.6%  rent minus income  +9.9 pts
+   16 Pike        renters   1,032  renter median $ 45,804  income +11.7% (+/-41.6)  rent -10.6%  rent minus income -22.3 pts
+   17 DeKalb      renters 118,371  renter median $ 54,357  income +11.0% (+/- 4.0)  rent +28.6%  rent minus income +17.6 pts
+   18 Morgan      renters   1,768  renter median $ 46,571  income +10.8% (+/-39.8)  rent  +9.5%  rent minus income  -1.3 pts
+   19 Coweta      renters  12,151  renter median $ 58,502  income  +9.3% (+/-12.6)  rent +15.3%  rent minus income  +6.0 pts
+   20 Newton      renters  10,808  renter median $ 47,862  income  +9.1% (+/-13.2)  rent +13.9%  rent minus income  +4.9 pts
+   21 Gwinnett    renters 110,314  renter median $ 60,473  income  +8.3% (+/- 4.5)  rent +31.8%  rent minus income +23.6 pts  <--
+   22 Meriwether  renters   2,264  renter median $ 33,952  income  +7.2% (+/-13.8)  rent  +2.5%  rent minus income  -4.7 pts
+   23 Carroll     renters  12,668  renter median $ 41,146  income  +4.3% (+/-11.8)  rent  +7.4%  rent minus income  +3.2 pts
+   24 Henry       renters  21,800  renter median $ 59,703  income  +4.0% (+/- 6.3)  rent +17.2%  rent minus income +13.2 pts
+   25 Walton      renters   7,412  renter median $ 44,800  income  +3.6% (+/-21.0)  rent  -0.7%  rent minus income  -4.3 pts
+   26 Spalding    renters   9,861  renter median $ 37,386  income  -2.9% (+/-12.8)  rent  +1.1%  rent minus income  +4.0 pts
+   27 Butts       renters   2,299  renter median $ 42,977  income  -3.1% (+/-35.1)  rent -15.3%  rent minus income -12.2 pts
+   28 Clayton     renters  48,159  renter median $ 45,679  income  -3.7% (+/- 5.8)  rent +14.6%  rent minus income +18.4 pts
+   29 Heard       renters   1,194  renter median $ 32,950  income -22.3% (+/-45.5)  rent -11.7%  rent minus income +10.6 pts
+   Counties with 10,000+ renter households: 15; Gwinnett's income change ranks 12 of 15; rent minus income ranks 1 (1 = rent outran income most)
+   Atlanta metro: renter median $58,686, income +15.8%, rent +27.5%
+   United States: renter median $52,966, income +15.9%

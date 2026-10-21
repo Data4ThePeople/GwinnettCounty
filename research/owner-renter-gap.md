@@ -45,3 +45,32 @@ means a wider gap. Margins are at 90%.
 - **Geography changes.** Connecticut reports planning regions in 2020-24 and
   counties in 2005-09; those places drop out of the change ranking. Puerto
   Rico is included in the rankings.
+
+## Did Gwinnett's renter income lag its neighbors?
+
+Yes. After inflation, the renter median rose 8.3% (plus or minus 4.5) from
+2005-09 to 2020-24. That is about half the rise for the Atlanta metro (15.8%)
+and the nation (15.9%). Rent rose 31.8%.
+
+Among the 15 metro counties with at least 10,000 renter households:
+
+| County | Renter income | Median gross rent |
+|---|---|---|
+| Fulton | +25.5% (+/-4.5) | +29.7% |
+| Cobb | +18.3% (+/-4.5) | +27.6% |
+| Cherokee | +16.7% (+/-10.9) | +34.0% |
+| DeKalb | +11.0% (+/-4.0) | +28.6% |
+| **Gwinnett** | **+8.3% (+/-4.5)** | **+31.8%** |
+| Henry | +4.0% (+/-6.3) | +17.2% |
+| Clayton | -3.7% (+/-5.8) | +14.6% |
+
+- **Income.** Gwinnett ranks 12th of 15. Its gain is clearly below Fulton's
+  and Cobb's, and too close to DeKalb's to call different. Henry and Clayton
+  did worse.
+- **Income and rent together.** Gwinnett's rent rose about as much as in the
+  higher-income counties, while its renter income rose about as little as in
+  the lower-income ones. The gap between the two, 23.6 percentage points, is
+  the largest of the 15.
+
+All 29 counties are in `research/owner-renter-gap-output.txt`. The smaller
+counties have margins too wide to rank.
