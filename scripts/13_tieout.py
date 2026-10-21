@@ -150,6 +150,24 @@ def main():
     check("F4", "older apartments within reach change, '-5,500'", -5500, inr[("apartments", "before 2000")], 50)
     big = max(add, key=add.get)
     check("F5", "largest single group is older houses (1 = yes)", 1, float(big == ("houses", "before 2000")), 0)
+    print("Post charts 05 and 06 (rents against what renters could afford)")
+    two = add[("houses", "before 2000")] + add[("apartments", "2010 or later")]
+    check("G1", "older houses + new apartments share of added (%), 'more than half'", 54, 100 * two / sum(add.values()), 1)
+    line = C9.ceiling("2024")
+    check("G2", "affordable rent 2020-24 ($), 'about $1,250'", 1250, line, 5)
+    for gid, (name, t, e), med, sh in (("G3", C9.NEW_TO_MARKET[0], 1990, 10), ("G4", C9.NEW_TO_MARKET[1], 1870, 8), ("G5", C9.NEW_TO_MARKET[2], 2500, 2)):
+        rows = C9.group_rows("2024", t, e)
+        check(gid, f"{name} median rent ($)", med, N7.wmedian(rows), 5)
+        check(gid + "s", f"{name} share within reach (%)", sh, N7.within(rows, line), 0.5)
+    oa = {v: N7.wmedian(C9.group_rows(v, "5+ unit apartments", "before 2000")) for v in ("2009", "2024")}
+    kk = cpi["2024"] / cpi["2009"]
+    check("G6", "older apartments median 2005-09 ($, nominal), 'about $860'", 860, oa["2009"], 5)
+    check("G7", "older apartments median 2020-24 ($)", 1660, oa["2024"], 5)
+    check("G8", "nominal rise (%)", 92, pct(oa["2009"], oa["2024"]), 0.5)
+    check("G9", "rise after inflation (%)", 31, pct(oa["2009"] * kk, oa["2024"]), 0.5)
+    check("G10", "affordable amount rise after inflation (%)", 8, pct(C9.ceiling("2009") * kk, line), 0.5)
+    check("G11", "gap 2005-09 ($, 2024 dollars), 'about $100'", 100, (oa["2009"] - C9.ceiling("2009")) * kk, 15)
+    check("G12", "gap 2020-24 ($), 'about $400'", 400, oa["2024"] - line, 15)
     print("Beat 5")
     h0, w0 = P12.load("2009", "135", cpi)
     h1, w1 = P12.load("2024", "135", cpi)

@@ -33,7 +33,8 @@ SLUG = "gwinnett-county-rents"
 # draft chart -> its name in the post, in order of appearance
 POST_ORDER = {"10-least-affordable.png": "01-least-affordable.png", "12-rentals-stacked.png": "02-rentals-within-reach.png",
               "09-income-vs-rent.png": "03-income-vs-rent.png", "13-growth-by-age.png": "04-growth-by-age.png",
-              "07-permits-per-household.png": "05-permits-per-household.png", "11-renter-pay.png": "06-renter-pay.png"}
+              "14-new-to-market-rents.png": "05-new-to-market-rents.png", "15-older-apartment-rents.png": "06-older-apartment-rents.png",
+              "11-renter-pay.png": "07-renter-pay.png"}
 FK = ["2009", "2014", "2019", "2024"]
 LABEL = {"2009": "2005-09", "2014": "2010-14", "2019": "2015-19", "2024": "2020-24"}
 G = "13135"
@@ -425,6 +426,75 @@ def growth_by_age():
     save(fig, "13-growth-by-age.png")
 
 
+# ---------------------------------------------------------------- 14 and 15 rent against what the median renter household could afford
+def group_rows(v, t, e):
+    """PUMS cash-rent renter households in Gwinnett for one building type ('single-family' or '5+ unit apartments')
+    and year-built group ('before 2000', '2000-09', '2010 or later')."""
+    era = {"older (pre-2000)": "before 2000", "newer (2000+)": "2000-09", "2000s": "2000-09", "newer (2010+)": "2010 or later"}
+    return [x for x in N7.records(v, "135") if x["type"] == t and era[x["era"]] == e]
+
+
+NEW_TO_MARKET = [("Houses built before 2000", "single-family", "before 2000"),
+                 ("Apartments built 2010 or later", "5+ unit apartments", "2010 or later"),
+                 ("Houses built 2010 or later", "single-family", "2010 or later")]
+
+
+def new_to_market_rents():
+    line = ceiling("2024")
+    vals, shares, names = [], [], []
+    for name, t, e in NEW_TO_MARKET:
+        rows = group_rows("2024", t, e)
+        vals.append(N7.wmedian(rows))
+        shares.append(N7.within(rows, line))
+        names.append(name)
+    fig, ax = frame(left=0.27, top=0.74)
+    y = list(range(len(vals)))[::-1]
+    ax.barh(y, vals, color=MUTED, height=0.55)
+    ax.set_yticks(y, names, color=INK, fontsize=11)
+    for yy, v, sh in zip(y, vals, shares):
+        ax.text(v + 30, yy, f"${round(v, -1):,.0f}  ({sh:.0f}% within reach)", va="center", ha="left", color=INK, fontsize=10)
+    ax.axvline(line, color=BLUE, lw=2)
+    ax.text(line - 25, len(vals) - 0.45, f"Affordable to the median\nrenter household: ${round(line, -1):,.0f}", color=BLUE, fontsize=10,
+            ha="right", va="bottom")
+    ax.set_xlim(0, max(vals) * 1.32)
+    ax.set_ylim(-0.6, len(vals) - 0.1)
+    ax.set_xticks([])
+    for side in ("left", "bottom"):
+        ax.spines[side].set_visible(False)
+    titleblock(fig, "The kinds of rentals Gwinnett added rent well above what renters could afford",
+               "Median gross rent a month, 2020-24, for the three groups that added the most rentals since 2005-09,\n"
+               "and the share of each within reach. Rounded to the nearest $10.\n" + REACH.replace(",\nthe", ", the"))
+    credit(fig, PUMS)
+    save(fig, "14-new-to-market-rents.png")
+
+
+def older_apartment_rents():
+    k = CPI["2024"] / CPI["2009"]
+    rent = {v: N7.wmedian(group_rows(v, "5+ unit apartments", "before 2000")) for v in ("2009", "2024")}
+    line = {v: ceiling(v) for v in ("2009", "2024")}
+    real = {"2009": (rent["2009"] * k, line["2009"] * k), "2024": (rent["2024"], line["2024"])}
+    fig, ax = frame(left=0.08, top=0.74)
+    xs = [0, 1]
+    wdt = 0.34
+    for i, (lab, col) in enumerate((("Median rent, apartments built before 2000", BLUE), ("Affordable to the median renter household", MUTED))):
+        vals = [real[v][i] for v in ("2009", "2024")]
+        ax.bar([x + (i - 0.5) * wdt for x in xs], vals, width=wdt - 0.02, color=col)
+        for x, v in zip(xs, vals):
+            ax.text(x + (i - 0.5) * wdt, v + 20, f"${round(v, -1):,.0f}", ha="center", va="bottom", color=INK, fontsize=10.5)
+    ax.set_xticks(xs, ["2005-09", "2020-24"], fontsize=11.5)
+    ax.set_ylim(0, max(max(r) for r in real.values()) * 1.18)
+    ax.set_yticks([])
+    ax.spines["left"].set_visible(False)
+    ch_rent, ch_line = pct(real["2009"][0], real["2024"][0]), pct(real["2009"][1], real["2024"][1])
+    titleblock(fig, f"Older apartment rents rose {ch_rent:.0f}%; what renters could afford rose {ch_line:.0f}%",
+               "Gwinnett County, monthly amounts in 2024 dollars (after inflation).\n"
+               "Blue: median gross rent in apartment buildings built before 2000. Gray: 30% of the median renter household's income after taxes.\n"
+               f"Before inflation, the median rent went from ${round(rent['2009'], -1):,.0f} to ${round(rent['2024'], -1):,.0f},"
+               f" up {pct(rent['2009'], rent['2024']):.0f}%. Rounded to the nearest $10.")
+    credit(fig, PUMS + "\nAffordable amount: the Rentals Within Reach tool's default, from published median renter income and the tool's tax grid.")
+    save(fig, "15-older-apartment-rents.png")
+
+
 if __name__ == "__main__":
     use_house_style()
     share_line()
@@ -440,6 +510,8 @@ if __name__ == "__main__":
     renter_pay()
     stacked()
     growth_by_age()
+    new_to_market_rents()
+    older_apartment_rents()
     out = ROOT / "posts" / SLUG / "images"
     out.mkdir(parents=True, exist_ok=True)
     for src, dst in POST_ORDER.items():

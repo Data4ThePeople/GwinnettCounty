@@ -45,21 +45,28 @@ After inflation, Gwinnett's median rent rose 32% from 2005-2009 to 2020-2024, wh
 
 Home prices rose fast in Gwinnett, but they rose about as fast in Cobb County, where renters' income rose 18%.
 
-## Not a story of high-priced new apartments
+## New rentals came in out of reach
 
-Houses account for more than half of the rentals Gwinnett added over this period, most of them older houses that became rentals. Apartments built since 2010 added about 11,000, at a median rent of $1,870, 3% above the county's. The rentals within reach were lost mostly in older apartments.
+Gwinnett added about 41,000 rentals over this period. Two kinds account for more than half of them: about 11,300 older houses, built before 2000, that became rentals, and about 11,000 apartments built since 2010.
 
 ![Two-panel bar chart of the change in Gwinnett County rentals with a cash rent from 2005-2009 to 2020-2024, by building type and year built. Change in all rentals: houses built before 2000 +11,300, houses built 2000-2009 +3,800, houses built 2010 or later +6,700, apartments built before 2000 +1,200, apartments built 2000-2009 +2,300, apartments built 2010 or later +11,000, other +4,500. Change in rentals within reach: +700, +200, +200, -5,500, -800, +900 and +200.](images/04-growth-by-age.png)
 *Source: Census Bureau, American Community Survey 5-year microdata. Apartments are buildings with 5 or more units. Year built is reported by the household.*
 
-Houses went from 31% of Gwinnett's rentals in 2005-2009 to 39.5% in 2020-2024. And Gwinnett permitted fewer homes for each new household than most of its neighbors.
+Neither was priced for the median renter household, which could afford about $1,250 a month at 30% of its income. In 2020-2024, older houses rented for a median of about $1,990 and new apartments for $1,870. About 10% of the older houses and 8% of the new apartments were within reach. Houses built since 2010 rented for more still.
 
-![Bar chart of housing units permitted from 2007 to 2021 for each household added from 2005-2009 to 2020-2024, in eight Atlanta-area counties. DeKalb 1.86, Forsyth 1.03, Fulton 0.92, Cherokee 0.91, Cobb 0.80, Henry 0.76, Gwinnett 0.65 and Clayton 0.42.](images/05-permits-per-household.png)
-*Source: Census Bureau, Building Permits Survey and American Community Survey 5-year estimates. Permits are approvals to build, not finished homes.*
+![Bar chart of median monthly rent in Gwinnett County in 2020-2024, against the $1,250 the median renter household could afford. Houses built before 2000 $1,990, with 10% within reach. Apartments built 2010 or later $1,870, with 8% within reach. Houses built 2010 or later $2,500, with 2% within reach.](images/05-new-to-market-rents.png)
+*Source: Census Bureau, American Community Survey 5-year microdata. Rents include utilities.*
+
+That does not explain why the number of rentals within reach fell. The answer is in older apartments, built before 2000. Gwinnett had about the same number of them in both periods, but their median rent went from about $860 to $1,660, up 92%. After inflation, that is a 31% rise, while the amount the median renter household could afford rose 8%. In 2005-2009, the median older apartment rented for about $100 more than that amount. By 2020-2024, it was about $400 more.
+
+![Bar chart of Gwinnett County amounts in 2024 dollars. In 2005-2009, the median rent for apartments built before 2000 was $1,260, and the median renter household could afford $1,160. In 2020-2024, the median rent was $1,660, and the household could afford $1,250.](images/06-older-apartment-rents.png)
+*Source: Census Bureau, American Community Survey 5-year microdata; Data 4 The People, Rentals Within Reach. Amounts in 2024 dollars.*
+
+In other words, the rentals new to the market came in out of reach, and the older apartments that used to be close to reach rose far faster than renters' income.
 
 ## Renters' pay did not keep up
 
-Gwinnett's renter households earned more over this period mostly because the households changed: more members worked, more worked full time, and more householders were older or had college degrees. Pay itself did not rise. After inflation, the median renter who worked full time all year earned about $46,100 in 2005-2009 and $44,600 in 2020-2024. In Cobb, that pay rose 7%.
+Why did renter income not keep up? For the same kind of renter household (the same number of workers, and a householder of the same age and education), income fell about 3% after inflation. Renter households as a whole earned more only because the households changed: more members worked, more worked full time, and more householders were older or had college degrees. Pay itself did not rise. After inflation, the median renter who worked full time all year earned about $46,100 in 2005-2009 and $44,600 in 2020-2024. In Cobb, that pay rose 7%.
 
 ![Bar chart of the change in median earnings of renters who worked full time all year, 2005-2009 to 2020-2024, after inflation. Fulton up 21.2%, DeKalb up 9.9%, Cobb up 6.7%, Gwinnett down 3.3%, Henry down 3.4%, Cherokee down 6.0% and Clayton down 9.2%.](images/06-renter-pay.png)
 *Source: Census Bureau, American Community Survey 5-year microdata; BLS consumer price index. Gwinnett's change has a margin of about 5 points either way.*
@@ -82,7 +89,6 @@ Renter pay also fell in Henry, Cherokee and Clayton. In Gwinnett, rents rose abo
 
 - **Shares within reach** come from our Rentals Within Reach tool, built from Census Bureau American Community Survey 5-year estimates for 2005-2009, 2010-2014, 2015-2019 and 2020-2024. Counties with fewer than 1,000 rentals, or with unreliable estimates, are left out. College counties are the tool's 71 counties where 15% or more of residents age 3 and over are enrolled in college.
 - **Rent and income changes** use the published median gross rent and median renter household income, put in 2024 dollars with the consumer price index.
-- **Rentals by building type and year built, and renter pay,** come from the survey's microdata (individual household records) for Gwinnett and six neighboring counties. Forsyth County is left out of these because its 2005-2009 records also cover Dawson and Pickens counties. Full time means 35 or more hours a week for 50 or more weeks a year.
-- **Permits** come from the Census Bureau's Building Permits Survey.
+- **Rentals by building type and year built, rents of older apartments, and renter pay,** come from the survey's microdata (individual household records) for Gwinnett and six neighboring counties. Forsyth County is left out of these because its 2005-2009 records also cover Dawson and Pickens counties. Full time means 35 or more hours a week for 50 or more weeks a year.
 - **Home prices** come from the Federal Housing Finance Agency's county house price index.
 - An independent check recomputed every number from the raw data. The code and data notes are on [GitHub](https://github.com/Data4ThePeople/GwinnettCounty).

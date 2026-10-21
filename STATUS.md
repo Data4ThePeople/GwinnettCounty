@@ -138,3 +138,9 @@ None.
   extended (F1-F5): group changes add to the microdata total; 60 of 60 pass.
   Chart notes the tool's counts (+41,400 rentals, -5,500 within reach) vs
   microdata (+40,800, -4,200).
+- 2026-10-21 Eric reworked beat 4 around older apartments (median rent +92%
+  nominal, +31% after inflation vs +8% for what renters could afford). New
+  charts 14 (new-to-market rents vs the $1,250 line) and 15 (older apartment
+  rent vs affordable amount, two periods); permits chart dropped from the
+  post. Beat 5 now opens with like-for-like income -3%. Post has 7 charts.
+  Tie-out extended (G1-G12): 75 of 75 pass.

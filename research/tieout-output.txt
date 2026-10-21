@@ -50,6 +50,22 @@ Chart 04 in the post (growth by building type and year built)
    PASS  F3   apartments built 2010+ added, 'about 11,000'                   claimed  11,000.00  computed  10,959.00
    PASS  F4   older apartments within reach change, '-5,500'                 claimed  -5,500.00  computed  -5,516.00
    PASS  F5   largest single group is older houses (1 = yes)                 claimed       1.00  computed       1.00
+Post charts 05 and 06 (rents against what renters could afford)
+   PASS  G1   older houses + new apartments share of added (%), 'more than half' claimed      54.00  computed      54.53
+   PASS  G2   affordable rent 2020-24 ($), 'about $1,250'                    claimed   1,250.00  computed   1,253.28
+   PASS  G3   Houses built before 2000 median rent ($)                       claimed   1,990.00  computed   1,994.94
+   PASS  G3s  Houses built before 2000 share within reach (%)                claimed      10.00  computed      10.21
+   PASS  G4   Apartments built 2010 or later median rent ($)                 claimed   1,870.00  computed   1,870.00
+   PASS  G4s  Apartments built 2010 or later share within reach (%)          claimed       8.00  computed       7.94
+   PASS  G5   Houses built 2010 or later median rent ($)                     claimed   2,500.00  computed   2,496.32
+   PASS  G5s  Houses built 2010 or later share within reach (%)              claimed       2.00  computed       2.38
+   PASS  G6   older apartments median 2005-09 ($, nominal), 'about $860'     claimed     860.00  computed     864.71
+   PASS  G7   older apartments median 2020-24 ($)                            claimed   1,660.00  computed   1,660.23
+   PASS  G8   nominal rise (%)                                               claimed      92.00  computed      92.00
+   PASS  G9   rise after inflation (%)                                       claimed      31.00  computed      31.31
+   PASS  G10  affordable amount rise after inflation (%)                     claimed       8.00  computed       8.29
+   PASS  G11  gap 2005-09 ($, 2024 dollars), 'about $100'                    claimed     100.00  computed     107.00
+   PASS  G12  gap 2020-24 ($), 'about $400'                                  claimed     400.00  computed     406.95
 Beat 5
    INFO  PUMS renter median change +6.8% (the text's 8% is the published table, C2)
    PASS  E1   full-time year-round pay change (%)                            claimed      -3.00  computed      -3.28
@@ -84,4 +100,4 @@ Words (checked by hand against the results above and the memos)
    FIXED  beat 5 and chart 11 'fell 3%': -3.3% is inside its 90% margin of about 5 points, so the text now says pay 'did not rise' (flagged by the independent tie-out).
    FIXED  beat 5 '34% to 38%' for households with 2+ workers: 37.46% rounds to 37 (E9); 'the same rise' as Cobb is now 'about the same rise' (E7, within the margin of about 0.02).
 
-60 of 60 number checks pass.
+75 of 75 number checks pass.
