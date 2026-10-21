@@ -363,3 +363,29 @@ counties and the nation. Cached in `data/raw/acs/tenure_income_*.json`.
   of two estimates (renters are not a subset of owners), with 90% MOEs.
 
 **License.** Public domain.
+
+## 10. Home prices: ACS B25077 and the FHFA county house price index
+
+**ACS B25077.** Median value of owner-occupied homes, as estimated by the
+owner. Census API, `2009/acs/acs5` and `2024/acs/acs5`, every county. Cached in
+`data/raw/acs/B25077_*_county.json`. Brought to 2024 dollars with CPI-U.
+
+**FHFA house price index for counties.** All-transactions index (sales and
+appraisals on mortgages bought or guaranteed by Fannie Mae and Freddie Mac),
+annual, nominal, not seasonally adjusted. From
+`https://www.fhfa.gov/hpi/download/annual/hpi_at_county.csv`, which is in fact
+an Excel file despite the `.csv` name; saved as
+`data/raw/fhfa/hpi_at_county.xlsx` (last updated March 31, 2026). The header
+row is the sixth row.
+
+**Quirks.**
+- FHFA calls these county indexes developmental and leaves a period (".") where
+  the sample is too small. Counties missing any year in 2005-2009 or 2020-2024
+  are left out.
+- We compare the average of 2005-2009 with the average of 2020-2024 to match
+  the ACS periods. The FHFA change is not adjusted for inflation; a common
+  factor would not change correlations or ranks.
+- The index measures price change for the same homes; ACS values also change
+  as the mix of owned homes changes.
+
+**License.** FHFA data are public.

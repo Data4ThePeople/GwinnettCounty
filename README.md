@@ -30,6 +30,8 @@ rentals priced within reach of the median renter household fell from 25.5% in
 - `research/owner-renter-gap.md`: how far renters' income sits below
   homeowners' in Gwinnett, its neighbors and large counties nationwide, with
   `scripts/08_owner_renter_gap.py`.
+- `research/values-vs-rents.md`: whether home price growth explains rent
+  growth across counties, with `scripts/10_values_vs_rents.py`.
 - `research/investor-sources.md`: published research on investor ownership
   of single-family homes in Gwinnett and metro Atlanta.
 - `charts/`: draft charts, drawn by `scripts/09_charts.py` with the house
@@ -47,7 +49,8 @@ Its `DATASETS.md` lists every limit of those data. The suburb and city
 tests also use the NCHS 2023 Urban-Rural Classification Scheme for Counties,
 the OMB July 2023 metro delineation, ACS 5-year place-level tables B25063,
 B25118 and B25119, ACS 5-year county tables on housing stock and renters, ACS
-5-year microdata (PUMS), and the Census Building Permits Survey.
+5-year microdata (PUMS), the Census Building Permits Survey, and the FHFA
+house price index for counties.
 
 ## How to rebuild
 
@@ -64,6 +67,7 @@ python scripts/06_pums_turnover.py
 python scripts/07_new_rentals.py
 python scripts/08_owner_renter_gap.py
 python scripts/09_charts.py
+python scripts/10_values_vs_rents.py
 ```
 
 The NCHS and OMB files go in `data/raw/nchs/` and `data/raw/omb/` (links in

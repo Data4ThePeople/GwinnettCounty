@@ -93,3 +93,9 @@ None.
   equal-growth line (+23.6 pts vs Clayton +18.3, DeKalb +17.6, Cherokee
   +17.3), but within margins; against a fitted trend it is level with
   Forsyth and Cherokee. Told Eric "outlier" overstates it.
+- 2026-10-21 Eric asked whether a stronger housing market explains it.
+  Partly (research/values-vs-rents.md): price vs rent change r = 0.60 ACS,
+  0.66 FHFA across 655 large counties; Gwinnett's prices 6th (ACS) / 3rd
+  (FHFA) of 15 metro counties; its rent is 1.0-1.4 SD above the fit. Cobb and
+  Cherokee had the same FHFA rise and similar rent rises, but renter income
+  +17-18% vs Gwinnett +8%. Waiting on Eric.

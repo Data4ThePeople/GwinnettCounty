@@ -1,0 +1,30 @@
+Home price change vs rent change, 2005-09 to 2020-24. ACS values and rents after inflation; FHFA nominal.
+
+ACS median home value: 655 counties with 10,000+ renter households
+   correlation with rent change r = 0.60 (rank correlation 0.52); fit: rent change = 8.3 + 0.30 x price change
+   Gwinnett: price +34.1%, rent +31.8%, predicted rent +18.6%, residual +13.2 pts = +1.44 SD; 55 of 655 counties sit further above the fit
+   renter income change vs price change r = 0.48
+
+FHFA house price index: 654 counties with 10,000+ renter households
+   correlation with rent change r = 0.66 (rank correlation 0.59); fit: rent change = -1.6 + 0.30 x price change
+   Gwinnett: price +82.4%, rent +31.8%, predicted rent +23.1%, residual +8.7 pts = +1.02 SD; 105 of 654 counties sit further above the fit
+   renter income change vs price change r = 0.52
+
+15 Atlanta-metro counties with 10,000+ renter households, sorted by ACS home value change
+    1 Paulding   home value +49.7%  FHFA  +77.5% (rank  4)  rent +38.3%  renter income +30.7%
+    2 Cherokee   home value +48.9%  FHFA  +83.9% (rank  1)  rent +34.0%  renter income +16.7%
+    3 Coweta     home value +39.9%  FHFA  +65.7% (rank 10)  rent +15.3%  renter income  +9.3%
+    4 Forsyth    home value +36.8%  FHFA  +73.5% (rank  5)  rent +37.6%  renter income +25.3%
+    5 Bartow     home value +35.1%  FHFA  +70.3% (rank  8)  rent +10.9%  renter income +32.6%
+    6 Gwinnett   home value +34.1%  FHFA  +82.4% (rank  3)  rent +31.8%  renter income  +8.3%  <--
+    7 Cobb       home value +32.6%  FHFA  +83.3% (rank  2)  rent +27.6%  renter income +18.3%
+    8 Douglas    home value +29.7%  FHFA  +66.5% (rank  9)  rent +23.6%  renter income +13.7%
+    9 DeKalb     home value +27.3%  FHFA  +63.8% (rank 13)  rent +28.6%  renter income +11.0%
+   10 Carroll    home value +27.0%  FHFA  +64.0% (rank 12)  rent  +7.4%  renter income  +4.3%
+   11 Fulton     home value +25.1%  FHFA  +72.6% (rank  7)  rent +29.7%  renter income +25.5%
+   12 Henry      home value +25.0%  FHFA  +58.2% (rank 15)  rent +17.2%  renter income  +4.0%
+   13 Newton     home value +20.8%  FHFA  +64.8% (rank 11)  rent +13.9%  renter income  +9.1%
+   14 Rockdale   home value +19.6%  FHFA  +60.6% (rank 14)  rent +15.2%  renter income +24.5%
+   15 Clayton    home value +17.2%  FHFA  +72.6% (rank  6)  rent +14.6%  renter income  -3.7%
+   metro ACS home value vs rent: r = 0.59
+   metro FHFA vs rent: r = 0.65
