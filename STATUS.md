@@ -1,0 +1,48 @@
+# Status
+
+Project: GwinnettCounty
+Process: ~/.claude/d4tp-process/PROCESS.md
+
+## Current
+
+Post: none yet
+Step: 1
+Since: 2026-10-21
+
+## Steps
+
+| Step | What | Confirmed | Notes |
+|---|---|---|---|
+| 1  | Exploration and analysis | | |
+| 2a | Draft with brackets resolved | | |
+| 2b | Eric's edit, Claude's look-over | | |
+| 2c | Slice markup | | |
+| 2d | Hero 1680x1080 + alt text | | |
+| 2e | SEO | | |
+| 2f | Pushed to Prismic (draft) | | |
+| 2g | Mailchimp teaser | | |
+
+## Stale
+
+None.
+
+## Log
+
+- 2026-10-21 Step 1 opened. Topic: a county spotlight in the style of the
+  Dawson County post, on the least affordable rental county with the largest
+  decline. Eric's rule: among the top 10 least affordable counties in
+  2020-2024 with at least 1,000 rentals, the one with the largest change since
+  2005-2009, using the Rentals Within Reach tool (AffordableHousing project).
+- 2026-10-21 Selection carried over from a session run in the AffordableHousing
+  project: research/candidate-selection.md (the rules, the candidates, why
+  Lincoln County NM was set aside, why Gwinnett, the Atlanta pattern, open
+  questions) and scripts/01_candidate_selection.py, which reproduces every
+  number from the tool's processed data. By the rule as written Lincoln
+  County NM has the largest decline (-72%), but its 2005-2009 starting point
+  is marked low reliability and its decline comes from renter incomes, not
+  rents. Eric chose Gwinnett County GA: rank 3 of 1,987 (rank 1 with college
+  counties left out), 25.5% to 10.5% (-59%), renter median margin 3% in every
+  period, rent up 32% after inflation against renter income up 8%. Nothing in
+  AffordableHousing was changed.
+- 2026-10-21 Eric is moving this work to a new PyCharm window. Next: plan mode
+  for the exploration, then DATASETS.md before any new data or chart.

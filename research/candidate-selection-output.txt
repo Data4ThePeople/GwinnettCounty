@@ -1,0 +1,109 @@
+CPI-U, 2009 to 2024: +46%
+Ranked counties (1,000+ cash-rent units, reliable in 2020-2024): 1987
+
+Top 10 least affordable, 2020-2024, college counties included (page default)
+  * = the tool marks that period low reliability
+  Whitman County, WA         college   8.0    8.7   13.0    9.8    +1.8 pts   +23%
+  Benton County, OR          college  14.5    7.5   13.5   10.5    -4.1 pts   -28%
+  Gwinnett County, GA                 25.5   18.1   21.5   10.5   -15.0 pts   -59%
+  Clayton County, GA                  19.5   11.0   23.7   11.0    -8.5 pts   -44%
+  Watauga County, NC         college   5.8    4.9    8.8   11.6    +5.7 pts   +98%
+  Lincoln County, NM                  42.1*  39.6   31.8*  11.8   -30.3 pts   -72%
+  Lincoln Parish, LA         college  10.6   13.8   18.1   12.5    +1.9 pts   +18%
+  Champaign County, IL       college  13.5   11.6   15.3   13.1    -0.5 pts    -3%
+  Monroe County, IN          college   8.3    7.3   14.1   13.1    +4.8 pts   +58%
+  Oktibbeha County, MS       college   5.2   15.1    9.3   14.0    +8.8 pts  +169%
+  Largest decline: Lincoln County, NM
+
+Top 10 least affordable, 2020-2024, college counties left out
+  * = the tool marks that period low reliability
+  Gwinnett County, GA                 25.5   18.1   21.5   10.5   -15.0 pts   -59%
+  Clayton County, GA                  19.5   11.0   23.7   11.0    -8.5 pts   -44%
+  Lincoln County, NM                  42.1*  39.6   31.8*  11.8   -30.3 pts   -72%
+  DeKalb County, GA                   20.7   17.0   22.7   14.0    -6.7 pts   -32%
+  Broward County, FL                  19.1   15.3   16.0   14.2    -4.9 pts   -25%
+  Dallas County, AL                   20.7   17.2   18.6   14.4    -6.3 pts   -31%
+  Tunica County, MS                   21.5*  14.3   43.7*  15.2    -6.3 pts   -29%
+  Boulder County, CO                  18.3   16.5   17.6   15.2    -3.1 pts   -17%
+  Osceola County, FL                  16.6   13.3   14.4   15.3    -1.3 pts    -8%
+  Kendall County, TX                  34.6   29.6   44.6   15.4   -19.2 pts   -56%
+  Largest decline: Lincoln County, NM
+
+Candidate detail (renter median income and median gross rent, each period in its own final-year dollars)
+
+  Gwinnett County, GA (rank 3 of 1987)
+    share:   2005-09 25.5  2010-14 18.1  2015-19 21.5  2020-24 10.5
+    renter median margin as % of estimate:   3%   3%   3%   3%
+    renter households: 67,396, 87,899, 98,952, 110,314
+    renter median $38,202 to $60,473 (+8% after inflation)
+    median gross rent $939 to $1,810 (+93%; +32% after inflation)
+    2020-24 renter income held fixed after inflation: 34.8% in 2005-09, 10.5% in 2020-24
+
+  Lincoln County, NM (rank 6 of 1987)
+    share:   2005-09 42.1  2010-14 39.6  2015-19 31.8  2020-24 11.8
+    renter median margin as % of estimate:  28%  13%  33%  21%
+    renter households: 1,751, 1,937, 1,470, 2,319
+    renter median $26,979 to $26,113 (-34% after inflation)
+    median gross rent $645 to $956 (+48%; +1% after inflation)
+    2020-24 renter income held fixed after inflation: 24.1% in 2005-09, 11.8% in 2020-24
+
+  Kendall County, TX (rank 19 of 1987)
+    share:   2005-09 34.6  2010-14 29.6  2015-19 44.6  2020-24 15.4
+    renter median margin as % of estimate:  10%  11%  16%   7%
+    renter households: 2,686, 3,565, 3,690, 3,638
+    renter median $34,031 to $51,210 (+3% after inflation)
+    median gross rent $864 to $1,606 (+86%; +27% after inflation)
+    2020-24 renter income held fixed after inflation: 37.4% in 2005-09, 15.4% in 2020-24
+
+  Clayton County, GA (rank 4 of 1987)
+    share:   2005-09 19.5  2010-14 11.0  2015-19 23.7  2020-24 11.0
+    renter median margin as % of estimate:   3%   4%   3%   5%
+    renter households: 34,062, 40,357, 47,601, 48,159
+    renter median $32,451 to $45,679 (-4% after inflation)
+    median gross rent $855 to $1,433 (+68%; +15% after inflation)
+    2020-24 renter income held fixed after inflation: 15.9% in 2005-09, 11.0% in 2020-24
+
+  DeKalb County, GA (rank 11 of 1987)
+    share:   2005-09 20.7  2010-14 17.0  2015-19 22.7  2020-24 14.0
+    renter median margin as % of estimate:   2%   3%   2%   3%
+    renter households: 109,400, 116,336, 128,114, 118,371
+    renter median $33,485 to $54,357 (+11% after inflation)
+    median gross rent $900 to $1,692 (+88%; +29% after inflation)
+    2020-24 renter income held fixed after inflation: 30.6% in 2005-09, 14.0% in 2020-24
+
+  Broward County, FL (rank 13 of 1987)
+    share:   2005-09 19.1  2010-14 15.3  2015-19 16.0  2020-24 14.2
+    renter median margin as % of estimate:   2%   2%   2%   2%
+    renter households: 200,833, 236,902, 261,368, 274,613
+    renter median $37,154 to $57,896 (+7% after inflation)
+    median gross rent $1,111 to $1,907 (+72%; +17% after inflation)
+    2020-24 renter income held fixed after inflation: 23.7% in 2005-09, 14.2% in 2020-24
+
+  Dallas County, AL (rank 15 of 1987)
+    share:   2005-09 20.7  2010-14 17.2  2015-19 18.6  2020-24 14.4
+    renter median margin as % of estimate:  10%  13%  13%  12%
+    renter households: 6,611, 6,367, 6,469, 5,769
+    renter median $14,317 to $20,336 (-3% after inflation)
+    median gross rent $531 to $733 (+38%; -6% after inflation)
+    2020-24 renter income held fixed after inflation: 20.0% in 2005-09, 14.4% in 2020-24
+
+  Tunica County, MS (rank 16 of 1987)
+    share:   2005-09 21.5  2010-14 14.3  2015-19 43.7  2020-24 15.2
+    renter median margin as % of estimate:  39%  19%  27%  13%
+    renter households: 2,017, 2,265, 2,349, 2,298
+    renter median $21,504 to $33,516 (+7% after inflation)
+    median gross rent $651 to $977 (+50%; +3% after inflation)
+    2020-24 renter income held fixed after inflation: 24.1% in 2005-09, 15.2% in 2020-24
+
+Core Atlanta metro counties
+  Fulton     26.4  21.0  28.1  24.6     -7%  rank  210  renter households 211,288
+  DeKalb     20.7  17.0  22.7  14.0    -32%  rank   11  renter households 118,371
+  Cobb       29.8  23.9  34.5  23.9    -20%  rank  183  renter households 97,524
+  Gwinnett   25.5  18.1  21.5  10.5    -59%  rank    3  renter households 110,314
+  Clayton    19.5  11.0  23.7  11.0    -44%  rank    4  renter households 48,159
+  Henry      23.8  23.3  29.2  18.2    -23%  rank   48  renter households 21,800
+  Rockdale   15.4  14.2  31.2  31.8   +107%  rank  514  renter households 10,473
+  Douglas    33.6  22.8  33.0  28.7    -15%  rank  354  renter households 17,230
+  Fayette    23.5  29.5  34.1  23.0     -2%  rank  157  renter households 8,867
+  Forsyth    36.7  23.0  35.8  31.4    -14%  rank  490  renter households 13,863
+  Cherokee   34.4  35.0  32.4  22.6    -34%  rank  143  renter households 23,050
