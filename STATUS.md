@@ -87,3 +87,9 @@ None.
   +8.3% after inflation vs metro +15.8%, 12th of 15 metro counties with
   10,000+ renters; rent +31.8%, and rent minus income is the largest of the
   15. Added to research/owner-renter-gap.md. Waiting on Eric.
+- 2026-10-21 Eric asked for a scatter of renter income change vs rent change
+  to show Gwinnett as an outlier. Drawn as charts/09-income-vs-rent.png (15
+  metro counties with 10,000+ renters). Gwinnett is farthest above the
+  equal-growth line (+23.6 pts vs Clayton +18.3, DeKalb +17.6, Cherokee
+  +17.3), but within margins; against a fitted trend it is level with
+  Forsyth and Cherokee. Told Eric "outlier" overstates it.

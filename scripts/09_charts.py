@@ -23,6 +23,7 @@ T0 = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(T0)
 W5 = import_module("05_why_rents")
 N7 = import_module("07_new_rentals")
+G8 = import_module("08_owner_renter_gap")
 
 CHARTS = ROOT / "charts"
 FK = ["2009", "2014", "2019", "2024"]
@@ -256,6 +257,47 @@ def single_family_shift():
     save(fig, "08-single-family-rentals.png")
 
 
+# ---------------------------------------------------------------- 09 rent change against renter income change, metro
+# label offsets in points, placement only
+NUDGE = {"Newton": (-7, -9), "Coweta": (6, 4), "Fulton": (7, -5), "Forsyth": (-8, 4), "Cobb": (7, -9), "DeKalb": (7, -9)}
+
+
+def income_vs_rent():
+    big = [o for o in G8.metro_changes() if o[4] >= 10000]
+    fig, ax = frame(top=0.76, bottom=0.12, left=0.09, right=0.95, h=7)
+    lo, hi = -10, 45
+    ax.plot([lo, hi], [lo, hi], color=MUTED, lw=1, ls=(0, (4, 4)))
+    ax.text(38.5, 33, "Rent and income\nrose at the same rate", color=INK_DIM, fontsize=9.5, ha="left", va="top", rotation=0)
+    for ch, m, r1, mr, n, name, f in big:
+        me = f == "13135"
+        ax.scatter(ch, mr, s=90 if me else 55, color=BLUE if me else MUTED, zorder=3, edgecolors="#181A1B", linewidths=1.5)
+        dx, dy = NUDGE.get(name, (7, 3))
+        ax.annotate(f"{name}\nincome {ch:+.0f}%, rent {mr:+.0f}%" if me else name, (ch, mr), xytext=(dx, dy), textcoords="offset points",
+                    ha="right" if dx < 0 else "left", va="center" if not me else "bottom", color=BLUE if me else INK,
+                    fontsize=11 if me else 9.5, fontweight="bold" if me else "normal")
+    ax.axhline(0, color=GRID, lw=1)
+    ax.axvline(0, color=GRID, lw=1)
+    ax.set_xlim(lo, hi)
+    ax.set_ylim(0, hi)
+    ax.set_yticks(range(10, hi + 1, 10))
+    fmt = matplotlib.ticker.FuncFormatter(lambda v, _: f"{v:+.0f}%")
+    ax.xaxis.set_major_formatter(fmt)
+    ax.yaxis.set_major_formatter(fmt)
+    ax.set_xlabel("Change in median renter household income", color=INK_DIM, fontsize=10)
+    ax.set_ylabel("Change in median gross rent", color=INK_DIM, fontsize=10)
+    ax.grid(True)
+    g = next(o for o in big if o[6] == "13135")
+    rank = sorted(big, key=lambda o: o[3] - o[0], reverse=True).index(g) + 1
+    assert rank == 1
+    titleblock(fig, "Among large Atlanta-area counties, Gwinnett's rent outran renter income the most",
+               f"Change from 2005-09 to 2020-24 after inflation, the {len(big)} Atlanta-metro counties with at least 10,000 renter households.\n"
+               f"Points above the dashed line saw rent rise faster than renter income. Gwinnett sits farthest above it,\n"
+               f"but its income change has a margin of about {g[1]:.0f} points either way, so its lead over the next counties is uncertain.")
+    credit(fig, ACS + " (B25119), median gross rent via the Rentals Within Reach tool's files; BLS CPI-U.\n"
+           "Counties in the Atlanta metro as defined by OMB in July 2023.")
+    save(fig, "09-income-vs-rent.png")
+
+
 if __name__ == "__main__":
     use_house_style()
     share_line()
@@ -266,3 +308,4 @@ if __name__ == "__main__":
     permits_by_year()
     permits_per_household()
     single_family_shift()
+    income_vs_rent()

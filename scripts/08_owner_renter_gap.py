@@ -52,6 +52,29 @@ def pull(v, geo):
     return out
 
 
+def metro_changes(D=None, k=None):
+    """(renter income change %, its 90% margin in points, 2020-24 renter median, rent change %, renters, name, fips)
+    for the 29 Atlanta metro counties, 2005-09 to 2020-24, after inflation. Also used by 09_charts.py."""
+    if D is None:
+        cpi = json.loads((PROC / "cpi.json").read_text())
+        D = {v: pull(v, "county:*") for v in FK}
+        k = {v: cpi["2024"] / cpi[v] for v in FK}
+    H = json.loads((PROC / "harmonized.json").read_text())
+    l1 = pd.read_excel(ROOT / "data" / "raw" / "omb" / "list1_2023.xlsx", header=2, dtype=str)
+    metro = l1[l1["CBSA Code"] == "12060"]
+    fips = sorted(metro["FIPS State Code"] + metro["FIPS County Code"])
+    assert len(fips) == 29
+    out = []
+    for f in fips:
+        a, b = D["2009"][f], D["2024"][f]
+        r0, r1 = a["rent"] * k["2009"], b["rent"] * k["2024"]
+        m = math.sqrt((a["rent_m"] * k["2009"]) ** 2 + (b["rent_m"] * k["2024"]) ** 2)
+        g = H["units"][f]["f"]
+        mr = pct(g["2009"]["mr"] * k["2009"], g["2024"]["mr"] * k["2024"])
+        out.append((pct(r0, r1), 100 * m / r0, r1, mr, b["renters"], b["name"].split(" County")[0], f))
+    return out
+
+
 def pull_metro(v):
     rows = census(f"{v}/acs/acs5", {"get": GET + ",B25064_001E", "for": "metropolitan statistical area/micropolitan statistical area:12060"},
                   RAW / f"tenure_income_{v}_atlanta_metro.json")
@@ -105,21 +128,9 @@ def main():
 
 
     # ---------- renter income growth across the Atlanta metro ----------
-    H = json.loads((PROC / "harmonized.json").read_text())
-    l1 = pd.read_excel(ROOT / "data" / "raw" / "omb" / "list1_2023.xlsx", header=2, dtype=str)
-    metro = l1[l1["CBSA Code"] == "12060"]
-    fips = sorted(metro["FIPS State Code"] + metro["FIPS County Code"])
-    assert len(fips) == 29
     print("\nRenter median income and median gross rent, change after inflation, 2005-09 to 2020-24 (2024 dollars)")
     print("29 Atlanta metro counties, sorted by renter income change; margin is 90%")
-    out = []
-    for f in fips:
-        a, b = D["2009"][f], D["2024"][f]
-        r0, r1 = a["rent"] * k["2009"], b["rent"] * k["2024"]
-        m = math.sqrt((a["rent_m"] * k["2009"]) ** 2 + (b["rent_m"] * k["2024"]) ** 2)
-        g = H["units"][f]["f"]
-        mr = pct(g["2009"]["mr"] * k["2009"], g["2024"]["mr"] * k["2024"])
-        out.append((pct(r0, r1), 100 * m / r0, r1, mr, b["renters"], b["name"].split(" County")[0], f))
+    out = metro_changes(D, k)
     for i, (ch, m, r1, mr, n, name, f) in enumerate(sorted(out, reverse=True), 1):
         print(f"   {i:2d} {name:11s} renters {n:>7,}  renter median ${r1:>7,.0f}  income {ch:+5.1f}% (+/-{m:4.1f})  rent {mr:+5.1f}%"
               f"  rent minus income {mr - ch:+5.1f} pts{'  <--' if f == '13135' else ''}")
