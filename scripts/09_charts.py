@@ -505,12 +505,20 @@ def national_pay():
     labels = [names[f].replace(" County", "").split(",")[0] + ", " + STATE_AB[f[:2]] for f in pool]
     vals = [res[f][0] for f in pool]
     atl = [metro[f].startswith("Atlanta") for f in pool]
-    fig, ax = frame(left=0.2, top=0.865, bottom=0.07, h=12)
-    hbars(ax, labels, vals, [BLUE if f == G else (YELLOW if a else MUTED) for f, a in zip(pool, atl)], lambda v: f"{v:+.1f}%", 0.5)
-    ax.tick_params(axis="y", labelsize=9.5)
-    for t in ax.texts:
-        t.set_fontsize(8.5)
-    ax.set_xlim(min(vals) - 6, max(vals) + 6)
+    moe = [1.645 * res[f][1] for f in pool]
+    fig, ax = frame(left=0.2, top=0.85, bottom=0.07, h=12)
+    y = list(range(len(pool)))[::-1]
+    ax.barh(y, vals, color=[BLUE if f == G else (YELLOW if a else MUTED) for f, a in zip(pool, atl)], height=0.62)
+    ax.errorbar(vals, y, xerr=moe, fmt="none", ecolor=INK, elinewidth=1, capsize=2.5, capthick=1)
+    for yy, v, m in zip(y, vals, moe):
+        x = v + m + 0.6 if v >= 0 else v - m - 0.6
+        ax.text(x, yy, f"{v:+.1f}%", va="center", ha="left" if v >= 0 else "right", color=INK, fontsize=8.5)
+    ax.set_yticks(y, labels, color=INK, fontsize=9.5)
+    ax.set_xticks([])
+    for side in ("left", "bottom"):
+        ax.spines[side].set_visible(False)
+    ax.axvline(0, color=GRID, lw=1)
+    ax.set_xlim(min(v - m for v, m in zip(vals, moe)) - 7, max(v + m for v, m in zip(vals, moe)) + 7)
     rank = len(pool) - pool.index(G)
     med = sorted(vals)[len(vals) // 2]
     fell = [names[f].replace(" County", "").split(",")[0] for f in pool if res[f][0] < 0]
@@ -518,7 +526,8 @@ def national_pay():
                f"Change in median earnings of renters who worked full time all year, 2005-09 to 2020-24, after inflation. Counties in metros of\n"
                f"1 million or more where median rent rose 25% or more after inflation. Gwinnett in blue, other Atlanta-area counties in yellow.\n"
                f"Of the {len(pool)} counties, only {' and '.join(fell)} show a fall; the middle county's pay rose {med:.0f}%.\n"
-               f"Gwinnett's change is within about {1.645 * res[G][1]:.0f} points either way, so the order near the bottom is not certain.",
+               f"Lines show each county's 90% margin: about {1.645 * res[G][1]:.0f} points either way for Gwinnett and"
+               f" {1.645 * res['13057'][1]:.0f} for Cherokee,\nso the order near the bottom is not certain.",
                y=0.975)
     left = counts[2] - counts[3]
     credit(fig, "Source: U.S. Census Bureau, American Community Survey 5-year microdata (PUMS); BLS CPI-U. Full time: 35+ hours a week, 50+ weeks a year.\n"

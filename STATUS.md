@@ -152,3 +152,6 @@ None.
   Cherokee GA; only those two show a drop; middle county +14.5%. Chart 16
   replaces the Atlanta renter-pay chart as post image 06. Tie-out 81 of 81.
   New numbers since Step 1 have Claude's tie-out only.
+- 2026-10-21 Eric asked whether to keep Cherokee (margin +/-10.8). Kept;
+  90% margin lines added to every bar of chart 16, and the post text notes
+  Cherokee's estimate is much less certain.
