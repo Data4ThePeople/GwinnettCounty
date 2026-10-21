@@ -173,3 +173,4 @@ None.
   out (K1). Proposed edits to the closing sent as a numbered list (not applied).
 - 2026-10-21 Eric accepted closing edits 1-10; applied.
 - 2026-10-21 Title set: Good Luck Renting It in Gwinnett.
+- 2026-10-21 Title changed: Renters Can't Win It in Gwinnett.

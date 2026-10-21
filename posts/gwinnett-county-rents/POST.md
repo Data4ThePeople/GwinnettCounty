@@ -1,5 +1,5 @@
 ---
-title: Good Luck Renting It in Gwinnett
+title: Renters Can't Win It in Gwinnett
 subtitle: [Eric: subtitle]
 slug: gwinnett-county-rents
 date:
@@ -16,7 +16,7 @@ caption_spacer: 20px
 dividers: false
 ---
 
-# Good Luck Renting It in Gwinnett
+# Renters Can't Win It in Gwinnett
 
 Last week, we dug into our [Rentals Within Reach](https://www.data4thepeople.com/p/rentals-within-reach) visualization and pulled out what looked like one of the most affordable counties in America for renters. That was [Dawson County, Nebraska](https://www.data4thepeople.com/p/lexington-tyson-plant-closure), and while it’s true that it used to be affordable, that all changed earlier this year when its largest employer – the Tyson meatpacking plant – shut its doors. 
 
