@@ -144,3 +144,5 @@ None.
   rent vs affordable amount, two periods); permits chart dropped from the
   post. Beat 5 now opens with like-for-like income -3%. Post has 7 charts.
   Tie-out extended (G1-G12): 75 of 75 pass.
+- 2026-10-21 Eric dropped the growth-by-age chart (draft 13) from the post as
+  confusing; its numbers stay in the text. Post has 6 charts.

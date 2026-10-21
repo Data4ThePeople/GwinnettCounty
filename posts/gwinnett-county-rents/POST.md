@@ -47,19 +47,14 @@ Home prices rose fast in Gwinnett, but they rose about as fast in Cobb County, w
 
 ## New rentals came in out of reach
 
-Gwinnett added about 41,000 rentals over this period. Two kinds account for more than half of them: about 11,300 older houses, built before 2000, that became rentals, and about 11,000 apartments built since 2010.
+Gwinnett added about 41,000 rentals over this period. Two kinds account for more than half of them: about 11,300 older houses, built before 2000, that became rentals, and about 11,000 apartments built since 2010. Neither was priced for the median renter household, which could afford about $1,250 a month at 30% of its income. In 2020-2024, older houses rented for a median of about $1,990 and new apartments for $1,870. About 10% of the older houses and 8% of the new apartments were within reach. Houses built since 2010 rented for more still.
 
-![Two-panel bar chart of the change in Gwinnett County rentals with a cash rent from 2005-2009 to 2020-2024, by building type and year built. Change in all rentals: houses built before 2000 +11,300, houses built 2000-2009 +3,800, houses built 2010 or later +6,700, apartments built before 2000 +1,200, apartments built 2000-2009 +2,300, apartments built 2010 or later +11,000, other +4,500. Change in rentals within reach: +700, +200, +200, -5,500, -800, +900 and +200.](images/04-growth-by-age.png)
-*Source: Census Bureau, American Community Survey 5-year microdata. Apartments are buildings with 5 or more units. Year built is reported by the household.*
-
-Neither was priced for the median renter household, which could afford about $1,250 a month at 30% of its income. In 2020-2024, older houses rented for a median of about $1,990 and new apartments for $1,870. About 10% of the older houses and 8% of the new apartments were within reach. Houses built since 2010 rented for more still.
-
-![Bar chart of median monthly rent in Gwinnett County in 2020-2024, against the $1,250 the median renter household could afford. Houses built before 2000 $1,990, with 10% within reach. Apartments built 2010 or later $1,870, with 8% within reach. Houses built 2010 or later $2,500, with 2% within reach.](images/05-new-to-market-rents.png)
+![Bar chart of median monthly rent in Gwinnett County in 2020-2024, against the $1,250 the median renter household could afford. Houses built before 2000 $1,990, with 10% within reach. Apartments built 2010 or later $1,870, with 8% within reach. Houses built 2010 or later $2,500, with 2% within reach.](images/04-new-to-market-rents.png)
 *Source: Census Bureau, American Community Survey 5-year microdata. Rents include utilities.*
 
 That does not explain why the number of rentals within reach fell. The answer is in older apartments, built before 2000. Gwinnett had about the same number of them in both periods, but their median rent went from about $860 to $1,660, up 92%. After inflation, that is a 31% rise, while the amount the median renter household could afford rose 8%. In 2005-2009, the median older apartment rented for about $100 more than that amount. By 2020-2024, it was about $400 more.
 
-![Bar chart of Gwinnett County amounts in 2024 dollars. In 2005-2009, the median rent for apartments built before 2000 was $1,260, and the median renter household could afford $1,160. In 2020-2024, the median rent was $1,660, and the household could afford $1,250.](images/06-older-apartment-rents.png)
+![Bar chart of Gwinnett County amounts in 2024 dollars. In 2005-2009, the median rent for apartments built before 2000 was $1,260, and the median renter household could afford $1,160. In 2020-2024, the median rent was $1,660, and the household could afford $1,250.](images/05-older-apartment-rents.png)
 *Source: Census Bureau, American Community Survey 5-year microdata; Data 4 The People, Rentals Within Reach. Amounts in 2024 dollars.*
 
 In other words, the rentals new to the market came in out of reach, and the older apartments that used to be close to reach rose far faster than renters' income.

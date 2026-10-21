@@ -291,61 +291,7 @@
           },
           {
             "type": "paragraph",
-            "text": "Gwinnett added about 41,000 rentals over this period. Two kinds account for more than half of them: about 11,300 older houses, built before 2000, that became rentals, and about 11,000 apartments built since 2010.",
-            "spans": [],
-            "direction": "ltr"
-          }
-        ]
-      }
-    },
-    {
-      "slice_type": "blog_body_content_image",
-      "slice_label": null,
-      "variation": "default",
-      "version": "initial",
-      "items": [],
-      "primary": {
-        "image": {
-          "alt": "Two-panel bar chart of the change in Gwinnett County rentals with a cash rent from 2005-2009 to 2020-2024, by building type and year built. Change in all rentals: houses built before 2000 +11,300, houses built 2000-2009 +3,800, houses built 2010 or later +6,700, apartments built before 2000 +1,200, apartments built 2000-2009 +2,300, apartments built 2010 or later +11,000, other +4,500. Change in rentals within reach: +700, +200, +200, -5,500, -800, +900 and +200.",
-          "copyright": null
-        },
-        "source_text": [
-          {
-            "type": "paragraph",
-            "text": "Source: Census Bureau, American Community Survey 5-year microdata. Apartments are buildings with 5 or more units. Year built is reported by the household.",
-            "spans": [
-              {
-                "start": 0,
-                "end": 154,
-                "type": "em"
-              }
-            ],
-            "direction": "ltr"
-          }
-        ]
-      }
-    },
-    {
-      "slice_type": "spacer",
-      "slice_label": null,
-      "variation": "default",
-      "version": "initial",
-      "items": [],
-      "primary": {
-        "spacer_value": "20px"
-      }
-    },
-    {
-      "slice_type": "paragarph_text",
-      "slice_label": null,
-      "variation": "default",
-      "version": "initial",
-      "items": [],
-      "primary": {
-        "paragraph_text": [
-          {
-            "type": "paragraph",
-            "text": "Neither was priced for the median renter household, which could afford about $1,250 a month at 30% of its income. In 2020-2024, older houses rented for a median of about $1,990 and new apartments for $1,870. About 10% of the older houses and 8% of the new apartments were within reach. Houses built since 2010 rented for more still.",
+            "text": "Gwinnett added about 41,000 rentals over this period. Two kinds account for more than half of them: about 11,300 older houses, built before 2000, that became rentals, and about 11,000 apartments built since 2010. Neither was priced for the median renter household, which could afford about $1,250 a month at 30% of its income. In 2020-2024, older houses rented for a median of about $1,990 and new apartments for $1,870. About 10% of the older houses and 8% of the new apartments were within reach. Houses built since 2010 rented for more still.",
             "spans": [],
             "direction": "ltr"
           }
