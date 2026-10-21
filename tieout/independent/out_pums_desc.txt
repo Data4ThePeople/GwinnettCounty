@@ -1,0 +1,26 @@
+2009 Gwinnett renter hh by YBL code (weighted): {1: 2824, 2: 13725, 3: 19722, 4: 19628, 5: 7942, 6: 1711, 7: 888, 8: 468, 9: 519}
+D1 apts built 2010+: 10959 of 106566 = 10.3%; median rent 1870; all cash-rent median 1812
+   newer apts vs all: 3.2%
+   chart05 pre2000 apt    n= 838 wt=  29972 median 1660
+   chart05 pre2000 house  n= 918 wt=  26182 median 1995
+   chart05 2000-09 apt    n= 327 wt=  12360 median 1673
+   chart05 2000-09 house  n= 302 wt=   8930 median 2221
+   chart05 2010+ apt      n= 346 wt=  10959 median 1870
+   chart05 2010+ house    n= 198 wt=   6733 median 2496
+D2 2009 older apts (cash rent): 28759 (n=1086), within reach (rent <= 791.5): 9589 (33.3% of them)
+D2 2024 older apts (cash rent): 29972 (n=838), within reach (rent <= 1253.3): 4073 (13.6% of them)
+   change in older apts 4.2%, within reach -57.5%
+E Gwinnett  renter hh inc 56375->60204 (6.8%) | FTYR earn 46139->44627 (-3.3%; n 2241/3473; incl <=0 earnings -3.3%) | workers/hh 1.295->1.356 | 2+ workers 33.8%->37.5%
+E Cobb      renter hh inc 56963->67032 (17.7%) | FTYR earn 49215->52503 (6.7%; n 2270/3077; incl <=0 earnings 6.7%) | workers/hh 1.269->1.343 | 2+ workers 32.5%->38.3%
+E DeKalb    renter hh inc 50292->55839 (11.0%) | FTYR earn 44863->49325 (9.9%; n 3079/3533; incl <=0 earnings 9.9%) | workers/hh 1.156->1.201 | 2+ workers 27.6%->30.5%
+E Fulton    renter hh inc 49984->62116 (24.3%) | FTYR earn 49215->59662 (21.2%; n 4143/5081; incl <=0 earnings 21.2%) | workers/hh 1.041->1.104 | 2+ workers 22.5%->27.3%
+E Henry     renter hh inc 58443->59390 (1.6%) | FTYR earn 49397->47730 (-3.4%; n 419/529; incl <=0 earnings -3.4%) | workers/hh 1.212->1.240 | 2+ workers 33.6%->34.4%
+E Cherokee  renter hh inc 58456->67006 (14.6%) | FTYR earn 49688->46702 (-6.0%; n 486/688; incl <=0 earnings -6.0%) | workers/hh 1.322->1.371 | 2+ workers 36.1%->42.0%
+E Clayton   renter hh inc 47396->46177 (-2.6%) | FTYR earn 44502->40405 (-9.2%; n 1005/959; incl <=0 earnings -9.2%) | workers/hh 1.153->1.189 | 2+ workers 26.2%->29.4%
+Gwinnett ft change -3.3%  SE 3.14 pts  90% MOE +/- 5.2 pts
+Gwinnett inc change 6.8%  SE 2.88 pts  90% MOE +/- 4.7 pts
+E4 2009: FTYR share of renter workers (employed, earnings>0) 65.8%; of all with earnings>0 58.3%
+E5 2009: householder 65+ 5.5%; bachelor's+ 23.4%
+E4 2024: FTYR share of renter workers (employed, earnings>0) 75.6%; of all with earnings>0 70.2%
+E5 2024: householder 65+ 9.7%; bachelor's+ 30.3%
+E6 reweighted 2024 median 54824 vs 2009 56375: change -2.8% (actual 6.8%); 2009 cells missing in 2024: 0 (share 0.00%); cells 36 possible, 2009 36, 2024 36

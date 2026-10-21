@@ -184,6 +184,8 @@ def main():
         " education, not only work. Suggest 'mostly because households changed: more members worked, more worked full time, and more"
         " householders were older or had degrees.' (fixed)",
         "SUPPORTED  beat 5 'its pay moved like Henry's' (-3.3% vs -3.4%).",
+        "FIXED  beat 5 and chart 11 'fell 3%': -3.3% is inside its 90% margin of about 5 points, so the text now says pay 'did not"
+        " rise' (flagged by the independent tie-out).",
         "FIXED  beat 5 '34% to 38%' for households with 2+ workers: 37.46% rounds to 37 (E9); 'the same rise' as Cobb is now 'about the"
         " same rise' (E7, within the margin of about 0.02).",
     ):

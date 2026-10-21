@@ -331,7 +331,7 @@ def renter_pay():
     hbars(ax, order, vals, [BLUE if n == "Gwinnett" else MUTED for n in order], lambda v: f"{v:+.1f}%", 0.4)
     ax.set_xlim(min(vals) - 5, max(vals) + 5)
     g = res["Gwinnett"]
-    titleblock(fig, f"Pay for Gwinnett's full-time renter workers fell {-g[2]:.0f}% after inflation; in Cobb it rose {res['Cobb'][2]:.0f}%",
+    titleblock(fig, f"Full-time renter pay in Gwinnett did not rise after inflation; in Cobb it rose {res['Cobb'][2]:.0f}%",
                "Change in median earnings of renters who worked full time all year, 2005-09 to 2020-24, in 2024 dollars.\n"
                f"Gwinnett: ${round(g[0], -2):,.0f} to ${round(g[1], -2):,.0f}, within about {g[3] * 1.645:.0f} points either way.")
     credit(fig, "Source: U.S. Census Bureau, American Community Survey 5-year microdata (PUMS); BLS CPI-U. Full time: 35+ hours a week, 50+ weeks"

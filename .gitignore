@@ -6,3 +6,4 @@ __pycache__/
 data/raw/
 .idea/
 tieout/independent/raw/
+tieout/independent/acs_*.json

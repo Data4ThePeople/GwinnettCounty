@@ -56,7 +56,8 @@ in older rentals rose faster than renters' income.**
 - Renter households earned 8% more after inflation, mostly because the
   households changed: more members worked, more worked full time, and more
   householders were older or had college degrees. Pay for a full-time worker
-  fell 3%. In Cobb, it rose 7%.
+  did not rise: it was 3% lower, within the survey's margin. In Cobb, it rose
+  7%.
   - The 8% is household income: all members' earnings plus other income. The
     3% is one person's pay: the median for renters who worked full time all
     year (within about 5 points either way).
@@ -65,7 +66,9 @@ in older rentals rose faster than renters' income.**
   - Among renters with earnings, the share working full time all year rose
     from 66% to 76%.
   - For the same kind of household (same number of workers, householder age
-    and education), income fell about 3%.
+    and education), income fell about 3%. This comes from the survey's
+    detailed records, where renter household income rose 7% rather than the
+    published table's 8%; the post should not mix the two in one sentence.
 - Full-time pay rose 10% in DeKalb and 21% in Fulton.
 - Pay of jobs located in Gwinnett rose 1% after inflation, the smallest rise of
   the eight counties.

@@ -116,3 +116,10 @@ None.
   share was 27.6% in 2010-14, not "near 31-32%"; 2+ worker households 37%,
   not 38%; Clayton "half a point behind"; beat 5 mix wording). Independent
   tie-out running.
+- 2026-10-21 Independent tie-out done (research/independent-tieout.md, code in
+  tieout/independent/). Every recomputed value and every chart number matches
+  within rounding; 2009 YBL coding in DATASETS.md confirmed against B25036.
+  Labels fixed per its findings: chart 09 title (certainty), chart 10 title
+  and footer (college-county rule), chart 11 title and beat 5 ("fell 3%" is
+  inside the margin, now "did not rise"); beat 5 notes the PUMS 7% vs table
+  8%. Ready to ask Eric to close Step 1.

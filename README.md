@@ -43,6 +43,8 @@ rentals priced within reach of the median renter household fell from 25.5% in
 - `research/thread.md`: the proposed thread and chart list.
 - `scripts/13_tieout.py`: recomputes every number in the thread, with output
   in `research/tieout-output.txt`.
+- `research/independent-tieout.md`: an independent recomputation from the raw
+  data, with its code in `tieout/independent/`.
 - `DATASETS.md`: every dataset used, with its limits and quirks.
 
 ## Data sources
