@@ -171,3 +171,4 @@ None.
   of after-tax renter income: 43.3% in 2020-24, 35.6% in 2005-09 (not yet in post).
 - 2026-10-21 Eric's closing placed verbatim under its own heading. 43% figure tied
   out (K1). Proposed edits to the closing sent as a numbered list (not applied).
+- 2026-10-21 Eric accepted closing edits 1-10; applied.
