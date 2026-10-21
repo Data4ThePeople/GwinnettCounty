@@ -13,8 +13,7 @@ the country outside college towns.**
   rentals, leaving out college towns.
 - Caveats:
   - With college towns included, it ranks 3rd of 1,987.
-  - Clayton County, next door, is at 11.0%, close enough that the two could
-    swap places.
+  - Clayton County, next door, is at 11.0%, half a point behind.
   - The ranking uses the tool's default settings (the median renter household,
     after taxes, 30% of income). Other settings give other rankings.
   - Counties with under 1,000 rentals, or marked low reliability, are left out.
@@ -24,7 +23,7 @@ the country outside college towns.**
 
 **2. The share fell from 25.5% in 2005-09 to 10.5% in 2020-24, a 59% decline.**
 - The number of rentals grew 63%, but the number within reach fell 33%.
-- The nation stayed near 31% to 32%.
+- The national share was 32% in 2005-09 and 31% in 2020-24.
 - Most of the drop came after 2015-19, when the share was 21.5%.
 - Charts: `01-share-within-reach.png`, `02-rentals-and-within-reach.png`.
 
@@ -53,11 +52,20 @@ in older rentals rose faster than renters' income.**
   `07-permits-per-household.png`.
 
 **5. On the income side, renters' pay lagged Cobb, DeKalb and Fulton.**
-- Pay for Gwinnett renters who worked full time all year fell 3% after
-  inflation (within about 5 points). It rose 7% in Cobb, 10% in DeKalb and 21%
-  in Fulton.
-- It is not that fewer renters were working. Workers per renter household rose
-  from 1.29 to 1.36, the same rise as in Cobb.
+- Renter households earned 8% more after inflation, mostly because the
+  households changed: more members worked, more worked full time, and more
+  householders were older or had college degrees. Pay for a full-time worker
+  fell 3%. In Cobb, it rose 7%.
+  - The 8% is household income: all members' earnings plus other income. The
+    3% is one person's pay: the median for renters who worked full time all
+    year (within about 5 points either way).
+  - Workers per renter household rose from 1.29 to 1.36, about the same rise
+    as in Cobb. Households with two or more workers went from 34% to 37%.
+  - Among renters with earnings, the share working full time all year rose
+    from 66% to 76%.
+  - For the same kind of household (same number of workers, householder age
+    and education), income fell about 3%.
+- Full-time pay rose 10% in DeKalb and 21% in Fulton.
 - Pay of jobs located in Gwinnett rose 1% after inflation, the smallest rise of
   the eight counties.
 - Caveat: renter pay also fell in Henry, Cherokee and Clayton. Gwinnett stands

@@ -1,0 +1,80 @@
+Beat 1
+   PASS  A1   Gwinnett share within reach 2020-24 (%)                        claimed      10.50  computed      10.51
+   PASS  A2   rank outside college towns                                     claimed       1.00  computed       1.00
+   PASS  A2b  counties outside college towns                                 claimed   1,922.00  computed   1,922.00
+   PASS  A3   rank with college towns                                        claimed       3.00  computed       3.00
+   PASS  A3b  counties with college towns                                    claimed   1,987.00  computed   1,987.00
+   PASS  A4   Clayton share 2020-24 (%)                                      claimed      11.00  computed      10.95
+   PASS  A5   Atlanta-area counties among the lowest four                    claimed       3.00  computed       3.00
+Beat 2
+   PASS  B1   share 2005-09 (%)                                              claimed      25.50  computed      25.52
+   PASS  B2   decline in share (%)                                           claimed     -59.00  computed     -58.82
+   PASS  B3   share 2015-19 (%)                                              claimed      21.50  computed      21.46
+   PASS  B4   rentals growth (%)                                             claimed      63.00  computed      63.00
+   PASS  B5   within-reach count change (%)                                  claimed     -33.00  computed     -32.88
+   PASS  B4x    cross-check: cash-rent units 2020-24, fresh B25063_002       claimed 107,229.00  computed 107,229.00
+   PASS  B4y    cross-check: cash-rent units 2005-09, fresh B25063_002       claimed  65,785.00  computed  65,785.00
+   PASS  B6   US share 2005-09, text says about 32% (%)                      claimed      32.00  computed      31.95
+   PASS  B7   US share 2020-24, text says about 31% (%)                      claimed      31.00  computed      31.32
+   NOTE  US share 2010-14 is 27.6% and 2015-19 31.9%: the text's 'stayed near 31% to 32%' does not hold for 2010-14.
+Beat 3
+   PASS  C1   real rent change (%)                                           claimed      32.00  computed      31.83
+   PASS  C1x    cross-check: fresh B25064, real change (%)                   claimed      31.83  computed      31.83
+   PASS  C2   real renter income change (%)                                  claimed       8.00  computed       8.26
+   PASS  C2x    cross-check: tool's renter median, real change (%)           claimed       8.26  computed       8.26
+   PASS  C3   large metro counties                                           claimed      15.00  computed      15.00
+   PASS  C4   Gwinnett rank, rent minus income                               claimed       1.00  computed       1.00
+   INFO  next three: Clayton +18.4, DeKalb +17.6, Cherokee +17.3; Gwinnett +23.6
+   PASS  C5   next three are Clayton, DeKalb, Cherokee                       claimed       1.00  computed       1.00
+   PASS  C6   renter median as % of owner median (%)                         claimed      55.00  computed      54.79
+   INFO  US figure 53.0% ('about the national figure')
+   PASS  C7   FHFA change Gwinnett (%)                                       claimed      82.00  computed      82.44
+   PASS  C8   FHFA change Cobb (%)                                           claimed      83.00  computed      83.33
+Beat 4
+   PASS  D1   new apartments share of rentals (%), 'about 10%'               claimed      10.00  computed      10.28
+   PASS  D2   new apartments median rent ($)                                 claimed   1,870.00  computed   1,870.00
+   PASS  D3   county median rent ($), tool                                   claimed   1,810.00  computed   1,810.00
+   PASS  D3x    cross-check: PUMS median rent ($)                            claimed   1,810.00  computed   1,812.11
+   PASS  D4   new apartments above county median (%)                         claimed       3.00  computed       3.31
+   INFO  older apartments 28,759 and 29,972 ('about the same number')
+   PASS  D5   older apartments within reach 2005-09, 'about 9,600'           claimed   9,600.00  computed   9,589.00
+   PASS  D6   older apartments within reach 2020-24, 'about 4,100'           claimed   4,100.00  computed   4,073.00
+   PASS  D7   permits per added household                                    claimed       0.65  computed       0.65
+   PASS  D8   peers below Gwinnett (only Clayton)                            claimed       1.00  computed       1.00
+   PASS  D9   houses share of rentals 2005-09 (%)                            claimed      31.00  computed      30.96
+   PASS  D10  houses share of rentals 2020-24 (%)                            claimed      39.50  computed      39.46
+   INFO  median rent of house rentals 2020-24 $2,122 ('above the county median')
+Beat 5
+   INFO  PUMS renter median change +6.8% (the text's 8% is the published table, C2)
+   PASS  E1   full-time year-round pay change (%)                            claimed      -3.00  computed      -3.28
+   PASS  E2   its 90% margin (points), 'about 5'                             claimed       5.00  computed       5.16
+   PASS  E3   full-time pay change Cobb (%)                                  claimed       7.00  computed       6.68
+   PASS  E3   full-time pay change DeKalb (%)                                claimed      10.00  computed       9.95
+   PASS  E3   full-time pay change Fulton (%)                                claimed      21.00  computed      21.23
+   PASS  E4   Henry full-time pay fell (1 = yes)                             claimed       1.00  computed       1.00
+   PASS  E4   Cherokee full-time pay fell (1 = yes)                          claimed       1.00  computed       1.00
+   PASS  E4   Clayton full-time pay fell (1 = yes)                           claimed       1.00  computed       1.00
+   PASS  E5   workers per household 2005-09                                  claimed       1.29  computed       1.29
+   PASS  E6   workers per household 2020-24                                  claimed       1.36  computed       1.36
+   PASS  E7   Cobb rise vs Gwinnett rise, workers ('about the same')         claimed       0.06  computed       0.07
+   PASS  E8   2+ workers 2005-09 (%)                                         claimed      34.00  computed      33.85
+   PASS  E9   2+ workers 2020-24 (%)                                         claimed      37.00  computed      37.46
+   PASS  E10  full-time year-round share of workers 2005-09 (%)              claimed      66.00  computed      65.76
+   PASS  E11  full-time year-round share of workers 2020-24 (%)              claimed      76.00  computed      75.61
+   PASS  E12  same-kind-of-household income change (%)                       claimed      -3.00  computed      -2.75
+   PASS  E13  QCEW pay change Gwinnett (%)                                   claimed       1.00  computed       1.01
+   PASS  E14  QCEW rank of Gwinnett, 8 = smallest                            claimed       8.00  computed       8.00
+
+Words (checked by hand against the results above and the memos)
+   SUPPORTED  beat 1 'smallest share ... outside college towns' (A1-A3); 'could swap places' with Clayton: no margin on the share exists, so this was a judgment, PARTLY SUPPORTED; now reads 'half a point behind' (fixed).
+   NOT SUPPORTED  beat 2 'The nation stayed near 31% to 32%': 27.6% in 2010-14 (B6 note). Fix: 'The national share was 32% in 2005-09 and 31% in 2020-24.' (fixed)
+   SUPPORTED  beat 2 'Most of the drop came after 2015-19': 21.5 to 10.5 is 11 of the 15 points.
+   SUPPORTED  beat 3 'widest' with the stated margin caveat (C4, C5).
+   SUPPORTED  beat 3 'about the national figure' (C6 and US figure).
+   SUPPORTED  beat 4 'not a story of high-priced new apartments' as a description of rent levels (D1-D4); it does not rule out new apartments raising nearby rents, which the data cannot test.
+   SUPPORTED  beat 4 'lower than every large neighbor but Clayton' (D8; 'large neighbor' = the seven peers).
+   PARTLY SUPPORTED  beat 5 'mostly because more of their members worked': the mix effect also includes householder age and education, not only work. Suggest 'mostly because households changed: more members worked, more worked full time, and more householders were older or had degrees.' (fixed)
+   SUPPORTED  beat 5 'its pay moved like Henry's' (-3.3% vs -3.4%).
+   FIXED  beat 5 '34% to 38%' for households with 2+ workers: 37.46% rounds to 37 (E9); 'the same rise' as Cobb is now 'about the same rise' (E7, within the margin of about 0.02).
+
+55 of 55 number checks pass.

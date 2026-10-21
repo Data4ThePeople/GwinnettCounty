@@ -40,6 +40,9 @@ rentals priced within reach of the median renter household fell from 25.5% in
 - `charts/`: draft charts, drawn by `scripts/09_charts.py` with the house
   style in `scripts/plot_style.py`. Every number is recomputed when the charts
   are drawn.
+- `research/thread.md`: the proposed thread and chart list.
+- `scripts/13_tieout.py`: recomputes every number in the thread, with output
+  in `research/tieout-output.txt`.
 - `DATASETS.md`: every dataset used, with its limits and quirks.
 
 ## Data sources
@@ -74,6 +77,7 @@ python scripts/09_charts.py
 python scripts/10_values_vs_rents.py
 python scripts/11_fetch_renter_people.py
 python scripts/12_renter_income.py
+python scripts/13_tieout.py
 ```
 
 The NCHS and OMB files go in `data/raw/nchs/` and `data/raw/omb/` (links in

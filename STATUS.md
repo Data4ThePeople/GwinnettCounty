@@ -110,3 +110,9 @@ None.
   rentals not new apartments, renter pay). Two new charts: 10 least
   affordable, 11 renter pay. Proposed set: 10, 01, 02, 09, 05, 04, 07, 11.
   Waiting on Eric to confirm the thread, then the tie-outs.
+- 2026-10-21 Beat 5 framing added (household income +8% vs full-time pay
+  -3%). Claude's tie-out (scripts/13_tieout.py, research/tieout-output.txt):
+  55 of 55 number checks pass after three text fixes in thread.md (national
+  share was 27.6% in 2010-14, not "near 31-32%"; 2+ worker households 37%,
+  not 38%; Clayton "half a point behind"; beat 5 mix wording). Independent
+  tie-out running.
