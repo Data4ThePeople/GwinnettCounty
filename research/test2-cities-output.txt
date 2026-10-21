@@ -1,0 +1,138 @@
+Largest principal city of each metro of 1 million or more (check by hand):
+  New York-Newark-Jersey City, NY-NJ           3651000  New York  | ACS names: New York city, New York
+  Los Angeles-Long Beach-Anaheim, CA           0644000  Los Angeles  | ACS names: Los Angeles city, California
+  Chicago-Naperville-Elgin, IL-IN              1714000  Chicago  | ACS names: Chicago city, Illinois
+  Dallas-Fort Worth-Arlington, TX              4819000  Dallas  | ACS names: Dallas city, Texas
+  Houston-Pasadena-The Woodlands, TX           4835000  Houston  | ACS names: Houston city, Texas
+  Washington-Arlington-Alexandria, DC-VA-MD-WV 1150000  Washington  | ACS names: Washington city, District of Columbia
+  Philadelphia-Camden-Wilmington, PA-NJ-DE-MD  4260000  Philadelphia  | ACS names: Philadelphia city, Pennsylvania
+  Atlanta-Sandy Springs-Roswell, GA            1304000  Atlanta  | ACS names: Atlanta city, Georgia
+  Miami-Fort Lauderdale-West Palm Beach, FL    1245000  Miami  | ACS names: Miami city, Florida
+  Phoenix-Mesa-Chandler, AZ                    0455000  Phoenix  | ACS names: Phoenix city, Arizona
+  Boston-Cambridge-Newton, MA-NH               2507000  Boston  | ACS names: Boston city, Massachusetts
+  Riverside-San Bernardino-Ontario, CA         0662000  Riverside  | ACS names: Riverside city, California
+  San Francisco-Oakland-Fremont, CA            0667000  San Francisco  | ACS names: San Francisco city, California
+  Detroit-Warren-Dearborn, MI                  2622000  Detroit  | ACS names: Detroit city, Michigan
+  Seattle-Tacoma-Bellevue, WA                  5363000  Seattle  | ACS names: Seattle city, Washington
+  Minneapolis-St. Paul-Bloomington, MN-WI      2743000  Minneapolis  | ACS names: Minneapolis city, Minnesota
+  Tampa-St. Petersburg-Clearwater, FL          1271000  Tampa  | ACS names: Tampa city, Florida
+  San Diego-Chula Vista-Carlsbad, CA           0666000  San Diego  | ACS names: San Diego city, California
+  Denver-Aurora-Centennial, CO                 0820000  Denver  | ACS names: Denver city, Colorado
+  Baltimore-Columbia-Towson, MD                2404000  Baltimore  | ACS names: Baltimore city, Maryland
+  St. Louis, MO-IL                             2965000  St. Louis  | ACS names: St. Louis city, Missouri
+  Orlando-Kissimmee-Sanford, FL                1253000  Orlando  | ACS names: Orlando city, Florida
+  Charlotte-Concord-Gastonia, NC-SC            3712000  Charlotte  | ACS names: Charlotte city, North Carolina
+  San Antonio-New Braunfels, TX                4865000  San Antonio  | ACS names: San Antonio city, Texas
+  Portland-Vancouver-Hillsboro, OR-WA          4159000  Portland  | ACS names: Portland city, Oregon
+  Pittsburgh, PA                               4261000  Pittsburgh  | ACS names: Pittsburgh city, Pennsylvania
+  Austin-Round Rock-San Marcos, TX             4805000  Austin  | ACS names: Austin city, Texas
+  Sacramento-Roseville-Folsom, CA              0664000  Sacramento  | ACS names: Sacramento city, California
+  Las Vegas-Henderson-North Las Vegas, NV      3240000  Las Vegas  | ACS names: Las Vegas city, Nevada
+  Cincinnati, OH-KY-IN                         3915000  Cincinnati  | ACS names: Cincinnati city, Ohio
+  Kansas City, MO-KS                           2938000  Kansas City  | ACS names: Kansas City city, Missouri
+  Columbus, OH                                 3918000  Columbus  | ACS names: Columbus city, Ohio
+  Cleveland, OH                                3916000  Cleveland  | ACS names: Cleveland city, Ohio
+  Indianapolis-Carmel-Greenwood, IN            1836003  Indianapolis city (balance)  | ACS names: Indianapolis city (balance), Indiana
+  Nashville-Davidson--Murfreesboro--Franklin,  4752006  Nashville-Davidson metropolitan government (balance)  | ACS names: Nashville-Davidson metropolitan government (balance), Tennessee
+  San Jose-Sunnyvale-Santa Clara, CA           0668000  San Jose  | ACS names: San Jose city, California
+  Virginia Beach-Chesapeake-Norfolk, VA-NC     5182000  Virginia Beach  | ACS names: Virginia Beach city, Virginia
+  Jacksonville, FL                             1235000  Jacksonville  | ACS names: Jacksonville city, Florida
+  Providence-Warwick, RI-MA                    4459000  Providence  | ACS names: Providence city, Rhode Island
+  Milwaukee-Waukesha, WI                       5553000  Milwaukee  | ACS names: Milwaukee city, Wisconsin
+  Raleigh-Cary, NC                             3755000  Raleigh  | ACS names: Raleigh city, North Carolina
+  Oklahoma City, OK                            4055000  Oklahoma City  | ACS names: Oklahoma City city, Oklahoma
+  Louisville/Jefferson County, KY-IN           2148006  Louisville/Jefferson County metro government (balance)  | ACS names: Louisville/Jefferson County metro government (balance), Kentucky
+  Memphis, TN-MS-AR                            4748000  Memphis  | ACS names: Memphis city, Tennessee
+  Richmond, VA                                 5167000  Richmond  | ACS names: Richmond city, Virginia
+  Salt Lake City-Murray, UT                    4967000  Salt Lake City  | ACS names: Salt Lake City city, Utah
+  Birmingham, AL                               0107000  Birmingham  | ACS names: Birmingham city, Alabama
+  Fresno, CA                                   0627000  Fresno  | ACS names: Fresno city, California
+  Buffalo-Cheektowaga, NY                      3611000  Buffalo  | ACS names: Buffalo city, New York
+  Hartford-West Hartford-East Hartford, CT     0937000  Hartford  | ACS names: Hartford city, Connecticut
+  Grand Rapids-Wyoming-Kentwood, MI            2634000  Grand Rapids  | ACS names: Grand Rapids city, Michigan
+  Tucson, AZ                                   0477000  Tucson  | ACS names: Tucson city, Arizona
+  Rochester, NY                                3663000  Rochester  | ACS names: Rochester city, New York
+  Tulsa, OK                                    4075000  Tulsa  | ACS names: Tulsa city, Oklahoma
+
+Problems: none
+
+All large metros together (rental-weighted), share within reach of each metro's renter median
+  Largest principal cities 2005-09  35.8  2010-14  30.7  2015-19  34.2  2020-24  32.8   change  -3.0 pts   -8%
+  Rest of their metros    2005-09  26.8  2010-14  23.5  2015-19  28.2  2020-24  26.9   change  +0.1 pts   +0%
+
+Per metro, 2005-09 -> 2020-24 (shares within reach of the metro renter median)
+  metro                                                    city   chg      rest of metro   chg  rest fell more?  city % of metro rentals
+  New York-Newark-Jersey City, NY-NJ            34.2 ->  30.9   -10%    23.6 ->  25.4    +8%  no                 63%
+  Los Angeles-Long Beach-Anaheim, CA            33.9 ->  29.8   -12%    21.0 ->  20.0    -4%  no                 40%
+  Chicago-Naperville-Elgin, IL-IN               30.4 ->  33.2    +9%    23.6 ->  31.2   +32%  no                 50%
+  Dallas-Fort Worth-Arlington, TX               48.0 ->  39.8   -17%    36.8 ->  28.7   -22%  yes                27%
+  Houston-Pasadena-The Woodlands, TX            41.4 ->  36.4   -12%    33.9 ->  26.0   -23%  yes                53%
+  Washington-Arlington-Alexandria, DC-VA-MD-WV  53.1 ->  38.6   -27%    26.1 ->  28.5    +9%  no                 22%
+  Philadelphia-Camden-Wilmington, PA-NJ-DE-MD   37.3 ->  34.6    -7%    20.9 ->  25.5   +22%  no                 40%
+  Atlanta-Sandy Springs-Roswell, GA             33.7 ->  25.7   -24%    24.0 ->  21.5   -10%  no                 16%
+  Miami-Fort Lauderdale-West Palm Beach, FL     35.9 ->  25.2   -30%    15.6 ->  15.1    -3%  no                 15%
+  Phoenix-Mesa-Chandler, AZ                     41.2 ->  35.3   -14%    28.1 ->  23.8   -15%  yes                41%
+  Boston-Cambridge-Newton, MA-NH                30.0 ->  29.6    -2%    27.1 ->  27.5    +2%  no                 25%
+  Riverside-San Bernardino-Ontario, CA          18.5 ->  19.4    +5%    25.5 ->  26.4    +4%  yes                 8%
+  San Francisco-Oakland-Fremont, CA             35.4 ->  36.8    +4%    30.8 ->  29.8    -3%  yes                29%
+  Detroit-Warren-Dearborn, MI                   31.5 ->  40.3   +28%    21.3 ->  24.2   +13%  yes                25%
+  Seattle-Tacoma-Bellevue, WA                   42.3 ->  32.1   -24%    38.9 ->  32.6   -16%  no                 32%
+  Minneapolis-St. Paul-Bloomington, MN-WI       41.7 ->  40.9    -2%    29.2 ->  33.4   +15%  no                 24%
+  Tampa-St. Petersburg-Clearwater, FL           31.7 ->  23.7   -25%    26.5 ->  24.5    -8%  no                 20%
+  San Diego-Chula Vista-Carlsbad, CA            25.8 ->  21.4   -17%    24.6 ->  23.5    -5%  no                 53%
+  Denver-Aurora-Centennial, CO                  42.2 ->  29.3   -30%    26.9 ->  22.2   -17%  no                 39%
+  Baltimore-Columbia-Towson, MD                 46.4 ->  43.4    -6%    19.7 ->  17.8   -10%  yes                36%
+  St. Louis, MO-IL                              46.2 ->  52.4   +14%    30.7 ->  38.8   +26%  no                 24%
+  Orlando-Kissimmee-Sanford, FL                 23.3 ->  19.2   -18%    20.9 ->  20.1    -4%  no                 21%
+  Charlotte-Concord-Gastonia, NC-SC             26.2 ->  21.9   -17%    41.8 ->  44.1    +5%  no                 50%
+  San Antonio-New Braunfels, TX                 38.0 ->  32.6   -14%    31.5 ->  23.6   -25%  yes                75%
+  Portland-Vancouver-Hillsboro, OR-WA           33.6 ->  29.0   -14%    23.2 ->  20.7   -11%  no                 36%
+  Pittsburgh, PA                                29.4 ->  26.7    -9%    38.0 ->  45.7   +20%  no                 24%
+  Austin-Round Rock-San Marcos, TX              38.1 ->  32.1   -16%    33.1 ->  35.1    +6%  no                 63%
+  Sacramento-Roseville-Folsom, CA               32.0 ->  26.9   -16%    25.4 ->  24.0    -5%  no                 30%
+  Las Vegas-Henderson-North Las Vegas, NV       37.1 ->  26.3   -29%    31.0 ->  21.7   -30%  yes                30%
+  Cincinnati, OH-KY-IN                          55.5 ->  48.8   -12%    32.2 ->  36.3   +13%  no                 31%
+  Kansas City, MO-KS                            45.9 ->  40.5   -12%    37.4 ->  38.5    +3%  no                 32%
+  Columbus, OH                                  33.1 ->  35.6    +7%    36.1 ->  42.1   +17%  no                 66%
+  Cleveland, OH                                 39.2 ->  47.3   +21%    21.8 ->  31.6   +45%  no                 32%
+  Indianapolis-Carmel-Greenwood, IN             37.9 ->  39.3    +4%    30.7 ->  33.6   +10%  no                 57%
+  Nashville-Davidson--Murfreesboro--Franklin,   34.0 ->  29.2   -14%    38.0 ->  37.2    -2%  no                 53%
+  San Jose-Sunnyvale-Santa Clara, CA            40.1 ->  43.3    +8%    32.0 ->  31.6    -1%  yes                48%
+  Virginia Beach-Chesapeake-Norfolk, VA-NC      11.8 ->  12.0    +2%    35.3 ->  29.8   -15%  yes                24%
+  Jacksonville, FL                              33.8 ->  30.0   -11%    25.4 ->  22.6   -11%  no                 76%
+  Providence-Warwick, RI-MA                     28.4 ->  30.8    +8%    31.4 ->  34.0    +9%  no                 17%
+  Milwaukee-Waukesha, WI                        37.1 ->  46.4   +25%    25.1 ->  30.5   +21%  yes                52%
+  Raleigh-Cary, NC                              30.8 ->  31.2    +1%    33.6 ->  35.1    +5%  no                 53%
+  Oklahoma City, OK                             41.8 ->  35.6   -15%    36.8 ->  37.9    +3%  no                 56%
+  Louisville/Jefferson County, KY-IN            36.9 ->  33.7    -9%    30.7 ->  33.6   +10%  no                 60%
+  Memphis, TN-MS-AR                             25.7 ->  30.2   +17%    26.1 ->  25.5    -2%  yes                68%
+  Richmond, VA                                  40.5 ->  32.3   -20%    22.9 ->  24.5    +7%  no                 34%
+  Salt Lake City-Murray, UT                     59.1 ->  44.2   -25%    32.4 ->  26.8   -17%  no                 34%
+  Birmingham, AL                                36.0 ->  32.0   -11%    28.9 ->  27.3    -5%  no                 37%
+  Fresno, CA                                    26.9 ->  26.6    -1%    32.7 ->  30.9    -5%  yes                58%
+  Buffalo-Cheektowaga, NY                       33.0 ->  34.3    +4%    27.1 ->  33.8   +25%  no                 41%
+  Hartford-West Hartford-East Hartford, CT      44.1 ->  33.9   -23%    25.0 ->  25.0    -0%  no                 24%
+  Grand Rapids-Wyoming-Kentwood, MI             31.9 ->  32.6    +2%    32.3 ->  35.3    +9%  no                 33%
+  Tucson, AZ                                    41.6 ->  36.8   -12%    20.4 ->  19.8    -3%  no                 73%
+  Rochester, NY                                 30.9 ->  38.4   +24%    20.8 ->  29.0   +39%  no                 40%
+  Tulsa, OK                                     39.7 ->  45.2   +14%    39.9 ->  39.0    -2%  yes                61%
+
+  Rest of metro fell more than the city in 15 of 54 metros (28%)
+
+Atlanta detail
+  2005-09: metro renter median $34,686, rent ceiling $728/mo | city 33.7% of 94,154 cash-rent units, rest 24.0% of 466,296 | city renter households 97,452, city renter median $30,307 (+/- $860), from buckets: city $30,351, rest $35,486
+  2010-14: metro renter median $34,910, rent ceiling $739/mo | city 26.5% of 99,018 cash-rent units, rest 19.6% of 564,886 | city renter households 101,557, city renter median $30,514 (+/- $959), from buckets: city $30,336, rest $35,718
+  2015-19: metro renter median $45,134, rent ceiling $950/mo | city 34.5% of 113,863 cash-rent units, rest 27.6% of 636,517 | city renter households 116,501, city renter median $40,198 (+/- $1,197), from buckets: city $40,315, rest $45,779
+  2020-24: metro renter median $59,206, rent ceiling $1,230/mo | city 25.7% of 123,795 cash-rent units, rest 21.5% of 634,997 | city renter households 126,676, city renter median $57,026 (+/- $2,843), from buckets: city $57,727, rest $59,417
+
+  Core counties at the same metro line (share within reach of the metro renter median), and each county's own renter median
+  Fulton and DeKalb both hold part of the city of Atlanta, so their figures mix city and suburb
+    Fulton County, GA       27.9  21.3  28.1  22.0    -21%   own renter median $33,957 -> $62,287 (+83%)
+    DeKalb County, GA       23.8  18.9  26.4  17.6    -26%   own renter median $33,485 -> $54,357 (+62%)
+    Cobb County, GA         17.9  15.2  19.9  13.5    -25%   own renter median $39,067 -> $67,585 (+73%)
+    Gwinnett County, GA     16.0  13.8  15.2   9.8    -38%   own renter median $38,202 -> $60,473 (+58%)
+    Clayton County, GA      27.0  26.5  43.9  31.5    +16%   own renter median $32,451 -> $45,679 (+41%)
+    Henry County, GA        12.2  10.0  20.0  17.8    +46%   own renter median $39,261 -> $59,703 (+52%)
+    Cherokee County, GA     22.4  20.3  23.0  15.7    -30%   own renter median $38,986 -> $66,514 (+71%)
+    Atlanta city            33.7 ...  25.7    -24%   own renter median $30,307 -> $57,026 (+88%)
+    Metro renter median    $34,686 -> $59,206 (+71%)

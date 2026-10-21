@@ -46,3 +46,12 @@ None.
   AffordableHousing was changed.
 - 2026-10-21 Eric is moving this work to a new PyCharm window. Next: plan mode
   for the exploration, then DATASETS.md before any new data or chart.
+- 2026-10-21 Plan approved: settle "Gwinnett story or suburb vs. inner city"
+  first, with decision rules set before the tests. DATASETS.md written (tool
+  shares, NCHS 2023 urban-rural codes, OMB 2023 delineation, ACS place
+  tables). Test 1 (counties, tool measure): suburbs fell more in 34 of 49
+  large metros. Test 2 (largest city vs. rest of metro, one metro income
+  line): suburbs fell more in only 15 of 54, and Atlanta city fell more than
+  its suburbs. By the rules: not a national or Atlanta suburb story; a
+  Gwinnett story (-38% at the metro line vs. DeKalb -26%, Clayton +16%, city
+  -24%). Memo: research/suburb-vs-city.md. Waiting on Eric's call on framing.

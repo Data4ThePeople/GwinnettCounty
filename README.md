@@ -14,6 +14,13 @@ rentals priced within reach of the median renter household fell from 25.5% in
   selection script.
 - `scripts/01_candidate_selection.py`: recomputes every number in the
   selection notes.
+- `research/suburb-vs-city.md`: whether this is a Gwinnett story or a
+  suburb-versus-city story, tested two ways across the 54 metros of 1 million
+  or more.
+- `scripts/02_core_vs_suburb_counties.py` and
+  `scripts/03_city_vs_suburb.py`: the two tests, with their output in
+  `research/`.
+- `DATASETS.md`: every dataset used, with its limits and quirks.
 
 ## Data sources
 
@@ -21,7 +28,10 @@ The shares come from the Rentals Within Reach tool
 ([repo](https://github.com/Data4ThePeople/AffordableHousing)), built from the
 American Community Survey 5-year files (Census Bureau tables B25063, B25119
 and others), NBER TAXSIM35 for taxes, and the BLS Consumer Price Index.
-Its `DATASETS.md` lists every limit of those data.
+Its `DATASETS.md` lists every limit of those data. The suburb and city
+tests also use the NCHS 2023 Urban-Rural Classification Scheme for Counties,
+the OMB July 2023 metro delineation, and ACS 5-year place-level tables B25063,
+B25118 and B25119.
 
 ## How to rebuild
 
@@ -30,7 +40,13 @@ project, expected at `~/PycharmProjects/AffordableHousing`:
 
 ```
 python scripts/01_candidate_selection.py
+python scripts/02_core_vs_suburb_counties.py
+python scripts/03_city_vs_suburb.py
 ```
+
+The NCHS and OMB files go in `data/raw/nchs/` and `data/raw/omb/` (links in
+`DATASETS.md`). The third script pulls the place tables from the Census API
+and needs a Census API key.
 
 ## Method notes
 
