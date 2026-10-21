@@ -32,9 +32,8 @@ CHARTS = ROOT / "charts"
 SLUG = "gwinnett-county-rents"
 # draft chart -> its name in the post, in order of appearance
 POST_ORDER = {"10-least-affordable.png": "01-least-affordable.png", "12-rentals-stacked.png": "02-rentals-within-reach.png",
-              "09-income-vs-rent.png": "03-income-vs-rent.png", "13-growth-by-age.png": "04-growth-by-age.png",
-              "14-new-to-market-rents.png": "05-new-to-market-rents.png", "15-older-apartment-rents.png": "06-older-apartment-rents.png",
-              "11-renter-pay.png": "07-renter-pay.png"}
+              "09-income-vs-rent.png": "03-income-vs-rent.png", "14-new-to-market-rents.png": "04-new-to-market-rents.png",
+              "15-older-apartment-rents.png": "05-older-apartment-rents.png", "11-renter-pay.png": "06-renter-pay.png"}
 FK = ["2009", "2014", "2019", "2024"]
 LABEL = {"2009": "2005-09", "2014": "2010-14", "2019": "2015-19", "2024": "2020-24"}
 G = "13135"
