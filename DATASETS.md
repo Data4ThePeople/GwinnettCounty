@@ -389,3 +389,56 @@ row is the sixth row.
   as the mix of owned homes changes.
 
 **License.** FHFA data are public.
+
+## 11. ACS 5-year PUMS person records for renter households
+
+**What it is.** Every person in a renter household (TEN 3, rented for cash or
+not, and TEN 4, occupied without rent), so that B25119's renter universe is
+covered. Variables:
+- **Household:** SERIALNO, SPORDER, NP, HINCP, ADJINC, WGTP, TEN.
+- **Person:** AGEP, ESR (employment status), PERNP (earnings), WAGP, WKHP
+  (usual hours), WKW (2005-09) or WKWN (2020-24) for weeks worked, NATIVITY,
+  HISP, RAC1P, SCHL, COW, INDP, PWGTP.
+- **Replicate weights:** WGTP1-80 and PWGTP1-80.
+
+**Where it comes from.** Census microdata API, `2009/acs/acs5/pums` and
+`2024/acs/acs5/pums`, same PUMAs as section 7 (Forsyth left out). Five calls
+per PUMA and period because of the 50-variable limit, joined on SERIALNO and
+SPORDER. Cached in `data/raw/pums_people/`.
+
+**Changes over time.**
+- **SCHL.** The 2005-09 file uses the old 16 codes (9 = high school
+  graduate, 12 = associate, 13 = bachelor's, 14-16 = graduate). The 2020-24
+  file uses 24 codes (16-17 = high school or GED, 18-20 = some college or
+  associate, 21-24 = bachelor's or more). Both map to four levels: less than
+  high school, high school, some college or associate, bachelor's or more.
+- **Weeks worked.** WKW in 2005-09 is a range code (1 = 50-52 weeks); WKWN in
+  2020-24 is the number of weeks. Full-time year-round means 35+ usual hours and
+  50+ weeks in both.
+- **Industry codes (INDP).** The Census industry codes were revised between
+  the files. We use only broad sectors, from code ranges that hold across
+  revisions.
+- **ADJINC** brings income and earnings to the file's final year. CPI-U then
+  takes 2009 dollars to 2024 dollars.
+
+**Uncertainty.** Successive difference replicate weights, as in section 7.
+
+**License.** Public domain.
+
+## 12. QCEW average annual pay by county (BLS)
+
+**What it is.** The Quarterly Census of Employment and Wages: average annual
+pay of jobs covered by unemployment insurance, all ownerships, all industries,
+by county where the job is located (not where the worker lives).
+
+**Where it comes from.** BLS public API v2, series `ENU{county FIPS}50010`
+(data type 5 = average annual pay, size 0, ownership 0, industry 10 = total),
+2005-2024. CPI-U annual averages (series CUUR0000SA0, period M13) come from the
+same API to put each year in 2024 dollars. Cached in `data/raw/qcew/`.
+
+**Quirks.** Pay is for jobs in the county, including jobs held by people who
+commute in. Federal, state and local government jobs are included; the
+self-employed are not. We compare the average of 2005-2009 with the average of
+2020-2024 to match the ACS periods.
+
+**License.** Public domain.

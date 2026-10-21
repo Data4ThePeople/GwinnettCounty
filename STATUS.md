@@ -99,3 +99,9 @@ None.
   (FHFA) of 15 metro counties; its rent is 1.0-1.4 SD above the fit. Cobb and
   Cherokee had the same FHFA rise and similar rent rises, but renter income
   +17-18% vs Gwinnett +8%. Waiting on Eric.
+- 2026-10-21 Eric asked why renter income lagged (research/renter-income.md).
+  R1 mix of households: not a factor by the rule (mix shift raised income
+  +9.5 pts, about the same as Cobb, less than Fulton/DeKalb/Cherokee/Henry).
+  R2 workers per household: not a factor (rose like peers). R3 full-time
+  year-round renter pay: -3.3% vs Cobb +6.7% (supported). R4 QCEW pay of jobs
+  in county: +1.0%, lowest of eight (supported). Waiting on Eric.

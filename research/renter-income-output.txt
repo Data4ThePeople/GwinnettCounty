@@ -1,0 +1,93 @@
+Renter households, 2024 dollars. Median income change after inflation (+/- 1 SE).
+R1 'reweighted' holds the 2005-09 mix of households by workers x householder age x householder education.
+   Gwinnett  median $ 56,375 (+/-1,001) -> $ 60,204 (+/-1,249):  +6.8% (+/-2.9); reweighted  -2.8% (+/-2.6); mix effect  -9.5 pts
+   Fulton    median $ 49,984 (+/-1,009) -> $ 62,116 (+/-1,635): +24.3% (+/-4.2); reweighted  +2.7% (+/-3.3); mix effect -21.6 pts
+   DeKalb    median $ 50,292 (+/-988) -> $ 55,839 (+/-840): +11.0% (+/-2.6); reweighted  -2.8% (+/-3.3); mix effect -13.8 pts
+   Cobb      median $ 56,963 (+/-1,124) -> $ 67,032 (+/-864): +17.7% (+/-2.8); reweighted  +7.9% (+/-2.3); mix effect  -9.8 pts
+   Clayton   median $ 47,396 (+/-1,054) -> $ 46,177 (+/-1,609):  -2.6% (+/-4.4); reweighted  -7.6% (+/-3.8); mix effect  -5.0 pts
+   Henry     median $ 58,443 (+/-2,263) -> $ 59,390 (+/-1,783):  +1.6% (+/-5.4); reweighted -10.0% (+/-5.9); mix effect -11.6 pts
+   Cherokee  median $ 58,456 (+/-1,564) -> $ 67,006 (+/-4,596): +14.6% (+/-8.3); reweighted  -0.0% (+/-5.6); mix effect -14.6 pts
+
+R2 workers per renter household (mean) and share with 0 / 1 / 2+ workers
+   Gwinnett  | 2005-09 1.29 (+/-0.02)  14.2% / 51.9% / 33.8% | 2020-24 1.36 (+/-0.02)  13.5% / 49.1% / 37.5%
+   Fulton    | 2005-09 1.04 (+/-0.01)  23.7% / 53.8% / 22.5% | 2020-24 1.10 (+/-0.01)  21.4% / 51.3% / 27.3%
+   DeKalb    | 2005-09 1.16 (+/-0.02)  20.0% / 52.4% / 27.6% | 2020-24 1.20 (+/-0.02)  18.5% / 51.0% / 30.5%
+   Cobb      | 2005-09 1.27 (+/-0.02)  14.1% / 53.4% / 32.5% | 2020-24 1.34 (+/-0.02)  15.5% / 46.2% / 38.3%
+   Clayton   | 2005-09 1.15 (+/-0.02)  16.0% / 57.8% / 26.2% | 2020-24 1.19 (+/-0.03)  18.4% / 52.2% / 29.4%
+   Henry     | 2005-09 1.21 (+/-0.04)  15.9% / 50.5% / 33.6% | 2020-24 1.24 (+/-0.04)  18.2% / 47.4% / 34.4%
+   Cherokee  | 2005-09 1.32 (+/-0.04)  12.4% / 51.5% / 36.1% | 2020-24 1.37 (+/-0.05)  16.4% / 41.6% / 42.0%
+
+Householder age, education, birthplace and household size (share of renter households)
+   Gwinnett  2005-09 age 43.7 / 50.8 /  5.5 | education 17.2 / 28.6 / 30.8 / 23.4 | foreign-born householder 35.6% | persons per household 2.59
+   Gwinnett  2020-24 age 33.7 / 56.6 /  9.7 | education 14.4 / 25.2 / 30.0 / 30.3 | foreign-born householder 36.9% | persons per household 2.60
+   Fulton    2005-09 age 42.9 / 47.9 /  9.2 | education 14.6 / 23.9 / 27.3 / 34.2 | foreign-born householder 14.2% | persons per household 2.07
+   Fulton    2020-24 age 43.1 / 42.8 / 14.1 | education  6.8 / 18.9 / 25.1 / 49.1 | foreign-born householder 14.7% | persons per household 1.91
+   DeKalb    2005-09 age 44.8 / 48.8 /  6.5 | education 14.7 / 26.2 / 30.7 / 28.4 | foreign-born householder 23.3% | persons per household 2.31
+   DeKalb    2020-24 age 37.9 / 49.7 / 12.4 | education 12.1 / 19.9 / 26.4 / 41.6 | foreign-born householder 22.6% | persons per household 2.16
+   Cobb      2005-09 age 47.7 / 46.1 /  6.2 | education 14.1 / 22.9 / 30.8 / 32.3 | foreign-born householder 21.7% | persons per household 2.33
+   Cobb      2020-24 age 40.7 / 48.2 / 11.1 | education  7.5 / 18.3 / 33.4 / 40.8 | foreign-born householder 19.9% | persons per household 2.28
+   Clayton   2005-09 age 42.4 / 52.6 /  5.0 | education 13.2 / 33.6 / 37.3 / 15.9 | foreign-born householder 14.5% | persons per household 2.53
+   Clayton   2020-24 age 33.1 / 55.3 / 11.6 | education 12.8 / 31.2 / 36.3 / 19.7 | foreign-born householder 14.5% | persons per household 2.46
+   Henry     2005-09 age 41.3 / 53.0 /  5.7 | education 14.8 / 31.9 / 35.6 / 17.7 | foreign-born householder  8.5% | persons per household 2.79
+   Henry     2020-24 age 28.7 / 58.2 / 13.1 | education  5.1 / 23.4 / 44.2 / 27.3 | foreign-born householder  9.0% | persons per household 2.49
+   Cherokee  2005-09 age 47.1 / 47.2 /  5.7 | education 24.2 / 26.6 / 31.9 / 17.3 | foreign-born householder 19.9% | persons per household 2.51
+   Cherokee  2020-24 age 33.7 / 49.6 / 16.7 | education 12.3 / 23.2 / 35.0 / 29.5 | foreign-born householder 16.9% | persons per household 2.51
+   (age: under 35, 35-64, 65+; education: less than high school, high school, some college, bachelor's+)
+
+R3 median earnings of renter workers, 2024 dollars, change after inflation (+/- 1 SE)
+   Gwinnett  | all workers $ 37,917 -> $ 39,102  +3.1% (+/-3.1) | full-time year-round $ 46,139 -> $ 44,627  -3.3% (+/-3.1) | full-time year-round share of workers 66% -> 76%
+   Fulton    | all workers $ 39,987 -> $ 48,923 +22.3% (+/-4.7) | full-time year-round $ 49,215 -> $ 59,662 +21.2% (+/-3.9) | full-time year-round share of workers 69% -> 74%
+   DeKalb    | all workers $ 35,989 -> $ 40,610 +12.8% (+/-4.6) | full-time year-round $ 44,863 -> $ 49,325  +9.9% (+/-3.1) | full-time year-round share of workers 66% -> 72%
+   Cobb      | all workers $ 38,449 -> $ 42,771 +11.2% (+/-3.6) | full-time year-round $ 49,215 -> $ 52,503  +6.7% (+/-3.0) | full-time year-round share of workers 64% -> 73%
+   Clayton   | all workers $ 37,085 -> $ 35,534  -4.2% (+/-3.7) | full-time year-round $ 44,502 -> $ 40,405  -9.2% (+/-2.1) | full-time year-round share of workers 69% -> 74%
+   Henry     | all workers $ 42,870 -> $ 40,610  -5.3% (+/-5.6) | full-time year-round $ 49,397 -> $ 47,730  -3.4% (+/-4.7) | full-time year-round share of workers 68% -> 74%
+   Cherokee  | all workers $ 39,987 -> $ 38,580  -3.5% (+/-5.0) | full-time year-round $ 49,688 -> $ 46,702  -6.0% (+/-6.6) | full-time year-round share of workers 68% -> 72%
+
+Renter workers by sector, Gwinnett and Cobb (share of workers with earnings; median earnings 2020-24)
+   Gwinnett
+      farming and mining                 0.2% ->   0.1%  median earnings 2020-24 $ 40,929
+      utilities                          0.3% ->   0.2%  median earnings 2020-24 $ 42,771
+      construction                      18.9% ->  14.2%  median earnings 2020-24 $ 38,725
+      manufacturing                      7.9% ->   8.4%  median earnings 2020-24 $ 41,549
+      wholesale                          4.6% ->   2.2%  median earnings 2020-24 $ 47,659
+      retail                            15.2% ->  12.1%  median earnings 2020-24 $ 35,534
+      transportation and warehousing     4.2% ->   7.9%  median earnings 2020-24 $ 38,184
+      information                        3.0% ->   1.9%  median earnings 2020-24 $ 42,957
+      finance and real estate            5.8% ->   4.8%  median earnings 2020-24 $ 57,869
+      professional and technical         4.6% ->   7.7%  median earnings 2020-24 $ 64,767
+      administrative and support         6.9% ->   7.0%  median earnings 2020-24 $ 31,484
+      education and health care         10.9% ->  16.2%  median earnings 2020-24 $ 41,979
+      leisure and hospitality            9.1% ->   9.6%  median earnings 2020-24 $ 22,742
+      other services                     5.5% ->   4.7%  median earnings 2020-24 $ 29,950
+      government and military            3.0% ->   2.4%  median earnings 2020-24 $ 57,276
+   Cobb
+      farming and mining                 0.0% ->   0.2%  median earnings 2020-24 $ 17,899
+      utilities                          0.9% ->   0.3%  median earnings 2020-24 $ 89,493
+      construction                      12.7% ->  10.7%  median earnings 2020-24 $ 40,327
+      manufacturing                      7.6% ->   6.4%  median earnings 2020-24 $ 58,094
+      wholesale                          3.2% ->   2.1%  median earnings 2020-24 $ 52,503
+      retail                            13.8% ->  12.1%  median earnings 2020-24 $ 32,218
+      transportation and warehousing     4.7% ->   5.4%  median earnings 2020-24 $ 42,771
+      information                        3.3% ->   2.9%  median earnings 2020-24 $ 61,101
+      finance and real estate            5.9% ->   6.5%  median earnings 2020-24 $ 54,991
+      professional and technical         6.5% ->  11.3%  median earnings 2020-24 $ 68,216
+      administrative and support         7.7% ->   5.7%  median earnings 2020-24 $ 34,518
+      education and health care         14.8% ->  16.5%  median earnings 2020-24 $ 44,688
+      leisure and hospitality           11.0% ->  11.8%  median earnings 2020-24 $ 26,237
+      other services                     5.0% ->   5.5%  median earnings 2020-24 $ 29,385
+      government and military            2.9% ->   2.3%  median earnings 2020-24 $ 55,860
+
+R4 QCEW average annual pay of jobs located in the county, 2005-09 average to 2020-24 average, after inflation
+   13063 Clayton   +16.4%
+   13121 Fulton    +15.8%
+   13067 Cobb      +10.3%
+   13057 Cherokee   +8.1%
+   13089 DeKalb     +7.9%
+   13151 Henry      +5.6%
+   13117 Forsyth    +3.2%
+   13135 Gwinnett   +1.0%
+
+Rules
+   R1 mix effect for Gwinnett -9.5 pts -> not a factor
+   R3 Gwinnett full-time year-round earnings -3.3% vs Cobb +6.7%, peer median +1.7%
+   R4 Gwinnett QCEW +1.0% vs peer median +9.2%
