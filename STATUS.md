@@ -5,15 +5,15 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 
 ## Current
 
-Post: none yet
-Step: 1
+Post: gwinnett-county-rents
+Step: 2a
 Since: 2026-10-21
 
 ## Steps
 
 | Step | What | Confirmed | Notes |
 |---|---|---|---|
-| 1  | Exploration and analysis | | |
+| 1  | Exploration and analysis | 2026-10-21 | thread and charts in research/thread.md; both tie-outs pass |
 | 2a | Draft with brackets resolved | | |
 | 2b | Eric's edit, Claude's look-over | | |
 | 2c | Slice markup | | |
@@ -123,3 +123,5 @@ None.
   and footer (college-county rule), chart 11 title and beat 5 ("fell 3%" is
   inside the margin, now "did not rise"); beat 5 notes the PUMS 7% vs table
   8%. Ready to ask Eric to close Step 1.
+- 2026-10-21 Step 1 confirmed by Eric. Slug: gwinnett-county-rents. Step 2a opened:
+  posts/gwinnett-county-rents/ created; waiting on Eric's draft.
