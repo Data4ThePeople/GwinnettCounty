@@ -13,8 +13,29 @@
         "drop_cap_text": [
           {
             "type": "paragraph",
-            "text": "Last week, we dug into our Rentals within Reach visualization and pulled out what looked like one of the most affordable counties in America for renters. That was Dawson County, Nebraska, and while it\u2019s true that it used to be affordable, that all changed earlier this year when its largest employer \u2013 the Tyson\u2019s meatpacking plant \u2013 shut its doors.",
-            "spans": [],
+            "text": "Last week, we dug into our Rentals Within Reach visualization and pulled out what looked like one of the most affordable counties in America for renters. That was Dawson County, Nebraska, and while it\u2019s true that it used to be affordable, that all changed earlier this year when its largest employer \u2013 the Tyson meatpacking plant \u2013 shut its doors.",
+            "spans": [
+              {
+                "start": 27,
+                "end": 47,
+                "type": "hyperlink",
+                "data": {
+                  "link_type": "Web",
+                  "url": "https://www.data4thepeople.com/p/rentals-within-reach",
+                  "target": "_blank"
+                }
+              },
+              {
+                "start": 163,
+                "end": 186,
+                "type": "hyperlink",
+                "data": {
+                  "link_type": "Web",
+                  "url": "https://www.data4thepeople.com/p/lexington-tyson-plant-closure",
+                  "target": "_blank"
+                }
+              }
+            ],
             "direction": "ltr"
           }
         ]
@@ -30,7 +51,7 @@
         "paragraph_text": [
           {
             "type": "paragraph",
-            "text": "Today, we went hunting on the opposite side of the ledger \u2013 the counties that were the least affordable for renters. Interestingly, three of the top ten counties were all in the Atlanta metro area. Interesting. But one county stood out from the rest \u2013 Gwinnett County, situated immediately northwest of downtown Atlanta. Gwinnett County had just 10.5% of rental units \u201cwithin reach\u201d of the median renter household income. We define within reach as no more than 30% of a family\u2019s after-tax income.",
+            "text": "Today, we went hunting on the opposite side of the ledger \u2013 the counties that were the least affordable for renters. Interestingly, three of the ten least affordable counties outside college counties were in the Atlanta metro area. But one county stood out from the rest \u2013 Gwinnett County, situated northeast of downtown Atlanta. Gwinnett County had just 10.5% of rental units \u201cwithin reach\u201d of the median renter household income. We define within reach as a rent of no more than 30% of the median renter household\u2019s after-tax income.",
             "spans": [],
             "direction": "ltr"
           }
@@ -90,7 +111,7 @@
           },
           {
             "type": "paragraph",
-            "text": "Nationally, Gwinnett's 10.5% was the lowest of the 1,922 counties we ranked with at least 1,000 rentals, leaving out college counties.",
+            "text": "Nationally, Gwinnett's 10.5% was the lowest of the 1,922 counties we ranked, leaving out college counties. We ranked counties with at least 1,000 rentals and reliable survey estimates.",
             "spans": [],
             "direction": "ltr"
           }
@@ -324,7 +345,7 @@
           },
           {
             "type": "paragraph",
-            "text": "Gwinnett added about 41,000 rentals over this period. Two kinds account for more than half of them: about 11,300 older houses, built before 2000, that became rentals, and about 11,000 apartments built since 2010. Neither was priced for the median renter household, which could afford about $1,250 a month at 30% of its income. In 2020-2024, older houses rented for a median of about $1,990 and new apartments for $1,870. About 10% of the older houses and 8% of the new apartments were within reach. Houses built since 2010 rented for more still.",
+            "text": "Gwinnett added about 41,000 rentals over this period. Two kinds account for more than half of them: about 11,300 more rentals in older houses, built before 2000, and about 11,000 apartments built since 2010. Houses built since 2010 added about 6,700 more. The typical rental in each of the three cost more than the median renter household could afford: about $1,250 a month, 30% of its after-tax income. In 2020-2024, older houses rented for a median of about $1,990 and new apartments for $1,870. About 10% of the older houses and 8% of the new apartments were within reach. Houses built since 2010 rented for a median of about $2,500, and 2% were within reach.",
             "spans": [],
             "direction": "ltr"
           }
@@ -378,7 +399,7 @@
         "paragraph_text": [
           {
             "type": "paragraph",
-            "text": "That does not explain why the number of rentals within reach fell. The answer is in older apartments, built before 2000. Gwinnett had about the same number of them in both periods, but their median rent went from about $860 to $1,660, up 92%. After inflation, that is a 31% rise, while the amount the median renter household could afford rose 8%. In 2005-2009, the median older apartment rented for about $100 more than that amount. By 2020-2024, it was about $400 more.",
+            "text": "That does not account for the drop in rentals within reach. Most of that drop is in older apartments, built before 2000. Gwinnett had about the same number of them in both periods, but their median rent went from about $860 to $1,660, up 92%. After inflation, that is a 31% rise, while the amount the median renter household could afford rose 8%. In 2005-2009, the median older apartment rented for about $100 more than that amount. By 2020-2024, it was about $400 more.",
             "spans": [],
             "direction": "ltr"
           }
@@ -432,7 +453,7 @@
         "paragraph_text": [
           {
             "type": "paragraph",
-            "text": "In other words, the rentals new to the market came in out of reach, and the older apartments that used to be close to reach rose far faster than renters' income.",
+            "text": "In other words, most of the rentals added cost more than the median renter household could afford, and the older apartments that used to be close to reach rose far faster than renters' income.",
             "spans": [],
             "direction": "ltr"
           }
@@ -465,13 +486,13 @@
           },
           {
             "type": "paragraph",
-            "text": "Why did renter income not keep up? For the same kind of renter household (the same number of workers, and a householder of the same age and education), income fell about 3% after inflation. Renter households as a whole earned more only because the households changed: more members worked, more worked full time, and more householders were older or had college degrees. Pay itself did not rise. After inflation, the median renter who worked full time all year earned about $46,100 in 2005-2009 and $44,600 in 2020-2024. In Cobb, that pay rose 7%.",
+            "text": "Why did renter income not keep up? For the same kind of renter household (the same number of workers, and a householder of the same age and education), income fell about 3% after inflation. Renter households as a whole earned more mostly because the households changed: more members worked, more worked full time, and more householders were older or had college degrees. Pay itself showed no measurable rise. After inflation, the median renter who worked full time all year earned about $46,100 in 2005-2009 and $44,600 in 2020-2024. In Cobb, that pay rose 7%.",
             "spans": [],
             "direction": "ltr"
           },
           {
             "type": "paragraph",
-            "text": "Few counties with rents rising this fast saw that. We looked at 37 counties in large metro areas where rent rose 25% or more after inflation and the survey can measure the county on its own. Only two showed a drop in full-time renter pay: Gwinnett, and Cherokee County, also in metro Atlanta, whose estimate is much less certain. In the middle county of the group, it rose 15%.",
+            "text": "Few counties with rents rising this fast saw that. We looked at 37 counties in large metro areas where rent rose 25% or more after inflation and the survey can measure the county on its own. Only two showed a drop in full-time renter pay: Gwinnett, and Cherokee County, also in metro Atlanta. Both drops are within the survey's margin of error, Cherokee's by a wide amount. In the middle county of the group, it rose 15%.",
             "spans": [],
             "direction": "ltr"
           }
@@ -524,8 +545,26 @@
       "primary": {
         "paragraph_text": [
           {
+            "type": "heading2",
+            "text": "\u201cHotlanta\u201d - for rents, not renter incomes",
+            "spans": [],
+            "direction": "ltr"
+          },
+          {
             "type": "paragraph",
-            "text": "[Eric: closing]",
+            "text": "We really tried hard to keep this analysis focused on Gwinnett County. With the lowest percent of rentals within reach across its cohort of larger U.S. counties, it deserved the attention. But notice how all throughout this analysis, other neighboring Atlanta area counties kept making appearances on the charts. The analysis does not support one neat and tidy cause and effect conclusion encompassing the entire Atlanta metro area, but the data does tell us something is going on around this city that is making many areas uniquely difficult for renters. Rental prices are rising like one would expect in Hotlanta, but the incomes aren\u2019t climbing with it. That\u2019s why Gwinnett took pole position in this analysis \u2013 it had the largest gap between the change in rental prices and renter incomes. But is Gwinnett unique, or is it just where this perfect storm came together around Atlanta? We don\u2019t know\u2026 but would love to hear from residents to help fill in the experiential gaps to which the data is blind.",
+            "spans": [],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "Our other takeaway from this analysis was how different it was from Dawson County\u2019s story. Dawson County was all about concentration risk of a small county in one large employer. It was an idiosyncratic story on the surface, but on reflection is just the manifestation of a risk facing many small counties across this country. Gwinnett County, from what we can tell, is simply a math story. It\u2019s a story that is happening everywhere to some degree - inflation creates winners and losers. If you owned your home over the past twenty years in Gwinnett County, you are a winner from housing inflation. If you needed to rent, you are a loser from housing inflation. Yes, you lost especially hard in Gwinnett, but this story just illustrates that what matters is the ratio between your income and your expenses. We all know this right? It couldn\u2019t be simpler. And yet, what happened in Gwinnett is happening across the country to varying degrees. In my view, this is very sad. We were all renters at one point in our life. And if we were lucky, we eventually became homeowners. But now we have counties where rental prices are accelerating far faster than incomes. How are renters in Gwinnett supposed to save for a house if they must spend 43% of their after-tax income on a median rental?",
+            "spans": [],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "Our job is the tools and analysis to help you understand the data. It\u2019s not policy. But geez this is depressing for those seeking the American Dream (without wealth parents to finance it for them). Hopefully some smart minds come together to first acknowledge this problem, and then enact solutions to give people some hope for a better match between wages and affordable rentals.",
             "spans": [],
             "direction": "ltr"
           }

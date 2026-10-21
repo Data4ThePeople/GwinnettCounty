@@ -77,6 +77,8 @@ Post chart 06 (renter pay, large-metro counties with rent up 25%+)
    PASS  H4   Gwinnett and Cherokee are the two (1 = yes)                    claimed       1.00  computed       1.00
    PASS  H5   middle county's pay change (%)                                 claimed      15.00  computed      14.54
    PASS  H6   Gwinnett pay change matches the PUMS county pull (%)           claimed      -3.28  computed      -3.28
+Closing
+   PASS  K1   median rent as % of median renter after-tax income, 2020-24    claimed      43.00  computed      43.33
 Beat 5
    INFO  PUMS renter median change +6.8% (the text's 8% is the published table, C2)
    PASS  E1   full-time year-round pay change (%)                            claimed      -3.00  computed      -3.28
@@ -111,4 +113,4 @@ Words (checked by hand against the results above and the memos)
    FIXED  beat 5 and chart 11 'fell 3%': -3.3% is inside its 90% margin of about 5 points, so the text now says pay 'did not rise' (flagged by the independent tie-out).
    FIXED  beat 5 '34% to 38%' for households with 2+ workers: 37.46% rounds to 37 (E9); 'the same rise' as Cobb is now 'about the same rise' (E7, within the margin of about 0.02).
 
-85 of 85 number checks pass.
+86 of 86 number checks pass.

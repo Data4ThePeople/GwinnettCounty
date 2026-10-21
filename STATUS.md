@@ -169,3 +169,5 @@ None.
 - 2026-10-21 Eric accepted edits 1-3 (college counties, rentals-added sentence,
   net rentals in older houses); applied. Asked for the median rent as a share
   of after-tax renter income: 43.3% in 2020-24, 35.6% in 2005-09 (not yet in post).
+- 2026-10-21 Eric's closing placed verbatim under its own heading. 43% figure tied
+  out (K1). Proposed edits to the closing sent as a numbered list (not applied).
