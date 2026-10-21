@@ -155,6 +155,7 @@ def main():
     check("F3", "apartments built 2010+ added, 'about 11,000'", 11000, add[("apartments", "2010 or later")], 50)
     check("F4", "older apartments within reach change, '-5,500'", -5500, inr[("apartments", "before 2000")], 50)
     big = max(add, key=add.get)
+    check("F6", "houses built 2010+ added, 'about 6,700'", 6700, add[("houses", "2010 or later")], 50)
     check("F5", "largest single group is older houses (1 = yes)", 1, float(big == ("houses", "before 2000")), 0)
     print("Post charts 05 and 06 (rents against what renters could afford)")
     two = add[("houses", "before 2000")] + add[("apartments", "2010 or later")]
