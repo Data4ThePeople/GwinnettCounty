@@ -174,3 +174,5 @@ None.
 - 2026-10-21 Eric accepted closing edits 1-10; applied.
 - 2026-10-21 Title set: Good Luck Renting It in Gwinnett.
 - 2026-10-21 Title changed: Renters Can't Win It in Gwinnett.
+- 2026-10-21 Subtitle set (Claude's suggestion); both closing sections kept. No
+  brackets left in POST.md. Waiting on Eric to confirm 2a.

@@ -1,6 +1,6 @@
 ---
 title: Renters Can't Win It in Gwinnett
-subtitle: [Eric: subtitle]
+subtitle: Gwinnett County, Georgia, had the smallest share of rentals within reach of its median renter outside college counties. Rent rose 32% after inflation while renter income rose 8%.
 slug: gwinnett-county-rents
 date:
 section: Data 4 Thought
