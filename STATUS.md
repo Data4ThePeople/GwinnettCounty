@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: gwinnett-county-rents
-Step: 2a
+Step: 2b
 Since: 2026-10-21
 
 ## Steps
@@ -14,7 +14,7 @@ Since: 2026-10-21
 | Step | What | Confirmed | Notes |
 |---|---|---|---|
 | 1  | Exploration and analysis | 2026-10-21 | thread and charts in research/thread.md; both tie-outs pass |
-| 2a | Draft with brackets resolved | | |
+| 2a | Draft with brackets resolved | 2026-10-21 | 7 charts; tie-outs: Claude 86/86, independent 1 and 2 match |
 | 2b | Eric's edit, Claude's look-over | | |
 | 2c | Slice markup | | |
 | 2d | Hero 1680x1080 + alt text | | |
@@ -176,3 +176,5 @@ None.
 - 2026-10-21 Title changed: Renters Can't Win It in Gwinnett.
 - 2026-10-21 Subtitle set (Claude's suggestion); both closing sections kept. No
   brackets left in POST.md. Waiting on Eric to confirm 2a.
+- 2026-10-21 Step 2a confirmed by Eric. Next: 2b, Eric edits POST.md, then
+  Claude's look-over.
