@@ -370,6 +370,61 @@ def stacked():
     save(fig, "12-rentals-stacked.png")
 
 
+# ---------------------------------------------------------------- 13 where the rentals came from, and where the ones within reach went
+GROUP_ROWS = [("houses", "before 2000"), ("houses", "2000-09"), ("houses", "2010 or later"),
+              ("apartments", "before 2000"), ("apartments", "2000-09"), ("apartments", "2010 or later"), ("other", "all")]
+
+
+def by_age_type():
+    """Cash-rent renter households and those within reach, 2005-09 and 2020-24, by building type and year built (PUMS).
+    Buildings built 2000-09 are the 'newer (2000+)' group in 2005-09 and the '2000s' group in 2020-24."""
+    era = {"older (pre-2000)": "before 2000", "newer (2000+)": "2000-09", "2000s": "2000-09", "newer (2010+)": "2010 or later"}
+    out = {g: {v: [0, 0] for v in ("2009", "2024")} for g in GROUP_ROWS}
+    for v in ("2009", "2024"):
+        c = ceiling(v)
+        for x in N7.records(v, "135"):
+            t = {"single-family": "houses", "5+ unit apartments": "apartments"}.get(x["type"], "other")
+            g = (t, "all") if t == "other" else (t, era[x["era"]])
+            out[g][v][0] += x["w"]
+            out[g][v][1] += x["w"] * (x["rent"] <= c)
+    return out
+
+
+def growth_by_age():
+    d = by_age_type()
+    labels = {"houses": "Houses", "apartments": "Apartments"}
+    names = [f"{labels[t]}, built {e}" if t != "other" else "Other (2-4 unit buildings, mobile homes)" for t, e in GROUP_ROWS]
+    all_ch = [d[g]["2024"][0] - d[g]["2009"][0] for g in GROUP_ROWS]
+    in_ch = [d[g]["2024"][1] - d[g]["2009"][1] for g in GROUP_ROWS]
+    tot = sum(all_ch)
+    f = H_["units"][G]["f"]
+    tool_drop = sum(f["2024"]["r"]) * tool_share(f["2024"], "2024") / 100 - sum(f["2009"]["r"]) * tool_share(f["2009"], "2009") / 100
+    houses = sum(c for g, c in zip(GROUP_ROWS, all_ch) if g[0] == "houses")
+    fig = plt.figure(figsize=(W, H))
+    cols = [BLUE if g[1] == "before 2000" else MUTED for g in GROUP_ROWS]
+    hi = max(all_ch + in_ch) * 1.3
+    lims = [(min(all_ch + [0]) * 1.5 - 0.02 * hi, hi), (min(in_ch + [0]) * 1.5 - 0.02 * hi, max(in_ch) + 0.25 * hi)]
+    per = 0.6 / sum(b - a for a, b in lims)                 # same width per household in both panels
+    x0 = 0.34
+    for i, (vals, head) in enumerate(((all_ch, "Change in all rentals"), (in_ch, "Change in rentals within reach"))):
+        lo, top = lims[i]
+        ax = fig.add_axes([x0, 0.14, per * (top - lo), 0.56])
+        x0 += per * (top - lo) + 0.03
+        ax.tick_params(length=0)
+        hbars(ax, names if i == 0 else [""] * len(names), vals, cols, lambda v: f"{round(v, -2):+,.0f}", 400 if i == 0 else 250)
+        if i:
+            ax.set_yticks([])
+        ax.set_xlim(lo, top)
+        ax.set_title(head, color=INK, fontsize=11.5, loc="left", pad=10)
+    titleblock(fig, "Houses added most new rentals; older apartments lost the most within reach",
+               f"Change in renter households with a cash rent, 2005-09 to 2020-24, by building type and year built, rounded to the nearest 100.\n"
+               f"All rentals grew by about {round(tot, -2):,.0f}; houses account for {100 * houses / tot:.0f}% of that. "
+               f"Rentals within reach fell by about {round(-sum(in_ch), -2):,.0f} in these records\n"
+               f"(the tool, which reads rents from price ranges, shows about {round(-tool_drop, -2):,.0f}). " + REACH.replace(",\nthe", ", the").replace("Within reach: g", "G"))
+    credit(fig, PUMS)
+    save(fig, "13-growth-by-age.png")
+
+
 if __name__ == "__main__":
     use_house_style()
     share_line()
@@ -384,6 +439,7 @@ if __name__ == "__main__":
     ranking()
     renter_pay()
     stacked()
+    growth_by_age()
     out = ROOT / "posts" / SLUG / "images"
     out.mkdir(parents=True, exist_ok=True)
     for src, dst in POST_ORDER.items():
