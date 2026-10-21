@@ -1,0 +1,203 @@
+=== reach.py
+college units 2024: 71 | Atlanta counties: 29
+  13135 Gwinnet      share 10.51  amt  1253.3  cash  107229 lo False col False
+  13063 Clayto       share 10.95  amt   974.6  cash   46761 lo False col False
+  13089 DeKal        share 14.00  amt  1139.2  cash  115334 lo False col False
+  13151 Henr         share 18.24  amt  1238.9  cash   20934 lo False col False
+  13217 Newto        share 19.09  amt  1016.4  cash   10168 lo False col False
+  13255 Spaldin      share 19.29  amt   815.8  cash    9249 lo False col False
+  13057 Cheroke      share 22.57  amt  1365.9  cash   22246 lo False col False
+  13113 Fayett       share 22.98  amt  1403.1  cash    8509 lo False col False
+  13067 Cob          share 23.90  amt  1385.9  cash   95318 lo False col False
+  13121 Fulto        share 24.61  amt  1287.1  cash  206905 lo False col False
+  13045 Carrol       share 27.27  amt   887.8  cash   11708 lo False col False
+  13097 Dougla       share 28.68  amt  1262.8  cash   16463 lo False col False
+  13149 Hear         share 29.03  amt   730.9  cash    1131 lo True col False
+  13223 Pauldin      share 29.68  amt  1407.6  cash   10766 lo False col False
+  13297 Walto        share 29.92  amt   957.8  cash    6844 lo False col False
+  13199 Meriwethe    share 30.70  amt   750.1  cash    1948 lo False col False
+  13117 Forsyt       share 31.36  amt  1693.0  cash   13136 lo False col False
+  13247 Rockdal      share 31.84  amt  1221.8  cash   10277 lo False col False
+  13085 Dawso        share 33.60  amt  1378.6  cash    2324 lo False col False
+  13077 Cowet        share 33.71  amt  1216.5  cash   11684 lo False col False
+  13187 Lumpki       share 36.03  amt   983.9  cash    2450 lo False col True
+  13013 Barro        share 36.30  amt  1132.3  cash    6253 lo False col False
+  13211 Morga        share 36.35  amt   991.7  cash    1508 lo True col False
+  13227 Picken       share 37.83  amt  1000.1  cash    2221 lo False col False
+  13015 Barto        share 39.11  amt  1142.4  cash   10615 lo False col False
+  13035 Butt         share 46.79  amt   922.9  cash    2171 lo False col False
+  13231 Pik          share 48.87  amt   977.0  cash     964 lo False col False
+  13159 Jaspe        share 57.03  amt  1012.1  cash     651 lo True col False
+  13143 Haralso      share 70.05  amt  1014.0  cash    3025 lo False col False
+ranked units: 1987 excluding college: 1922
+lowest 15 (no college):
+   1 13135 Gwinnett County, Georgia                 10.51 ATL
+   2 13063 Clayton County, Georgia                  10.95 ATL
+   3 35027 Lincoln County, New Mexico               11.79 
+   4 13089 DeKalb County, Georgia                   14.00 ATL
+   5 12011 Broward County, Florida                  14.20 
+   6 01047 Dallas County, Alabama                   14.39 
+   7 28143 Tunica County, Mississippi               15.22 
+   8 08013 Boulder County, Colorado                 15.24 
+   9 12097 Osceola County, Florida                  15.35 
+  10 48259 Kendall County, Texas                    15.38 
+  11 48249 Jim Wells County, Texas                  16.12 
+  12 12035 Flagler County, Florida                  16.31 
+  13 51740 Portsmouth city, Virginia                16.35 
+  14 21197 Powell County, Kentucky                  16.39 
+  15 51683 Manassas city, Virginia                  16.56 
+ATL in lowest 10: 3
+lowest 8 incl college: [('Whitman County, Washington', np.float64(9.82), True), ('Benton County, Oregon', np.float64(10.47), True), ('Gwinnett County, Georgia', np.float64(10.51), False), ('Clayton County, Georgia', np.float64(10.95), False), ('Watauga County, North Carolina', np.float64(11.56), True), ('Lincoln County, New Mexico', np.float64(11.79), False), ('Lincoln Parish, Louisiana', np.float64(12.5), True), ('Champaign County, Illinois', np.float64(13.09), True)]
+Gwinnett 2024 med 60473.0 amt 1253.28 share 10.51 | 2009 med 38202.0 amt 791.53 (x CPI 1157.35) share 25.52
+CPI factor 1.4621673650698948
+=== gw_k.py
+K1 total cash-rent renter hh 65811 -> 106566, change +40755 (61.9%)
+  house_pre2000  2009   14918 (n= 598) 2024   26182 (n= 918) change  +11264
+  apt_pre2000    2009   28759 (n=1086) 2024   29972 (n= 838) change   +1213
+  house_2000s    2009    5095 (n= 225) 2024    8930 (n= 302) change   +3835
+  apt_2000s      2009   10090 (n= 424) 2024   12360 (n= 327) change   +2270
+  house_2010     2009       0 (n=   0) 2024    6733 (n= 198) change   +6733
+  apt_2010       2009       0 (n=   0) 2024   10959 (n= 346) change  +10959
+  house_all      2009   20013 (n= 823) 2024   41845 (n=1418) change  +21832
+  apt_all        2009   38849 (n=1510) 2024   53291 (n=1511) change  +14442
+K1 houses pre-2000 +11264, apts 2010+ +10959, combined +22223 = 54.5% of total change
+K2 affordable amount 2024: 1253.28; 2009: 791.53 (2009$) = 1157.35 (2024$)
+   all cash-rent 2024 median 1812, within reach 11.0%; 2009 median 947 within 24.1%
+K3 2024 house_pre2000  median 1995 (alt 1995) within reach 10.2%  n=918
+K3 2024 apt_2010       median 1870 (alt 1870) within reach 7.9%  n=346
+K3 2024 house_2010     median 2496 (alt 2496) within reach 2.4%  n=198
+K3 2024 apt_pre2000    median 1660 (alt 1660) within reach 13.6%  n=838
+K3 2024 house_2000s    median 2221 (alt 2221) within reach 4.3%  n=302
+K3 2024 apt_2000s      median 1673 (alt 1673) within reach 8.0%  n=327
+K4 older apts count 28759 -> 29972 (4.2%)
+   median rent 2009 865 (alt 865) [1264 in 2024$], 2024 1660 (alt 1660)
+   change before inflation 92.0%, after 31.3%
+   amount 2024$: 1157 -> 1253 (8.3%)
+   gap rent - amount: 2005-09 +107, 2020-24 +407
+   older apts within reach: 2009 33.3%  2024 13.6%
+=== l1.py
+NCHS code 1/2 rows: 438 | with current pop: 435 | code1 68 code2 370
+in 2024 ACS: 435 | in both: 433 | current-pop rows missing 2009: ['Capitol Planning Region, CT', 'Lower Connecticut River Valley Planning Region, CT'] | missing 2024: ['Hartford County, CT', 'Middlesex County, CT', 'Tolland County, CT']
+large-metro counties with rent in both periods: 433 | rent up 25%+ after inflation: 81
+measurable on own: 37 | not: 44 | fail 2000 only 18 fail 2020 only 4 both fail 22
+  48071 Chambers County, TX                67.0%  -  2000:1 False  2020:1 False
+  08031 Denver County, CO                  60.8%  -  2000:5 False  2020:5 False
+  08005 Arapahoe County, CO                50.0%  -  2000:6 False  2020:7 False
+  53033 King County, WA                    48.3%  MEASURABLE  2000:15 True  2020:18 True
+  41067 Washington County, OR              45.4%  -  2000:4 False  2020:5 True
+  08014 Broomfield County, CO              44.8%  -  2000:0 False  2020:1 False
+  08059 Jefferson County, CO               44.0%  -  2000:8 False  2020:8 False
+  47037 Davidson County, TN                43.5%  MEASURABLE  2000:5 True  2020:6 True
+  06085 Santa Clara County, CA             43.3%  MEASURABLE  2000:14 True  2020:15 True
+  53053 Pierce County, WA                  42.8%  MEASURABLE  2000:5 True  2020:8 True
+  41051 Multnomah County, OR               42.0%  -  2000:8 False  2020:6 True
+  53011 Clark County, WA                   41.3%  MEASURABLE  2000:3 True  2020:4 True
+  06081 San Mateo County, CA               41.2%  MEASURABLE  2000:6 True  2020:6 True
+  08001 Adams County, CO                   40.2%  -  2000:8 False  2020:5 False
+  47189 Wilson County, TN                  39.4%  -  2000:1 False  2020:1 True
+  41005 Clackamas County, OR               39.0%  -  2000:4 False  2020:4 True
+  53061 Snohomish County, WA               38.8%  MEASURABLE  2000:5 True  2020:6 True
+  47119 Maury County, TN                   38.5%  -  2000:1 False  2020:1 True
+  13223 Paulding County, GA                38.3%  -  2000:1 False  2020:1 True
+  06001 Alameda County, CA                 38.2%  MEASURABLE  2000:10 True  2020:14 True
+  48407 San Jacinto County, TX             38.1%  -  2000:1 False  2020:1 False
+  11001 District of Columbia, DC           37.6%  MEASURABLE  2000:5 True  2020:6 True
+  13117 Forsyth County, GA                 37.6%  -  2000:1 False  2020:2 True
+  48453 Travis County, TX                  37.3%  -  2000:6 False  2020:9 True
+  49035 Salt Lake County, UT               37.0%  MEASURABLE  2000:7 True  2020:9 True
+  37119 Mecklenburg County, NC             36.7%  MEASURABLE  2000:6 True  2020:8 True
+  51800 Suffolk city, VA                   36.7%  -  2000:1 False  2020:1 False
+  48187 Guadalupe County, TX               35.6%  -  2000:1 False  2020:1 True
+  48121 Denton County, TX                  35.2%  MEASURABLE  2000:2 True  2020:6 True
+  48367 Parker County, TX                  35.2%  -  2000:1 False  2020:1 True
+  47165 Sumner County, TN                  34.7%  -  2000:2 False  2020:2 False
+  47187 Williamson County, TN              34.7%  MEASURABLE  2000:1 True  2020:2 True
+  48085 Collin County, TX                  34.5%  MEASURABLE  2000:4 True  2020:8 True
+  37183 Wake County, NC                    34.4%  -  2000:5 False  2020:8 True
+  13057 Cherokee County, GA                34.0%  MEASURABLE  2000:1 True  2020:2 True
+  47149 Rutherford County, TN              33.8%  MEASURABLE  2000:1 True  2020:3 True
+  39041 Delaware County, OH                33.6%  MEASURABLE  2000:1 True  2020:2 True
+  12109 St. Johns County, FL               33.2%  -  2000:1 True  2020:3 False
+  13085 Dawson County, GA                  33.2%  -  2000:1 False  2020:1 False
+  37179 Union County, NC                   33.0%  -  2000:1 True  2020:2 False
+  37025 Cabarrus County, NC                33.0%  -  2000:1 True  2020:2 False
+  41071 Yamhill County, OR                 32.3%  -  2000:1 False  2020:1 True
+  48113 Dallas County, TX                  32.3%  MEASURABLE  2000:15 True  2020:22 True
+  13135 Gwinnett County, GA                31.8%  MEASURABLE  2000:5 True  2020:7 True
+  06075 San Francisco County, CA           31.6%  MEASURABLE  2000:7 True  2020:8 True
+  04013 Maricopa County, AZ                31.4%  MEASURABLE  2000:22 True  2020:35 True
+  12003 Baker County, FL                   31.3%  -  2000:1 False  2020:1 False
+  08035 Douglas County, CO                 31.3%  -  2000:2 False  2020:3 False
+  06013 Contra Costa County, CA            31.1%  MEASURABLE  2000:8 True  2020:9 True
+  45091 York County, SC                    30.7%  -  2000:1 True  2020:3 False
+  48439 Tarrant County, TX                 30.6%  -  2000:11 False  2020:16 True
+  41009 Columbia County, OR                30.6%  -  2000:1 False  2020:1 False
+  48091 Comal County, TX                   30.4%  -  2000:1 False  2020:1 True
+  48139 Ellis County, TX                   30.2%  MEASURABLE  2000:1 True  2020:1 True
+  48209 Hays County, TX                    30.1%  -  2000:1 False  2020:2 True
+  04021 Pinal County, AZ                   29.8%  -  2000:1 False  2020:4 False
+  08093 Park County, CO                    29.8%  -  2000:1 False  2020:1 False
+  13121 Fulton County, GA                  29.7%  MEASURABLE  2000:7 True  2020:8 True
+  13113 Fayette County, GA                 29.7%  -  2000:1 False  2020:1 True
+  12086 Miami-Dade County, FL              29.6%  -  2000:20 False  2020:25 False
+  48039 Brazoria County, TX                29.3%  MEASURABLE  2000:2 True  2020:3 True
+  48257 Kaufman County, TX                 29.1%  -  2000:1 False  2020:1 True
+  48325 Medina County, TX                  29.0%  -  2000:1 False  2020:1 False
+  48491 Williamson County, TX              28.8%  MEASURABLE  2000:2 True  2020:4 True
+  12103 Pinellas County, FL                28.6%  MEASURABLE  2000:8 True  2020:8 True
+  13089 DeKalb County, GA                  28.6%  MEASURABLE  2000:6 True  2020:6 True
+  36047 Kings County, NY                   28.3%  MEASURABLE  2000:18 True  2020:18 True
+  12057 Hillsborough County, FL            28.2%  MEASURABLE  2000:8 True  2020:11 True
+  06073 San Diego County, CA               28.2%  MEASURABLE  2000:16 True  2020:22 True
+  13067 Cobb County, GA                    27.6%  MEASURABLE  2000:5 True  2020:5 True
+  12069 Lake County, FL                    27.5%  MEASURABLE  2000:2 True  2020:3 True
+  25025 Suffolk County, MA                 27.3%  MEASURABLE  2000:6 True  2020:6 True
+  48259 Kendall County, TX                 27.1%  -  2000:1 False  2020:1 False
+  06067 Sacramento County, CA              27.0%  MEASURABLE  2000:9 True  2020:13 True
+  48015 Austin County, TX                  26.6%  -  2000:1 False  2020:1 False
+  47021 Cheatham County, TN                26.5%  -  2000:1 False  2020:1 False
+  25017 Middlesex County, MA               26.4%  -  2000:15 False  2020:13 True
+  08019 Clear Creek County, CO             25.9%  -  2000:1 False  2020:1 False
+  18011 Boone County, IN                   25.8%  -  2000:1 False  2020:1 False
+  34017 Hudson County, NJ                  25.4%  MEASURABLE  2000:5 True  2020:5 True
+  48029 Bexar County, TX                   25.3%  MEASURABLE  2000:11 True  2020:16 True
+=== l2_calc.py
+ 1 Cherokee County, GA            rent  34.0%  earn    49688 ->    46702    -6.0% +/- 10.8  n 486/688  [drop]
+ 2 Gwinnett County, GA            rent  31.8%  earn    46139 ->    44627    -3.3% +/-  5.2  n 2241/3473  [drop]
+ 3 Lake County, FL                rent  27.5%  earn    40933 ->    41979    +2.6% +/-  5.8  n 720/913
+ 4 Hillsborough County, FL        rent  28.2%  earn    44502 ->    46702    +4.9% +/-  2.4  n 5129/7039
+ 5 Sacramento County, CA          rent  27.0%  earn    50556 ->    53696    +6.2% +/-  2.6  n 5518/7686
+ 6 Bexar County, TX               rent  25.3%  earn    40933 ->    43658    +6.7% +/-  3.0  n 5559/8098
+ 7 Cobb County, GA                rent  27.6%  earn    49215 ->    52503    +6.7% +/-  4.8  n 2270/3077
+ 8 Rutherford County, TN          rent  33.8%  earn    42381 ->    45343    +7.0% +/-  8.0  n 733/1291
+ 9 Contra Costa County, CA        rent  31.1%  earn    61379 ->    66821    +8.9% +/-  4.7  n 2970/4385
+10 DeKalb County, GA              rent  28.6%  earn    44863 ->    49325    +9.9% +/-  5.1  n 3079/3533
+11 Pinellas County, FL            rent  28.6%  earn    43842 ->    48276   +10.1% +/-  3.2  n 3610/4351
+12 Snohomish County, WA           rent  38.8%  earn    52611 ->    58657   +11.5% +/-  5.2  n 2177/3232
+13 Maricopa County, AZ            rent  31.4%  earn    44502 ->    50274   +13.0% +/-  0.3  n 14129/19583
+14 Denton County, TX              rent  35.2%  earn    47469 ->    53696   +13.1% +/-  4.4  n 2237/4118
+15 Pierce County, WA              rent  42.8%  earn    49284 ->    55860   +13.3% +/-  3.8  n 2999/3893
+16 Collin County, TX              rent  34.5%  earn    53716 ->    60915   +13.4% +/-  4.2  n 2399/5027
+17 Brazoria County, TX            rent  29.3%  earn    44502 ->    50762   +14.1% +/-  6.6  n 757/990
+18 San Diego County, CA           rent  28.2%  earn    53403 ->    60915   +14.1% +/-  2.0  n 15480/19634
+19 Ellis County, TX               rent  30.2%  earn    43063 ->    49325   +14.5% +/- 12.9  n 420/570
+20 Davidson County, TN            rent  43.5%  earn    43842 ->    50689   +15.6% +/-  3.8  n 2738/4211
+21 Alameda County, CA             rent  38.2%  earn    62218 ->    72618   +16.7% +/-  3.6  n 7018/11076
+22 Clark County, WA               rent  41.3%  earn    47469 ->    55748   +17.4% +/-  6.5  n 1207/2067
+23 Mecklenburg County, NC         rent  36.7%  earn    44502 ->    52473   +17.9% +/-  4.7  n 3425/6943
+24 Williamson County, TN          rent  34.7%  earn    56369 ->    67032   +18.9% +/- 16.1  n 326/589
+25 Salt Lake County, UT           rent  37.0%  earn    42657 ->    50762   +19.0% +/-  4.5  n 2820/4517
+26 Fulton County, GA              rent  29.7%  earn    49215 ->    59662   +21.2% +/-  6.4  n 4143/5081
+27 Dallas County, TX              rent  32.3%  earn    41077 ->    50274   +22.4% +/-  2.7  n 11045/14612
+28 Suffolk County, MA             rent  27.3%  earn    58456 ->    71594   +22.5% +/-  3.7  n 4504/7785
+29 San Mateo County, CA           rent  41.2%  earn    65493 ->    81220   +24.0% +/-  5.2  n 3690/5329
+30 Hudson County, NJ              rent  25.4%  earn    57306 ->    72413   +26.4% +/-  4.8  n 5163/7334
+31 Williamson County, TX          rent  28.8%  earn    46139 ->    58657   +27.1% +/-  7.3  n 1180/2758
+32 Santa Clara County, CA         rent  43.3%  earn    69209 ->    89375   +29.1% +/-  3.5  n 8472/13679
+33 Kings County, NY               rent  28.3%  earn    51149 ->    67032   +31.1% +/-  2.0  n 16953/22177
+34 Delaware County, OH            rent  33.6%  earn    46473 ->    61101   +31.5% +/- 11.1  n 331/473
+35 District of Columbia, DC       rent  37.6%  earn    63057 ->    86296   +36.9% +/-  3.1  n 4348/6608
+36 King County, WA                rent  48.3%  earn    56905 ->    78204   +37.4% +/-  3.2  n 7746/13060
+37 San Francisco County, CA       rent  31.6%  earn    76136 ->   109982   +44.5% +/-  5.3  n 6561/8983
+median of county changes: 14.540577962001699 | middle county: Ellis County, TX 14.540577962001699
+Wed Oct 21 17:38:38 EDT 2026

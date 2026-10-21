@@ -48,6 +48,8 @@ rentals priced within reach of the median renter household fell from 25.5% in
   in `research/tieout-output.txt`.
 - `research/independent-tieout.md`: an independent recomputation from the raw
   data, with its code in `tieout/independent/`.
+- `research/independent-tieout-2.md`: a second independent recomputation, of
+  the numbers added while writing, with its code in `tieout/independent2/`.
 - `DATASETS.md`: every dataset used, with its limits and quirks.
 
 ## Data sources

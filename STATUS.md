@@ -161,3 +161,8 @@ None.
   Post has 7 charts. Tie-out 84 of 84. DATASETS 14 (county boundaries).
 - 2026-10-21 Eric accepted intro edits 1-5 (northeast, top ten outside college
   towns, household definition, tool link, Tyson); applied.
+- 2026-10-21 Independent tie-out 2 done (research/independent-tieout-2.md,
+  code in tieout/independent2/): every number in the new sections and on post
+  images 01, 02, 05-07 matches. Wording fixes applied to Claude's text and
+  chart titles (cause words, "after-tax", "median renter", pay-drop margins,
+  ranked-county limits). Three edits to Eric-derived wording sent as a list.

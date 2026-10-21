@@ -462,7 +462,7 @@ def new_to_market_rents():
     ax.set_xticks([])
     for side in ("left", "bottom"):
         ax.spines[side].set_visible(False)
-    titleblock(fig, "The kinds of rentals Gwinnett added rent well above what renters could afford",
+    titleblock(fig, "The rental types that grew most cost more than the median renter could afford",
                "Median gross rent a month, 2020-24, for the three groups that added the most rentals since 2005-09,\n"
                "and the share of each within reach. Rounded to the nearest $10.\n" + REACH.replace(",\nthe", ", the"))
     credit(fig, PUMS)
@@ -487,7 +487,7 @@ def older_apartment_rents():
     ax.set_yticks([])
     ax.spines["left"].set_visible(False)
     ch_rent, ch_line = pct(real["2009"][0], real["2024"][0]), pct(real["2009"][1], real["2024"][1])
-    titleblock(fig, f"Older apartment rents rose {ch_rent:.0f}%; what renters could afford rose {ch_line:.0f}%",
+    titleblock(fig, f"Older apartment rents rose {ch_rent:.0f}%; what the median renter could afford rose {ch_line:.0f}%",
                "Gwinnett County, monthly amounts in 2024 dollars (after inflation).\n"
                "Blue: median gross rent in apartment buildings built before 2000. Gray: 30% of the median renter household's income after taxes.\n"
                f"Before inflation, the median rent went from ${round(rent['2009'], -1):,.0f} to ${round(rent['2024'], -1):,.0f},"
@@ -523,7 +523,7 @@ def national_pay():
     rank = len(pool) - pool.index(G)
     med = sorted(vals)[len(vals) // 2]
     fell = [names[f].replace(" County", "").split(",")[0] for f in pool if res[f][0] < 0]
-    titleblock(fig, f"Where rent rose 25%+, renter pay did worst in {' and '.join(sorted(fell))}",
+    titleblock(fig, f"Where rent rose 25%+, only {' and '.join(sorted(fell))} show a drop in renter pay",
                f"Change in median earnings of renters who worked full time all year, 2005-09 to 2020-24, after inflation. Counties in metros of\n"
                f"1 million or more where median rent rose 25% or more after inflation. Gwinnett in blue, other Atlanta-area counties in yellow.\n"
                f"Of the {len(pool)} counties, only {' and '.join(fell)} show a fall; the middle county's pay rose {med:.0f}%.\n"
