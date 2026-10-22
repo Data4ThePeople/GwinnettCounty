@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: gwinnett-county-rents
-Step: 2c
+Step: 2d
 Since: 2026-10-22
 
 ## Steps
@@ -16,7 +16,7 @@ Since: 2026-10-22
 | 1  | Exploration and analysis | 2026-10-21 | thread and charts in research/thread.md; both tie-outs pass |
 | 2a | Draft with brackets resolved | 2026-10-21 | 7 charts; tie-outs: Claude 86/86, independent 1 and 2 match |
 | 2b | Eric's edit, Claude's look-over | 2026-10-22 | pay section now full-time pay only; tie-out 93/93 |
-| 2c | Slice markup | | |
+| 2c | Slice markup | 2026-10-22 | defaults only; 33 slices, 7 images |
 | 2d | Hero 1680x1080 + alt text | | |
 | 2e | SEO | | |
 | 2f | Pushed to Prismic (draft) | | |
@@ -187,3 +187,5 @@ None.
   37%, full-time share 66% to 76%, bachelor's 23% to 30%). New numbers tied
   out (C11-C14, F7, E15-E16): 93 of 93 pass.
 - 2026-10-22 Step 2b confirmed by Eric. Next: 2c, slice markup.
+- 2026-10-22 Step 2c confirmed by Eric. Importer convert-only: 33 slices, 7
+  images, defaults only, no fences added. Next: 2d, hero.
