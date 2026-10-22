@@ -11,7 +11,8 @@ renter household income rose 8%.
 ## What is here
 
 - `posts/gwinnett-county-rents/`: the post (`POST.md`), its email teaser
-  (`EMAIL.md`) and its images. The hero photo is "College Street, Norcross
+  (`EMAIL.md`), its social posts (`SOCIAL.md`), its images, and Instagram
+  slides in `social/`, built by `scripts/16_instagram.py`. The hero photo is "College Street, Norcross
   March 2017" by Thomson200 on Wikimedia Commons, public domain (CC0).
 - `research/candidate-selection.md`: how Gwinnett was chosen, the other
   candidates, and the questions this project starts from.
@@ -92,6 +93,7 @@ python scripts/12_renter_income.py
 python scripts/14_fetch_national_pay.py
 python scripts/15_national_pay.py
 python scripts/13_tieout.py
+python scripts/16_instagram.py
 ```
 
 The NCHS and OMB files go in `data/raw/nchs/` and `data/raw/omb/` (links in
