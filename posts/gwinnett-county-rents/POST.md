@@ -5,7 +5,7 @@ slug: gwinnett-county-rents
 date:
 section: Data 4 Thought
 hero: images/gwinnett-county-rents-hero-1680x1080.png
-hero_alt:
+hero_alt: College Street in downtown Norcross, Gwinnett County, Georgia, on a partly cloudy day. A row of new two-story townhomes with front porches lines the right side of the street, with cars parked in front. On the left, a black lamppost holds a street sign for Holcomb Bridge Road and a red Norcross banner. Small older houses and bare trees sit behind it, and a white church steeple rises at the end of the street.
 meta_title:
 description:
 keywords:
