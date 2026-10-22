@@ -473,26 +473,34 @@ def older_apartment_rents():
     k = CPI["2024"] / CPI["2009"]
     rent = {v: N7.wmedian(group_rows(v, "5+ unit apartments", "before 2000")) for v in ("2009", "2024")}
     line = {v: ceiling(v) for v in ("2009", "2024")}
-    real = {"2009": (rent["2009"] * k, line["2009"] * k), "2024": (rent["2024"], line["2024"])}
-    fig, ax = frame(left=0.08, top=0.74)
+    r = [round(rent["2009"] * k, -1), round(rent["2024"], -1)]
+    a = [round(line["2009"] * k, -1), round(line["2024"], -1)]
+    fig, ax = frame(left=0.10, right=0.66, top=0.76, bottom=0.17)
     xs = [0, 1]
-    wdt = 0.34
-    for i, (lab, col) in enumerate((("Median rent, apartments built before 2000", BLUE), ("Affordable to the median renter household", MUTED))):
-        vals = [real[v][i] for v in ("2009", "2024")]
-        ax.bar([x + (i - 0.5) * wdt for x in xs], vals, width=wdt - 0.02, color=col)
-        for x, v in zip(xs, vals):
-            ax.text(x + (i - 0.5) * wdt, v + 20, f"${round(v, -1):,.0f}", ha="center", va="bottom", color=INK, fontsize=10.5)
+    ax.fill_between(xs, a, r, color=YELLOW, alpha=0.12, lw=0)
+    for vals, col in ((r, YELLOW), (a, BLUE)):
+        ax.plot(xs, vals, color=col, lw=2.6, marker="o", ms=8, zorder=3)
+        ax.text(-0.04, vals[0], f"${vals[0]:,.0f}", ha="right", va="center", color=INK, fontsize=11)
+    ch_rent, ch_line = pct(rent["2009"] * k, rent["2024"]), pct(line["2009"] * k, line["2024"])
+    for vals, col, name, ch in ((r, YELLOW, "Median rent, older apartments", ch_rent),
+                                (a, BLUE, "Affordable to the median\nrenter household", ch_line)):
+        ax.text(1.05, vals[1], f"${vals[1]:,.0f}", ha="left", va="center", color=INK, fontsize=11)
+        ax.text(1.24, vals[1], f"{name}\nup {ch:.0f}% after inflation", ha="left", va="center", color=col, fontsize=11,
+                fontweight="bold", linespacing=1.35)
+    for x, (rv, av) in zip(xs, zip(r, a)):
+        ax.text(x + (0.05 if x == 0 else -0.05), (rv + av) / 2, f"Gap\n${rv - av:,.0f}", ha="left" if x == 0 else "right",
+                va="center", color=INK_DIM, fontsize=10, linespacing=1.3)
     ax.set_xticks(xs, ["2005-09", "2020-24"], fontsize=11.5)
-    ax.set_ylim(0, max(max(r) for r in real.values()) * 1.18)
+    ax.set_xlim(-0.25, 1.05)
+    ax.set_ylim(min(a) - 250, max(r) + 150)
     ax.set_yticks([])
-    ax.spines["left"].set_visible(False)
-    ch_rent, ch_line = pct(real["2009"][0], real["2024"][0]), pct(real["2009"][1], real["2024"][1])
+    for side in ("left", "bottom"):
+        ax.spines[side].set_visible(False)
     titleblock(fig, f"Older apartment rents rose {ch_rent:.0f}%; what the median renter could afford rose {ch_line:.0f}%",
-               "Gwinnett County, monthly amounts in 2024 dollars (after inflation).\n"
-               "Blue: median gross rent in apartment buildings built before 2000. Gray: 30% of the median renter household's income after taxes.\n"
+               "Gwinnett County, monthly amounts in 2024 dollars (after inflation), for apartment buildings built before 2000.\n"
                f"Before inflation, the median rent went from ${round(rent['2009'], -1):,.0f} to ${round(rent['2024'], -1):,.0f},"
                f" up {pct(rent['2009'], rent['2024']):.0f}%. Rounded to the nearest $10.")
-    credit(fig, PUMS + "\nAffordable amount: the Rentals Within Reach tool's default, from published median renter income and the tool's tax grid.")
+    credit(fig, PUMS + "\nAffordable amount: 30% of the median renter household's income after taxes, the Rentals Within Reach tool's default.")
     save(fig, "15-older-apartment-rents.png")
 
 

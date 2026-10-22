@@ -32,7 +32,7 @@ Nationally, Gwinnett's 10.5% was the lowest of the 1,922 counties we ranked, lea
 ![Bar chart of the 10 counties with the lowest share of rentals within reach in 2020-2024, leaving out college counties. Gwinnett County, Georgia, is lowest at 10.5%, followed by Clayton County, Georgia, at 11.0%, Lincoln County, New Mexico, at 11.8% and DeKalb County, Georgia, at 14.0%. The rest range from 14.2% to 15.4%.](images/02-least-affordable.png)
 *Source: Data 4 The People, Rentals Within Reach, from Census Bureau American Community Survey 5-year estimates, 2020-2024.*
 
-Two caveats. Clayton County is only half a point behind. And with college counties included, Gwinnett ranks third, behind Whitman County, Washington, and Benton County, Oregon.
+With college counties included, Gwinnett ranks third, behind Whitman County, Washington (home of Washington State University), and Benton County, Oregon (home of Oregon State University).
 
 ## A 59% decline
 
@@ -48,38 +48,54 @@ After inflation, Gwinnett's median rent rose 32% from 2005-2009 to 2020-2024, wh
 ![Scatter plot of 15 Atlanta-area counties, with the change in median renter income across and the change in median rent up, 2005-2009 to 2020-2024, after inflation. Gwinnett, at income up 8% and rent up 32%, sits farthest above the line where the two rose at the same rate. Clayton, DeKalb and Cherokee are close behind it.](images/04-income-vs-rent.png)
 *Source: Census Bureau, American Community Survey 5-year estimates; BLS consumer price index. Gwinnett's income change has a margin of about 5 points either way.*
 
-Home prices rose fast in Gwinnett, but they rose about as fast in Cobb County, where renters' income rose 18%.
+For context, look at Newton County. Its median renter household income rose 9%, the closest of these 15 counties to Gwinnett's 8%. Its median rent rose just 14%, paling in comparison to Gwinnett's 32% surge. Newton's income figure has a wide margin, about 13 points either way. 
 
 ## New rentals came in out of reach
 
-Gwinnett added about 41,000 rentals over this period. Two kinds account for more than half of them: about 11,300 more rentals in older houses, built before 2000, and about 11,000 apartments built since 2010. Houses built since 2010 added about 6,700 more. The typical rental in each of the three cost more than the median renter household could afford: about $1,250 a month, 30% of its after-tax income. In 2020-2024, older houses rented for a median of about $1,990 and new apartments for $1,870. About 10% of the older houses and 8% of the new apartments were within reach. Houses built since 2010 rented for a median of about $2,500, and 2% were within reach.
+The problem here is not that rental units in Gwinnett didn't grow. They did. 
+
+Gwinnett added about 41,000 rentals over this period. Three kinds account for about 70% of them:
+
+- About 11,300 more rentals in older houses, built before 2000
+- About 11,000 apartments built since 2010
+- About 6,700 houses built since 2010
+
+The typical rental in each of the three cost more than the median renter household could afford: about $1,250 a month, 30% of its after-tax income. In 2020-2024, older houses rented for a median of about $1,990 and new apartments for $1,870. About 10% of the older houses and 8% of the new apartments were within reach. Houses built since 2010 rented for a median of about $2,500, and 2% were within reach.
 
 ![Bar chart of median monthly rent in Gwinnett County in 2020-2024, against the $1,250 the median renter household could afford. Houses built before 2000 $1,990, with 10% within reach. Apartments built 2010 or later $1,870, with 8% within reach. Houses built 2010 or later $2,500, with 2% within reach.](images/05-new-to-market-rents.png)
 *Source: Census Bureau, American Community Survey 5-year microdata. Rents include utilities.*
 
-That does not account for the drop in rentals within reach. Most of that drop is in older apartments, built before 2000. Gwinnett had about the same number of them in both periods, but their median rent went from about $860 to $1,660, up 92%. After inflation, that is a 31% rise, while the amount the median renter household could afford rose 8%. In 2005-2009, the median older apartment rented for about $100 more than that amount. By 2020-2024, it was about $400 more.
+But it gets worse. Not only were the new units out of reach, but the older units that used to be within reach in 2005-2009 moved out of reach too.
 
-![Bar chart of Gwinnett County amounts in 2024 dollars. In 2005-2009, the median rent for apartments built before 2000 was $1,260, and the median renter household could afford $1,160. In 2020-2024, the median rent was $1,660, and the household could afford $1,250.](images/06-older-apartment-rents.png)
+Over our study period, Gwinnett lost about 5,500 rentals within reach, despite gaining about 41,000 rentals overall. Most of that drop was in older apartments, built before 2000. Gwinnett had about the same number of them in both periods, but their median rent went from about $860 to $1,660, up 92%. After inflation, that is a 31% rise, while the amount the median renter household could afford rose 8%. In 2005-2009, the median older apartment rented for about $100 more than that amount. By 2020-2024, it was about $400 more.
+
+![Slope chart of Gwinnett County amounts in 2024 dollars for apartments built before 2000. The median rent rose from $1,260 in 2005-2009 to $1,660 in 2020-2024, up 31% after inflation. The amount the median renter household could afford rose from $1,160 to $1,250, up 8%. The gap between them grew from $100 to $410.](images/06-older-apartment-rents.png)
 *Source: Census Bureau, American Community Survey 5-year microdata; Data 4 The People, Rentals Within Reach. Amounts in 2024 dollars.*
 
 In other words, most of the rentals added cost more than the median renter household could afford, and the older apartments that used to be close to reach rose far faster than renters' income.
 
 ## Renters' pay did not keep up
 
-Why did renter income not keep up? For the same kind of renter household (the same number of workers, and a householder of the same age and education), income fell about 3% after inflation. Renter households as a whole earned more mostly because the households changed: more members worked, more worked full time, and more householders were older or had college degrees. Pay itself showed no measurable rise. After inflation, the median renter who worked full time all year earned about $46,100 in 2005-2009 and $44,600 in 2020-2024. In Cobb, that pay rose 7%.
+Why did renter income not keep up? To answer that, we looked at pay: what one renter who worked full time all year earned. Household income adds up everyone in the household, so it can rise even when pay does not, if more people in the household work or work more hours. Pay isolates what renters are getting paid.
 
-Few counties with rents rising this fast saw that. We looked at 37 counties in large metro areas where rent rose 25% or more after inflation and the survey can measure the county on its own. Only two showed a drop in full-time renter pay: Gwinnett, and Cherokee County, also in metro Atlanta. Both drops are within the survey's margin of error, Cherokee's by a wide amount. In the middle county of the group, it rose 15%.
+Gwinnett's renter households did change. Households with two or more workers went from 34% to 37% of renter households. Among renters who worked, the share working full time all year rose from 66% to 76%. Householders with a bachelor's degree or more went from 23% to 30%. Changes like these can lift household income even when pay stays flat.
+
+And pay itself showed no measurable rise. After inflation, the median renter who worked full time all year earned about $46,100 in 2005-2009 and $44,600 in 2020-2024. In Cobb, that pay rose 7%.
+
+Few counties with rents rising this fast saw a drop in full-time renter pay. We looked at 37 counties in large metro areas where rent rose 25% or more after inflation and the survey can measure the county on its own. Only two showed a drop in full-time renter pay: Gwinnett, and Cherokee County, also in metro Atlanta. Both drops are within the survey's margin of error, Cherokee's by a wide amount. In the middle county of the group, it rose 15%.
 
 ![Bar chart of the change in median earnings of renters who worked full time all year, 2005-2009 to 2020-2024, after inflation, in 37 counties in large metro areas where median rent rose 25% or more after inflation. San Francisco is highest at 44.5%. The middle county rose about 15%. Cobb rose 6.7%, DeKalb 9.9% and Fulton 21.2%. Only Gwinnett, down 3.3%, and Cherokee, down 6.0%, show a drop. Lines on each bar show the margin of error, widest for Cherokee.](images/07-renter-pay.png)
 *Source: Census Bureau, American Community Survey 5-year microdata; BLS consumer price index. Lines show 90% margins: about 5 points either way for Gwinnett and 11 for Cherokee, so the order near the bottom is not certain. Another 44 counties with rent up 25% or more share a microdata area with a neighbor and could not be measured on their own.*
 
 ## “Hotlanta” - for rents, not renter incomes
 
-We really tried hard to keep this analysis focused on Gwinnett County. With the lowest percent of rentals within reach among the 1,922 U.S. counties we ranked, outside college counties, it deserved the attention. But notice how all throughout this analysis, other neighboring Atlanta-area counties kept making appearances on the charts. The analysis does not support one neat and tidy cause and effect conclusion encompassing the entire Atlanta metro area, but the data does tell us something is going on around this city that is making many areas especially difficult for renters. Rental prices are rising like one would expect in Hotlanta, but the incomes aren’t climbing with it. Among the large Atlanta-area counties, Gwinnett had one of the widest gaps between the change in rental prices and renter incomes. But is Gwinnett unique, or is it just where this perfect storm came together around Atlanta? We don’t know… but would love to hear from residents to help fill in the experiential gaps to which the data is blind.
+We really tried hard to keep this analysis focused on Gwinnett County. With the lowest percent of rentals within reach among the 1,922 U.S. counties we ranked, outside college counties, it deserved the attention. But notice how all throughout this analysis, other neighboring Atlanta-area counties kept making appearances on the charts. The analysis does not support one neat and tidy cause and effect conclusion encompassing the entire Atlanta metro area, but the data does suggest that something is going on around this city that is making many areas especially difficult for renters. Rental prices are rising like one would expect in Hotlanta, but the incomes aren’t climbing with it. Among the large Atlanta-area counties, Gwinnett had one of the widest gaps between the change in rental prices and renter incomes. But is Gwinnett unique, or is it just where this perfect storm came together around Atlanta? We don’t know… but would love to hear from residents to help fill in the experiential gaps to which the data is blind.
 
-Our other takeaway from this analysis was how different it was from Dawson County’s story. Dawson County was all about concentration risk of a small county in one large employer. It was an idiosyncratic story on the surface, but on reflection is just the manifestation of a risk facing many small counties across this country. Gwinnett County, from what we can tell, is simply a math story. It’s a story that is happening in many places to some degree - inflation creates winners and losers. If you owned your home over the past twenty years in Gwinnett County, you are a winner from housing inflation. If you needed to rent, you are a loser from housing inflation. Yes, you lost especially hard in Gwinnett, but this story just illustrates that what matters is the ratio between your income and your expenses. We all know this right? It couldn’t be simpler. And yet, what happened in Gwinnett is happening in other places to varying degrees. In my view, this is very sad. Most of us were renters at one point in our lives. And if we were lucky, we eventually became homeowners. But now we have counties where rental prices are accelerating far faster than incomes. How are renters in Gwinnett supposed to save for a house if the median renter household must spend 43% of its after-tax income on the median rental?
+Our other takeaway was how different this was from Dawson County's story. Dawson County was about a small county relying on one large employer, a risk many small counties share. Gwinnett County, from what we can tell, is a math story: what matters is the ratio between your income and your expenses. Over the past twenty years, rising housing costs worked in favor of people who owned homes in Gwinnett and against people who rented. Renters lost especially hard in Gwinnett, but rents are outpacing renter incomes in other places too. When rents outpace renter incomes year after year, it can work like a gravitational pull, widening the gap between the economic prospects of renters and homeowners in America.
 
-Our job is to provide the tools and analysis to help you understand the data. It’s not policy. But geez this is depressing for those seeking the American Dream (without wealthy parents to finance it for them). Hopefully some smart minds come together to first acknowledge this problem, and then enact solutions to give people some hope for a better match between wages and affordable rentals.
+In my view, this is very sad. For many people, renting is the step before owning a home. How are renters in Gwinnett supposed to save for a house if the median renter household must spend 43% of its after-tax income on the median rental?
+
+Our job is to provide the tools and analysis to help you understand the data. It’s not policy. But geez this is depressing for those seeking the American Dream (without wealthy parents to finance it for them). Hopefully some smart minds come together to first acknowledge this problem, and then enact solutions to give people some hope for days when there can be a better match between wages and affordable rentals.
 
 ::: divider
 

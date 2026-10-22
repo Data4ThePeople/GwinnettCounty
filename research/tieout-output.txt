@@ -29,6 +29,10 @@ Beat 3
    PASS  C4   Gwinnett rank, rent minus income                               claimed       1.00  computed       1.00
    INFO  next three: Clayton +18.4, DeKalb +17.6, Cherokee +17.3; Gwinnett +23.6
    PASS  C5   next three are Clayton, DeKalb, Cherokee                       claimed       1.00  computed       1.00
+   PASS  C11  county with renter income change closest to Gwinnett's is Newton (1 = yes) claimed       1.00  computed       1.00
+   PASS  C12  Newton renter income change (%)                                claimed       9.00  computed       9.05
+   PASS  C13  Newton median rent change (%)                                  claimed      14.00  computed      13.91
+   PASS  C14  Newton income margin (points), 'about 13'                      claimed      13.00  computed      13.20
    PASS  C6   renter median as % of owner median (%)                         claimed      55.00  computed      54.79
    INFO  US figure 53.0% ('about the national figure')
    PASS  C7   FHFA change Gwinnett (%)                                       claimed      82.00  computed      82.44
@@ -54,6 +58,7 @@ Chart 04 in the post (growth by building type and year built)
    PASS  F4   older apartments within reach change, '-5,500'                 claimed  -5,500.00  computed  -5,516.00
    PASS  F6   houses built 2010+ added, 'about 6,700'                        claimed   6,700.00  computed   6,733.00
    PASS  F5   largest single group is older houses (1 = yes)                 claimed       1.00  computed       1.00
+   PASS  F7   three kinds' share of added rentals (%), 'about 70%'           claimed      70.00  computed      71.05
 Post charts 05 and 06 (rents against what renters could afford)
    PASS  G1   older houses + new apartments share of added (%), 'more than half' claimed      54.00  computed      54.53
    PASS  G2   affordable rent 2020-24 ($), 'about $1,250'                    claimed   1,250.00  computed   1,253.28
@@ -96,6 +101,8 @@ Beat 5
    PASS  E9   2+ workers 2020-24 (%)                                         claimed      37.00  computed      37.46
    PASS  E10  full-time year-round share of workers 2005-09 (%)              claimed      66.00  computed      65.76
    PASS  E11  full-time year-round share of workers 2020-24 (%)              claimed      76.00  computed      75.61
+   PASS  E15  householders with a bachelor's or more 2005-09 (%)             claimed      23.00  computed      23.44
+   PASS  E16  householders with a bachelor's or more 2020-24 (%)             claimed      30.00  computed      30.34
    PASS  E12  same-kind-of-household income change (%)                       claimed      -3.00  computed      -2.75
    PASS  E13  QCEW pay change Gwinnett (%)                                   claimed       1.00  computed       1.01
    PASS  E14  QCEW rank of Gwinnett, 8 = smallest                            claimed       8.00  computed       8.00
@@ -113,4 +120,4 @@ Words (checked by hand against the results above and the memos)
    FIXED  beat 5 and chart 11 'fell 3%': -3.3% is inside its 90% margin of about 5 points, so the text now says pay 'did not rise' (flagged by the independent tie-out).
    FIXED  beat 5 '34% to 38%' for households with 2+ workers: 37.46% rounds to 37 (E9); 'the same rise' as Cobb is now 'about the same rise' (E7, within the margin of about 0.02).
 
-86 of 86 number checks pass.
+93 of 93 number checks pass.

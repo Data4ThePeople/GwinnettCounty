@@ -106,6 +106,11 @@ def main():
     check("C4", "Gwinnett rank, rent minus income", 1, [o[6] for o in gap].index(G) + 1, 0)
     print("   INFO  next three: " + ", ".join(f"{o[5]} {o[3] - o[0]:+.1f}" for o in gap[1:4]) + f"; Gwinnett {gap[0][3] - gap[0][0]:+.1f}")
     check("C5", "next three are Clayton, DeKalb, Cherokee", 1, float({o[5] for o in gap[1:4]} == {"Clayton", "DeKalb", "Cherokee"}), 0)
+    near = min((o for o in big if o[6] != G), key=lambda o: abs(o[0] - next(x for x in big if x[6] == G)[0]))
+    check("C11", "county with renter income change closest to Gwinnett's is Newton (1 = yes)", 1, float(near[5] == "Newton"), 0)
+    check("C12", "Newton renter income change (%)", 9, near[0], 0.5)
+    check("C13", "Newton median rent change (%)", 14, near[3], 0.5)
+    check("C14", "Newton income margin (points), 'about 13'", 13, near[1], 0.5)
     us_ratio = 100 * G8.pull("2024", "us:1")["us"]["rent"] / G8.pull("2024", "us:1")["us"]["own"]
     check("C6", "renter median as % of owner median (%)", 55, 100 * D["2024"][G]["rent"] / D["2024"][G]["own"], 0.5)
     print(f"   INFO  US figure {us_ratio:.1f}% ('about the national figure')")
@@ -157,6 +162,8 @@ def main():
     big = max(add, key=add.get)
     check("F6", "houses built 2010+ added, 'about 6,700'", 6700, add[("houses", "2010 or later")], 50)
     check("F5", "largest single group is older houses (1 = yes)", 1, float(big == ("houses", "before 2000")), 0)
+    three = sum(add[g] for g in (("houses", "before 2000"), ("apartments", "2010 or later"), ("houses", "2010 or later")))
+    check("F7", "three kinds' share of added rentals (%), 'about 70%'", 70, 100 * three / sum(add.values()), 1.5)
     print("Post charts 05 and 06 (rents against what renters could afford)")
     two = add[("houses", "before 2000")] + add[("apartments", "2010 or later")]
     check("G1", "older houses + new apartments share of added (%), 'more than half'", 54, 100 * two / sum(add.values()), 1)
@@ -213,6 +220,9 @@ def main():
     ft = lambda ws: 100 * sum(x["w"] for x in ws if x["ftyr"]) / sum(x["w"] for x in ws)  # noqa: E731
     check("E10", "full-time year-round share of workers 2005-09 (%)", 66, ft(w0), 0.5)
     check("E11", "full-time year-round share of workers 2020-24 (%)", 76, ft(w1), 0.5)
+    ba = lambda h: 100 * sum(x["w"] for x in h if x["edu"] == 3) / sum(x["w"] for x in h)  # noqa: E731
+    check("E15", "householders with a bachelor's or more 2005-09 (%)", 23, ba(h0), 0.5)
+    check("E16", "householders with a bachelor's or more 2020-24 (%)", 30, ba(h1), 0.5)
     check("E12", "same-kind-of-household income change (%)", -3, pct(P12.wmed(h0, "inc", P12.weights(h0)), P12.reweighted(h1, h0)), 0.5)
     q = P12.qcew()
     check("E13", "QCEW pay change Gwinnett (%)", 1, q[G], 0.5)

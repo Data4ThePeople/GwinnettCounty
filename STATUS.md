@@ -6,8 +6,8 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: gwinnett-county-rents
-Step: 2b
-Since: 2026-10-21
+Step: 2c
+Since: 2026-10-22
 
 ## Steps
 
@@ -15,7 +15,7 @@ Since: 2026-10-21
 |---|---|---|---|
 | 1  | Exploration and analysis | 2026-10-21 | thread and charts in research/thread.md; both tie-outs pass |
 | 2a | Draft with brackets resolved | 2026-10-21 | 7 charts; tie-outs: Claude 86/86, independent 1 and 2 match |
-| 2b | Eric's edit, Claude's look-over | | |
+| 2b | Eric's edit, Claude's look-over | 2026-10-22 | pay section now full-time pay only; tie-out 93/93 |
 | 2c | Slice markup | | |
 | 2d | Hero 1680x1080 + alt text | | |
 | 2e | SEO | | |
@@ -178,3 +178,12 @@ None.
   brackets left in POST.md. Waiting on Eric to confirm 2a.
 - 2026-10-21 Step 2a confirmed by Eric. Next: 2b, Eric edits POST.md, then
   Claude's look-over.
+- 2026-10-22 Step 2b: chart 15 (post image 06) redrawn as a slope chart with
+  the gap shaded; alt text updated. Eric's edits reviewed as a numbered list;
+  accepted edits applied (college names, Newton comparison, three kinds of
+  added rentals as bullets, rentals within reach lost, closing tightened).
+  Like-for-like income dropped from the post; the pay section now goes
+  straight to full-time renter pay, with household changes (2+ workers 34% to
+  37%, full-time share 66% to 76%, bachelor's 23% to 30%). New numbers tied
+  out (C11-C14, F7, E15-E16): 93 of 93 pass.
+- 2026-10-22 Step 2b confirmed by Eric. Next: 2c, slice markup.
