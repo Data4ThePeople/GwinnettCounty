@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: gwinnett-county-rents
-Step: 2g
+Step: complete
 Since: 2026-10-22
 
 ## Steps
@@ -20,7 +20,7 @@ Since: 2026-10-22
 | 2d | Hero 1680x1080 + alt text | 2026-10-22 | Norcross College Street photo, Wikimedia Commons, CC0; alt 410 chars |
 | 2e | SEO | 2026-10-22 | meta title, description, 7 keywords; Article schema |
 | 2f | Pushed to Prismic (draft) | 2026-10-22 | draft atngkhEAACsAAIPC, Migration Release |
-| 2g | Mailchimp teaser | | |
+| 2g | Mailchimp teaser | 2026-10-22 | EMAIL.md; email hero JPG 229KB |
 
 ## Stale
 
@@ -200,3 +200,7 @@ None.
   Migration Release (7 charts + hero uploaded, 33 slices, tags and author
   empty). Date set to 2026-10-22 06:30 EDT; schema section changed to
   Research. --verify not run (no read token). Next: 2g, Mailchimp teaser.
+- 2026-10-22 Step 2g confirmed by Eric. EMAIL.md drafted from the post, with
+  Eric's added closing (case study, American Dream) and his call to action
+  ("We need to do better..."). Email hero exported at 1200x771, 229KB.
+  README updated with the post link. Post complete.

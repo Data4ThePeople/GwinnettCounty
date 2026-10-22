@@ -1,13 +1,18 @@
 # Gwinnett County, Georgia: rentals out of reach
 
-Work in progress for a Data 4 The People county spotlight on Gwinnett County,
-Georgia. In the Rentals Within Reach tool, Gwinnett is among the least
-affordable rental counties in the country in 2020-2024, and its share of
-rentals priced within reach of the median renter household fell from 25.5% in
-2005-2009 to 10.5% in 2020-2024. No post or Pages link yet.
+The data and code behind "Renters Can't Win It in Gwinnett," a Data 4 The
+People county spotlight on Gwinnett County, Georgia
+([post](https://www.data4thepeople.com/p/gwinnett-county-rents)). In 2020-2024,
+10.5% of Gwinnett's rentals were within reach of its median renter household,
+the lowest of the 1,922 counties ranked outside college counties, down from
+25.5% in 2005-2009. After inflation, its median rent rose 32% while its median
+renter household income rose 8%.
 
 ## What is here
 
+- `posts/gwinnett-county-rents/`: the post (`POST.md`), its email teaser
+  (`EMAIL.md`) and its images. The hero photo is "College Street, Norcross
+  March 2017" by Thomson200 on Wikimedia Commons, public domain (CC0).
 - `research/candidate-selection.md`: how Gwinnett was chosen, the other
   candidates, and the questions this project starts from.
 - `research/candidate-selection-output.txt`: the full output of the
