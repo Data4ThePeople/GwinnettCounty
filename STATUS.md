@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: gwinnett-county-rents
-Step: 2f
+Step: 2g
 Since: 2026-10-22
 
 ## Steps
@@ -19,7 +19,7 @@ Since: 2026-10-22
 | 2c | Slice markup | 2026-10-22 | defaults only; 33 slices, 7 images |
 | 2d | Hero 1680x1080 + alt text | 2026-10-22 | Norcross College Street photo, Wikimedia Commons, CC0; alt 410 chars |
 | 2e | SEO | 2026-10-22 | meta title, description, 7 keywords; Article schema |
-| 2f | Pushed to Prismic (draft) | | |
+| 2f | Pushed to Prismic (draft) | 2026-10-22 | draft atngkhEAACsAAIPC, Migration Release |
 | 2g | Mailchimp teaser | | |
 
 ## Stale
@@ -196,3 +196,7 @@ None.
   Lawrenceville, Quebec; Flickr ones are small and no-derivatives). Next: 2e, SEO.
 - 2026-10-22 Step 2e confirmed by Eric. meta_title, description and keywords
   written; Article schema; no text added. Next: 2f, Prismic draft push.
+- 2026-10-22 Step 2f confirmed by Eric. Prismic draft atngkhEAACsAAIPC in the
+  Migration Release (7 charts + hero uploaded, 33 slices, tags and author
+  empty). Date set to 2026-10-22 06:30 EDT; schema section changed to
+  Research. --verify not run (no read token). Next: 2g, Mailchimp teaser.

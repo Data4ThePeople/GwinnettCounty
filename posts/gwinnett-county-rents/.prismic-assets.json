@@ -1,0 +1,58 @@
+{
+  "images/01-atlanta-map.png": {
+    "id": "NT7vTU6ZLf7UVOnx",
+    "width": 1600,
+    "height": 1440,
+    "url": "https://images.prismic.io/data4thepeople/NT7vTU6ZLf7UVOnx_01-atlanta-map.png?auto=format,compress",
+    "stamp": "273058:1792623518"
+  },
+  "images/02-least-affordable.png": {
+    "id": "-X4kdnN651MjL4BQ",
+    "width": 1600,
+    "height": 992,
+    "url": "https://images.prismic.io/data4thepeople/-X4kdnN651MjL4BQ_02-least-affordable.png?auto=format,compress",
+    "stamp": "139577:1792623518"
+  },
+  "images/03-rentals-within-reach.png": {
+    "id": "SLyXroLtoOoWaA2P",
+    "width": 1600,
+    "height": 992,
+    "url": "https://images.prismic.io/data4thepeople/SLyXroLtoOoWaA2P_03-rentals-within-reach.png?auto=format,compress",
+    "stamp": "125683:1792623518"
+  },
+  "images/04-income-vs-rent.png": {
+    "id": "djJk-yo0189wrtT_",
+    "width": 1600,
+    "height": 1120,
+    "url": "https://images.prismic.io/data4thepeople/djJk-yo0189wrtT__04-income-vs-rent.png?auto=format,compress",
+    "stamp": "169603:1792623518"
+  },
+  "images/05-new-to-market-rents.png": {
+    "id": "Bc_opQWk3PJ3Ry7I",
+    "width": 1600,
+    "height": 992,
+    "url": "https://images.prismic.io/data4thepeople/Bc_opQWk3PJ3Ry7I_05-new-to-market-rents.png?auto=format,compress",
+    "stamp": "129792:1792623518"
+  },
+  "images/06-older-apartment-rents.png": {
+    "id": "uBH_2ntU7SEAHf9T",
+    "width": 1600,
+    "height": 992,
+    "url": "https://images.prismic.io/data4thepeople/uBH_2ntU7SEAHf9T_06-older-apartment-rents.png?auto=format,compress",
+    "stamp": "145980:1792623525"
+  },
+  "images/07-renter-pay.png": {
+    "id": "Y_yqTqCw-jEroqGu",
+    "width": 1600,
+    "height": 1920,
+    "url": "https://images.prismic.io/data4thepeople/Y_yqTqCw-jEroqGu_07-renter-pay.png?auto=format,compress",
+    "stamp": "284698:1792623518"
+  },
+  "images/gwinnett-county-rents-hero-1680x1080.png": {
+    "id": "Myzcmjd9HJrqsbTc",
+    "width": 1680,
+    "height": 1080,
+    "url": "https://images.prismic.io/data4thepeople/Myzcmjd9HJrqsbTc_gwinnett-county-rents-hero-1680x1080.png?auto=format,compress",
+    "stamp": "3291029:1792663235"
+  }
+}
