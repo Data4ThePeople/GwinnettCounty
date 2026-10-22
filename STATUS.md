@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: gwinnett-county-rents
-Step: 2e
+Step: 2f
 Since: 2026-10-22
 
 ## Steps
@@ -18,7 +18,7 @@ Since: 2026-10-22
 | 2b | Eric's edit, Claude's look-over | 2026-10-22 | pay section now full-time pay only; tie-out 93/93 |
 | 2c | Slice markup | 2026-10-22 | defaults only; 33 slices, 7 images |
 | 2d | Hero 1680x1080 + alt text | 2026-10-22 | Norcross College Street photo, Wikimedia Commons, CC0; alt 410 chars |
-| 2e | SEO | | |
+| 2e | SEO | 2026-10-22 | meta title, description, 7 keywords; Article schema |
 | 2f | Pushed to Prismic (draft) | | |
 | 2g | Mailchimp teaser | | |
 
@@ -194,3 +194,5 @@ None.
   crop to 1680x1080; source kept as images/gwinnett-county-rents-hero-source.jpg.
   No usable Lawrenceville GA sign or downtown photo found (Commons sign is
   Lawrenceville, Quebec; Flickr ones are small and no-derivatives). Next: 2e, SEO.
+- 2026-10-22 Step 2e confirmed by Eric. meta_title, description and keywords
+  written; Article schema; no text added. Next: 2f, Prismic draft push.

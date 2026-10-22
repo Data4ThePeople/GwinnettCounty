@@ -6,9 +6,9 @@ date:
 section: Data 4 Thought
 hero: images/gwinnett-county-rents-hero-1680x1080.png
 hero_alt: College Street in downtown Norcross, Gwinnett County, Georgia, on a partly cloudy day. A row of new two-story townhomes with front porches lines the right side of the street, with cars parked in front. On the left, a black lamppost holds a street sign for Holcomb Bridge Road and a red Norcross banner. Small older houses and bare trees sit behind it, and a white church steeple rises at the end of the street.
-meta_title:
-description:
-keywords:
+meta_title: Gwinnett County Rents Outran Renter Income, 2005-2024
+description: Gwinnett County, Georgia, had the smallest share of rentals within reach of its median renter outside college counties. Rent rose 32%; renter income, 8%.
+keywords: Gwinnett County rent, Gwinnett County affordable housing, Atlanta rent increase, renter income, rent burden Georgia, rentals within reach, Atlanta suburbs rent
 schema_type: article
 drop_cap: true
 heading_spacer: 20px

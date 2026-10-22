@@ -1,6 +1,9 @@
 {
   "page_title": "Renters Can't Win It in Gwinnett",
   "page_subtitle": "Gwinnett County, Georgia, had the smallest share of rentals within reach of its median renter outside college counties. Rent rose 32% after inflation while renter income rose 8%.",
+  "meta_title": "Gwinnett County Rents Outran Renter Income, 2005-2024",
+  "meta_description": "Gwinnett County, Georgia, had the smallest share of rentals within reach of its median renter outside college counties. Rent rose 32%; renter income, 8%.",
+  "meta_keywords": "Gwinnett County rent, Gwinnett County affordable housing, Atlanta rent increase, renter income, rent burden Georgia, rentals within reach, Atlanta suburbs rent",
   "make_this_main_post": false,
   "slices": [
     {
@@ -803,5 +806,5 @@
       }
     }
   ],
-  "schema": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Article\",\n  \"headline\": \"Renters Can't Win It in Gwinnett\",\n  \"description\": \"\",\n  \"articleSection\": \"Data 4 Thought\",\n  \"license\": \"https://www.data4thepeople.com/terms-of-use\",\n  \"inLanguage\": \"en-US\",\n  \"isAccessibleForFree\": true,\n  \"author\": {\n    \"@type\": \"Person\",\n    \"name\": \"Eric Pachman\",\n    \"url\": \"https://www.data4thepeople.com/authors/eric-pachman\"\n  },\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"Data 4 The People\",\n    \"url\": \"https://data4thepeople.com\"\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.data4thepeople.com/p/gwinnett-county-rents\"\n  }\n}"
+  "schema": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Article\",\n  \"headline\": \"Renters Can't Win It in Gwinnett\",\n  \"description\": \"Gwinnett County, Georgia, had the smallest share of rentals within reach of its median renter outside college counties. Rent rose 32%; renter income, 8%.\",\n  \"articleSection\": \"Data 4 Thought\",\n  \"license\": \"https://www.data4thepeople.com/terms-of-use\",\n  \"inLanguage\": \"en-US\",\n  \"isAccessibleForFree\": true,\n  \"keywords\": [\n    \"Gwinnett County rent\",\n    \"Gwinnett County affordable housing\",\n    \"Atlanta rent increase\",\n    \"renter income\",\n    \"rent burden Georgia\",\n    \"rentals within reach\",\n    \"Atlanta suburbs rent\"\n  ],\n  \"author\": {\n    \"@type\": \"Person\",\n    \"name\": \"Eric Pachman\",\n    \"url\": \"https://www.data4thepeople.com/authors/eric-pachman\"\n  },\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"Data 4 The People\",\n    \"url\": \"https://data4thepeople.com\"\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.data4thepeople.com/p/gwinnett-county-rents\"\n  }\n}"
 }
